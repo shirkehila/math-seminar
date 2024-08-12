@@ -229,7 +229,7 @@ status open
 \end_inset
 
  קיים 
-\begin_inset Formula $k\ge1$
+\begin_inset Formula $k\ge0$
 \end_inset
 
  כך ש
@@ -272,6 +272,19 @@ status open
 4
 \numeric off
 ](
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לצרף פה גרף
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -435,14 +448,22 @@ T\left(f\right) & = & \begin{cases}
 \end_inset
 
  קיים 
-\begin_inset Formula $k\ge1$
+\begin_inset Formula $k\ge0$
 \end_inset
 
  כך ש
 \begin_inset Formula $T^{k}\left(f\right)=1$
 \end_inset
 
-?
+? לבעיה זו נקרא בהמשך 
+\begin_inset Quotes eld
+\end_inset
+
+בעיית קולץ הפולינומיאלית
+\begin_inset Quotes erd
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -462,6 +483,14 @@ x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
 
 \end_inset
 
+כלומר 
+\begin_inset Formula $T^{6}\left(x^{2}+1\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
 מהשוואה בין 
 \begin_inset Formula $T$
 \end_inset
@@ -507,7 +536,7 @@ x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
 \color inherit
 2
 \numeric off
-, ההתחלקות בו מורה לאיזה ענף של 
+: ההתחלקות בו מורה לאיזה ענף של 
 \begin_inset Formula $T$
 \end_inset
 
@@ -669,6 +698,19 @@ status open
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לצרף פה גרף
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 \begin_inset Quotes eld
 \end_inset
@@ -680,8 +722,78 @@ status open
  של הסמינר
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 הצגה במבט על של השאלות שנשאל ושל התוצאות שנשיג
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסמינר זה נציג תשובה חיובית לבעיית קולץ הפולינומיאלית.
+ לאחר קבלת תשובה חיובית זו טבעי לשאול - 
+\begin_inset Quotes eld
+\end_inset
+
+כמה מהר
+\begin_inset Quotes erd
+\end_inset
+
+ לוקח להגיע ל-
+\numeric on
+1
+\numeric off
+?
+\end_layout
+
+\begin_layout Standard
+לכל מיפוי 
+\begin_inset Formula $M:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ נגדיר:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,M\right) & = & \min\left\{ k\ge0:M^{k}\left(f\right)=1\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+אם קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כזה, ואחרת נגדיר 
+\begin_inset Formula $t_{\min}\left(f,M\right)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח כי לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula 
+\[
+t_{\min}\left(f,T\right)\le\deg\left(f\right)^{2}+\deg\left(f\right)<\infty
+\]
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Section*
