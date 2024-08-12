@@ -113,9 +113,18 @@
 הצגת השערת קולץ
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 מה זו השערת קולץ, דוגמה וגרף של איזה מספר הולך לאיזה עבור מספרים קטנים,
  רקע היסטורי שלה
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -273,8 +282,17 @@
 
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 הצגה של המיפוי, דוגמה וגרף של איזה פולינום הולך לאיזה עבור מעלות קטנות
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -394,7 +412,6 @@ Zavislak
 2
 \numeric off
 ](.
- 
 \end_layout
 
 \begin_layout Standard
@@ -402,18 +419,254 @@ Zavislak
 \begin_inset Formula $T:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
 \end_inset
 
- כך:
+ באופן הבא:
 \begin_inset Formula 
 \begin{eqnarray*}
 T\left(f\right) & = & \begin{cases}
-\\
-\\
+\frac{f}{x} & f\equiv0\left(\mod x\right)\\
+\left(x+1\right)f+1 & f\equiv1\left(\mod x\right)
 \end{cases}
 \end{eqnarray*}
 
 \end_inset
 
+ושואלים - האם לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
 
+ קיים 
+\begin_inset Formula $k\ge1$
+\end_inset
+
+ כך ש
+\begin_inset Formula $T^{k}\left(f\right)=1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נבצע לדוגמה הפעלה חוזרת של 
+\begin_inset Formula $T$
+\end_inset
+
+ על הפולינום 
+\begin_inset Formula $x^{2}+1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
+\]
+
+\end_inset
+
+מהשוואה בין 
+\begin_inset Formula $T$
+\end_inset
+
+ לבין 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ ניתן לראות כי האיבר הראשוני 
+\begin_inset Formula $x$
+\end_inset
+
+ בחוג 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ ממלא את תפקידו של המספר הראשוני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, ההתחלקות בו מורה לאיזה ענף של 
+\begin_inset Formula $T$
+\end_inset
+
+ לפנות כשם שההתחלקות ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מורה לאיזה ענף של 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ לפנות.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להוסיף הפנייה למבנים?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהמשך להשוואה זו, לפולינום 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ המתחלק ב
+\begin_inset Formula $x$
+\end_inset
+
+, כלומר מקיים 
+\begin_inset Formula $f\equiv0\left(\mod x\right)$
+\end_inset
+
+ אנו קוראים פולינום 
+\begin_inset Quotes eld
+\end_inset
+
+זוגי
+\begin_inset Quotes erd
+\end_inset
+
+ ולפולינום שאינו מתחלק ב
+\begin_inset Formula $x$
+\end_inset
+
+ אנו קוראים פולינום 
+\begin_inset Quotes eld
+\end_inset
+
+אי-זוגי
+\begin_inset Quotes erd
+\end_inset
+
+.
+ נעיר כי 
+\begin_inset Formula $f\equiv f\left(0\right)\left(\mod x\right)$
+\end_inset
+
+ )הכוונה ב
+\begin_inset Formula $f\left(0\right)$
+\end_inset
+
+ היא לפולינום הקבוע שהמקדם החופשי שלו תוצאת ההצבה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $f$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא זוגי אם ורק אם 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection*
