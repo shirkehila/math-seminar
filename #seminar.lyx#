@@ -781,19 +781,43 @@ t_{\min}\left(f,M\right) & = & \min\left\{ k\ge0:M^{k}\left(f\right)=1\right\}
 \end_layout
 
 \begin_layout Standard
-נוכיח כי לכל 
-\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+למעשה, נוכיח שזמן העצירה סופי על ידי הוכחה כי לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
 \end_inset
 
- מתקיים 
+ מתקיים: 
 \begin_inset Formula 
 \[
-t_{\min}\left(f,T\right)\le\deg\left(f\right)^{2}+\deg\left(f\right)<\infty
+t_{\min}\left(f,T\right)\le\deg\left(f\right)^{2}+2\deg\left(f\right)
 \]
 
 \end_inset
 
- 
+ובסימונים אסימפטוטיים, 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\deg\left(f\right)^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בשלב הבא, שמהווה את חלק הארי של הסמינר, נשפר את החסם הזה ונוכיח כי לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\right)
+\]
+
+\end_inset
+
+משמע 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\deg\left(f\right)^{1.5}\right)$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section*
