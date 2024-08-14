@@ -1498,7 +1498,7 @@ T^{2r+1}\left(f\right) & = & \frac{\left(x+1\right)^{r}g+1}{x}
 .
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Proof
 בסיס האינדוקציה: 
 \begin_inset Formula $\deg f=0$
 \end_inset
@@ -1623,7 +1623,7 @@ T^{2r+1}\left(f\right) & = & \frac{\left(x+1\right)^{r}g+1}{x}
  והחסם מתקיים.
 \end_layout
 
-\begin_layout Itemize
+\begin_layout Proof
 צעד האינדוקציה: יהי 
 \begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
 \end_inset
@@ -1680,6 +1680,10 @@ t_{\min}\left(f,T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
 חסם משופר לזמן העצירה
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
 \begin_layout Itemize
 צמצום למקרה של פולינום אי זוגי
 \end_layout
@@ -1720,6 +1724,105 @@ t_{\min}\left(f,T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
 \end_inset
 
  לכל פולינום
+\end_layout
+
+\end_inset
+
+כפי שציינו במבוא, קיבלנו חסם אסימפטוטי ריבועי ל
+\begin_inset Formula $t_{\min}\left(f,T\right)$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\deg f$
+\end_inset
+
+.
+ בחלק זה נשפר את החסם ונוכיח 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתבונן במסלול שעושים פולינומים ממעלה עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד שהם מגיעים ל
+\numeric on
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+תמונה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימנו בירוק צעדים שמקטינים את מעלת הפולינום, ובסגול צעדים שמגדילים את מעלת
+ הפולינום.
+ 
 \end_layout
 
 \begin_layout Subsection*
