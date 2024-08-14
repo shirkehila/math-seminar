@@ -105,11 +105,11 @@
 יחסים אסימפטוטיים
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 מבוא
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 הצגת השערת קולץ
 \end_layout
 
@@ -287,7 +287,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 בעיה אנלוגית ב
 \begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
 \end_inset
@@ -711,7 +711,7 @@ status open
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 \begin_inset Quotes eld
 \end_inset
 
@@ -820,13 +820,17 @@ t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\ri
 .
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 תוצאות
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 הוכחה שזמן העצירה סופי
 \end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
 
 \begin_layout Itemize
 הוכחה שמגיעים בסוף ל
@@ -836,6 +840,627 @@ t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\ri
 
 \begin_layout Itemize
 גזירת חסם ריבועי
+\end_layout
+
+\end_inset
+
+כדי להוכיח שזמן העצירה סופי, נתחיל בלהוכיח שלאחר מספר צעדים שחסום על ידי
+ ביטוי התלוי במעלה של 
+\begin_inset Formula $f$
+\end_inset
+
+, המעלה של 
+\begin_inset Formula $f$
+\end_inset
+
+ חייבת לקטון.
+ עבור פולינום זוגי, נדרש צעד אחד להורדת המעלה.
+ עבור פולינום אי זוגי, המצב מעט יותר מסובך.
+ נתבונן למשל בפולינום 
+\begin_inset Formula $x^{7}+x^{5}+1$
+\end_inset
+
+.
+ על מנת להמחיש ויזואלית את הסדרה המתקבלת מהפעלות חוזרות של 
+\begin_inset Formula $T$
+\end_inset
+
+, נאמץ את הסימון הבא של פולינום כוקטור בינארי:
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{7}+x^{5}+1 &  & \text{■□■□□□□■}
+\end{eqnarray*}
+
+\end_inset
+
+ריבוע שחור מייצג את המקדמים שערכם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וריבוע לבן מייצג את המקדמים שערכם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, וככל שמתקדמים שמאלה, החזקה של 
+\begin_inset Formula $x$
+\end_inset
+
+ עולה.
+ 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+0 & \text{□■□■□□□□■}\\
+1 & \text{■■■■□□□■□}\\
+2 & \text{□■■■■□□□■}\\
+3 & \text{■□□□■□□■□}\\
+4 & \text{□■□□□■□□■}\\
+5 & \text{■■□□■■□■□}\\
+6 & \text{□■■□□■■□■}\\
+7 & \text{■□■□■□■■□}\\
+8 & \text{□■□■□■□■■}\\
+9 & \text{■■■■■■■□□}\\
+10 & \text{□■■■■■■■□}\\
+11 & \text{□□■■■■■■■}
+\end{array}
+\]
+
+\end_inset
+
+נתבונן בשורות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $0,2,4,6,8$
+\end_inset
+
+.
+ ניתן לראות שבשורה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ קיים מרווח של 
+\begin_inset Formula $4$
+\end_inset
+
+ מקומות בין החזקה הנמוכה ביותר לחזקה הבאה, לאחר מכן בשורה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המרווח הוא של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקומות.
+ זה ממשיך עד שהמרווח נעלם בשורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+.
+ לאחר מכן נדרשים עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צעדים כדי להגיע לפולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Lemma
+יהי 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\deg\left(f\right)\ge1$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $1\le m\le2\deg\left(f\right)+1$
+\end_inset
+
+ כך שמתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+\deg\left(T^{m}\left(f\right)\right) & = & \deg\left(f\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $d=\deg\left(f\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ זוגי אז 
+\begin_inset Formula $T\left(f\right)=\frac{f}{x}$
+\end_inset
+
+ ולכן,
+\begin_inset Formula 
+\[
+\deg\left(T\left(f\right)\right)=d-1
+\]
+
+\end_inset
+
+במקרה זה 
+\begin_inset Formula $m=1$
+\end_inset
+
+ מקיים את הטענה.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי, נרשום:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & = & x^{r}g+1
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $1\le r\le d$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f-1$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $x\nmid g$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $\deg g=d-r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח באינדוקציה כי לכל 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j}\left(f\right) & = & \left(x+1\right)^{j}x^{r-j}g+1
+\end{eqnarray*}
+
+\end_inset
+
+עבור 
+\begin_inset Formula $j=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T\left(f\right) & = & \left(x+1\right)\left(x^{r}g+1\right)+1=\left(x+1\right)x^{r}g+x\\
+T^{2}\left(f\right) & = & \left(x+1\right)x^{r-1}g+1
+\end{eqnarray*}
+
+\end_inset
+
+נניח כעת כי התוצאה נכונה עבור 
+\begin_inset Formula $1\le j<r$
+\end_inset
+
+ ונוכיח שהיא נכונה עבור 
+\begin_inset Formula $j+1$
+\end_inset
+
+.
+ מהנחת האינדוקציה:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j}\left(f\right) & = & \left(x+1\right)^{j}x^{r-j}g+1
+\end{eqnarray*}
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $j<r$
+\end_inset
+
+, הפולינום 
+\begin_inset Formula $\left(x+1\right)^{j}x^{r-j}g$
+\end_inset
+
+ זוגי ולכן 
+\begin_inset Formula $T^{2j}\left(f\right)$
+\end_inset
+
+ אי זוגי.
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j+1}\left(f\right) & = & \left(x+1\right)^{j+1}\left(x^{r-j}g+1\right)+1=\left(x+1\right)^{j+1}x^{r-j}g+x\\
+T^{2j+2}\left(f\right) & = & \left(x+1\right)^{j+1}x^{r-\left(j+1\right)}g+1
+\end{eqnarray*}
+
+\end_inset
+
+ובכך הוכחנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Proof
+נקבל עבור 
+\begin_inset Formula $j=r$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2r}\left(f\right) & = & \left(x+1\right)^{r}g+1
+\end{eqnarray*}
+
+\end_inset
+
+נזכיר כי 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי ולכן 
+\begin_inset Formula $\left(x+1\right)^{r}g$
+\end_inset
+
+ אי זוגי.
+ זה גורר ש
+\begin_inset Formula $T^{2r}\left(f\right)$
+\end_inset
+
+ זוגי לכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2r+1}\left(f\right) & = & \frac{\left(x+1\right)^{r}g+1}{x}
+\end{eqnarray*}
+
+\end_inset
+
+ומתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+\deg\left(T^{2r+1}\left(f\right)\right) & = & \deg\left(T^{2r}\left(f\right)\right)-1=d-1
+\end{eqnarray*}
+
+\end_inset
+
+במקרה זה 
+\begin_inset Formula $m=2r+1\le2d+1$
+\end_inset
+
+ מקיים את הטענה.
+\end_layout
+
+\begin_layout Standard
+נ
+\end_layout
+
+\begin_layout Theorem
+יהי 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+, אז 
 \end_layout
 
 \begin_layout Subsection*
