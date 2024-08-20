@@ -4,19 +4,23 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass heb-article
+\textclass article
 \use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
 \maintain_unincluded_children false
 \language hebrew
 \language_package default
-\inputencoding cp1255
+\inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
+\font_roman "default" "Arial"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
-\use_non_tex_fonts false
+\use_non_tex_fonts true
 \font_sc false
 \font_osf false
 \font_sf_scale 100 100
@@ -24,7 +28,7 @@
 \use_microtype false
 \use_dash_ligatures true
 \graphics default
-\default_output_format default
+\default_output_format pdf4
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -868,7 +872,7 @@ status open
 , נאמץ את הסימון הבא של פולינום כוקטור בינארי:
 \begin_inset Formula 
 \begin{eqnarray*}
-x^{7}+x^{5}+1 &  & \text{■□■□□□□■}
+x^{7}+x^{5}+1 &  & ◼◻◼◻◻◻◻◼
 \end{eqnarray*}
 
 \end_inset
@@ -965,7 +969,7 @@ x^{7}+x^{5}+1 &  & \text{■□■□□□□■}
 \begin_inset Formula 
 \[
 \begin{array}{cc}
-0 & \text{□■□■□□□□■}\\
+0 & ◻◼◻◼◻◻◻◻◼\\
 1 & \text{■■■■□□□■□}\\
 2 & \text{□■■■■□□□■}\\
 3 & \text{■□□□■□□■□}\\
@@ -1676,7 +1680,7 @@ t_{\min}\left(f,T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
 כנדרש.
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 חסם משופר לזמן העצירה
 \end_layout
 
@@ -1820,9 +1824,71 @@ status open
 \end_layout
 
 \begin_layout Standard
-סימנו בירוק צעדים שמקטינים את מעלת הפולינום, ובסגול צעדים שמגדילים את מעלת
- הפולינום.
- 
+סימנו בירוק צעדים מסוג 
+\begin_inset Formula $f\mapsto\frac{f}{x}$
+\end_inset
+
+ ובסגול צעדים מסוג 
+\begin_inset Formula $f\mapsto\left(x+1\right)f+1$
+\end_inset
+
+.
+ נשים לב שכל פולינום זוגי מגיע לפולינום אי זוגי לאחר רצף של חלוקות ב
+\begin_inset Formula $x$
+\end_inset
+
+, ואם כך נוכל להוכיח חסם לפולינומים אי זוגיים בלבד ולאחר מכן להסיק ממנו
+ חסם לכל פולינום שונה מ
+\numeric on
+0
+\numeric off
+ בעזרת הקשר הבא:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\text{odd}},T\right)
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה הגבוהה ביותר של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+פסקה של הסבר למה צריך את הפולינום ההדדי ושזה הופך את המיפוי למשהו שניתן
+ לחזות יותר בקלות מה קורה אחרי מספר צעדים שלו
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צמצום למקרה של פולינום אי זוגי
+\end_layout
+
+\begin_layout Definition
+לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ נגדיר את המיפויים הבאים
 \end_layout
 
 \begin_layout Subsection*
