@@ -4,19 +4,23 @@
 \begin_header
 \save_transient_properties true
 \origin unavailable
-\textclass heb-article
+\textclass article
 \use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
 \maintain_unincluded_children false
 \language hebrew
 \language_package default
-\inputencoding cp1255
+\inputencoding auto
 \fontencoding global
-\font_roman "default" "default"
+\font_roman "default" "David"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
-\use_non_tex_fonts false
+\use_non_tex_fonts true
 \font_sc false
 \font_osf false
 \font_sf_scale 100 100
@@ -24,7 +28,7 @@
 \use_microtype false
 \use_dash_ligatures true
 \graphics default
-\default_output_format default
+\default_output_format pdf4
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -868,7 +872,7 @@ status open
 , נאמץ את הסימון הבא של פולינום כוקטור בינארי:
 \begin_inset Formula 
 \begin{eqnarray*}
-x^{7}+x^{5}+1 &  & \text{■□■□□□□■}
+x^{7}+x^{5}+1 &  & ◼◻◼◻◻◻◻◼
 \end{eqnarray*}
 
 \end_inset
@@ -965,18 +969,18 @@ x^{7}+x^{5}+1 &  & \text{■□■□□□□■}
 \begin_inset Formula 
 \[
 \begin{array}{cc}
-0 & \text{□■□■□□□□■}\\
-1 & \text{■■■■□□□■□}\\
-2 & \text{□■■■■□□□■}\\
-3 & \text{■□□□■□□■□}\\
-4 & \text{□■□□□■□□■}\\
-5 & \text{■■□□■■□■□}\\
-6 & \text{□■■□□■■□■}\\
-7 & \text{■□■□■□■■□}\\
-8 & \text{□■□■□■□■■}\\
-9 & \text{■■■■■■■□□}\\
-10 & \text{□■■■■■■■□}\\
-11 & \text{□□■■■■■■■}
+0 & ◻◼◻◼◻◻◻◻◼\\
+1 & ◼◼◼◼◻◻◻◼◻\\
+2 & ◻◼◼◼◼◻◻◻◼\\
+3 & ◼◻◻◻◼◻◻◼◻\\
+4 & ◻◼◻◻◻◼◻◻◼\\
+5 & ◼◼◻◻◼◼◻◼◻\\
+6 & ◻◼◼◻◻◼◼◻◼\\
+7 & ◼◻◼◻◼◻◼◼◻\\
+8 & ◻◼◻◼◻◼◻◼◼\\
+9 & ◼◼◼◼◼◼◼◻◻\\
+10 & ◻◼◼◼◼◼◼◼◻\\
+11 & ◻◻◼◼◼◼◼◼◼
 \end{array}
 \]
 
