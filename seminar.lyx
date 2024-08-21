@@ -2285,6 +2285,156 @@ t_{\min}\left(f,T\right) & = & 2t_{\min}\left(f,T_{3}\right)+n
 .
 \end_layout
 
+\begin_layout Subsubsection
+הפולינום ההדדי ומיפויים מקבילים
+\end_layout
+
+\begin_layout Standard
+ברצוננו להמשיך ולחקור את הסדרה 
+\begin_inset Formula $\left(T_{3}^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי.
+ מתברר כי אם נבצע היפוך של סדר המקדמים עבור כל הפולינומים שבסדרה נקבל שוב
+ סדרה של פולינומים אי זוגיים.
+ בסדרה זו נוכל לתאר את המעבר מפולינום נתון לפולינום הבא אחריו בעזרת מיפוי
+ פשוט יותר מאשר 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ שנגדיר ונסמן ב
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפולינום המתקבל מפולינום נתון בעזרת היפוך סדר המקדמים נקרא הפולינום ההדדי.
+ בחלק זה נציג תכונות בסיסיות של הפולינום ההדדי, נגדיר את המיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ ונוכיח שעבור פולינומים אי זוגיים מתקיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+יהי המיפוי 
+\begin_inset Formula $:^{\hat{}}\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ הפועל כך:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & \mapsto & \hat{f}=x^{\deg\left(f\right)}f\left(\frac{1}{x}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נדבוק בקונבנציה ש
+\begin_inset Formula $\deg\left(0\right)=-\infty$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $\widehat{0}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+תכונות של המיפוי 
+\begin_inset Formula $f\mapsto\hat{f}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x\right)=\sum_{i=0}^{m}a_{i}x^{i}\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a_{m}\ne0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\hat{f}\left(x\right)=\sum_{i=0}^{m}a_{i}x^{m-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $f,g\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\hat{fg}=\hat{f}\hat{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\hat{x^{k}f}=\hat{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\hat{\hat{f}}=\frac{f}{x^{r}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ בפרט אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי אז 
+\begin_inset Formula $\hat{\hat{f}}=f$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 סדרות משהו משהו
 \end_layout
@@ -2293,11 +2443,11 @@ t_{\min}\left(f,T\right) & = & 2t_{\min}\left(f,T_{3}\right)+n
 אין לי שמץ עוד לא קראתי
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 שאלות פתוחות
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 ביבליוגרפיה
 \end_layout
 
