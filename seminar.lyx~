@@ -34,7 +34,16 @@ theorems-sec
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize default
 \use_geometry false
 \use_package amsmath 1
@@ -1681,6 +1690,12 @@ t_{\min}\left(f,T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:חסם-משופר-לזמן"
+
+\end_inset
+
 חסם משופר לזמן העצירה
 \end_layout
 
@@ -1883,15 +1898,181 @@ status open
 צמצום למקרה של פולינום אי זוגי
 \end_layout
 
+\begin_layout Standard
+כפי שציינו במבוא ל
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:חסם-משופר-לזמן"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, ניתן לצמצם את הבעיה לפולינומים אי זוגיים בלבד.
+ נתחיל בלהציג מספר מיפויי עזר.
+\end_layout
+
 \begin_layout Definition
 לכל 
 \begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
 \end_inset
 
- נגדיר את המיפויים הבאים
+ נגדיר את המיפויים הבאים:
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Itemize
+\begin_inset Formula $T_{1}\left(f\right)=\left(x+1\right)f+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{2}\left(f\right)=\frac{f}{x^{r}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\ne0$
+\end_inset
+
+ ונגדיר גם 
+\begin_inset Formula $T_{2}\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{3}\left(f\right)=\left(T_{2}\circ T_{1}\right)\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ אי זוגי, הסדרה 
+\begin_inset Formula $\left(T_{3}^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ מהווה תת סדרה של 
+\begin_inset Formula $\left(T^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ שכן עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי הפעלה יחידה של 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ שקולה להפעלה חוזרת של 
+\begin_inset Formula $T$
+\end_inset
+
+ עד להגעה לפולינום אי זוגי )שאינו 
+\begin_inset Formula $f$
+\end_inset
+
+ עצמו(.
+\end_layout
+
+\begin_layout Lemma
+יהי 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ אי זוגי.
+ 
+\begin_inset Formula $t_{\min}\left(f,T\right)=2t_{\min}\left(f,T_{3}\right)+\deg\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ יכול לצמצם רווח )
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צעדים רגילים( ויכול להוריד מעלה )
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צעדים רגילים + הפרש המעלות(
+\end_layout
+
+\begin_layout Subsection
 סדרות משהו משהו
 \end_layout
 

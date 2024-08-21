@@ -15,7 +15,7 @@ theorems-sec
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "David"
+\font_roman "default" "Arial"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
@@ -2004,72 +2004,279 @@ noprefix "false"
 \begin_inset Formula $t_{\min}\left(f,T\right)=2t_{\min}\left(f,T_{3}\right)+\deg\left(f\right)$
 \end_inset
 
+ )בפרט 
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)$
+\end_inset
 
+ סופי(
 \end_layout
 
 \begin_layout Proof
+נוכיח את הטענה באינדוקציה שלמה על מעלת הפולינום 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\deg f=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $t_{\min}\left(f,T\right)=0$
+\end_inset
+
+ וכן 
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=0$
+\end_inset
+
+ ולכן השוויון נכון.
+\end_layout
+
+\begin_layout Proof
+נניח שהטענה נכונה לפולינומים אי זוגיים ממעלה קטנה מ
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח אותה לפולינומים אי זוגיים ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ הוכחנו כי עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי, הנתון בצורה:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & = & x^{r}g+1
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $1\le r\le d$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f-1$
+\end_inset
+
+, מתקיים כי לכל 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j}\left(f\right) & = & \left(x+1\right)^{j}x^{r-j}g+1
+\end{eqnarray*}
+
+\end_inset
+
+בפרט עבור 
+\begin_inset Formula $j=r-1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2\left(r-1\right)}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב כי מההוכחה ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $2\left(r-1\right)$
+\end_inset
+
+ ההפעלות של 
+\begin_inset Formula $T$
+\end_inset
+
+ הן לסירוגין מסוג 
+\begin_inset Formula $f\mapsto\left(x+1\right)f+1$
+\end_inset
+
+ ומסוג 
+\begin_inset Formula $f\mapsto\frac{f}{x}$
+\end_inset
+
+ כלומר מתחלקות לזוגות של הפעלות שכל אחת מהן שקולה להפעלה אחת של 
 \begin_inset Formula $T_{3}$
 \end_inset
 
- יכול לצמצם רווח )
-\numeric on
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{3}^{r-1}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
+\end{eqnarray*}
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $h\left(x\right)=\left(x+1\right)^{r-1}xg+1$
+\end_inset
+
+.
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-צעדים רגילים( ויכול להוריד מעלה )
-\numeric on
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\begin_inset Formula 
+\begin{eqnarray*}
+T\left(h\right) & = & \left(x+1\right)^{r}xg+x
+\end{eqnarray*}
+
+\end_inset
+
+תהי כעת 
+\begin_inset Formula $s$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $T\left(h\right)$
+\end_inset
+
+, אז 
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{s}\left(T\left(h\right)\right) & = & T_{2}\left(T\left(h\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+מצד שני מהגדרת 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{3}\left(h\right) & = & T_{2}\left(T_{1}\left(h\right)\right)=T_{2}\left(T\left(h\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+קיבלנו:
+\begin_inset Formula 
+\begin{eqnarray}
+f\overbrace{\to}^{T^{2\left(r-1\right)}}h\overbrace{\to}^{T^{1+s}}T_{2}\left(T\left(h\right)\right) &  & T^{2\left(r-1\right)+1+s}\left(f\right)=T_{2}\left(T\left(h\right)\right)\label{eq:1}\\
+f\overbrace{\to}^{T_{3}^{r-1}}h\overbrace{\to}^{T_{3}}T_{2}\left(T\left(h\right)\right) &  & T_{3}^{r}\left(f\right)=T_{2}\left(T\left(h\right)\right)\label{eq:2}
+\end{eqnarray}
+
+\end_inset
+
+הפולינום 
+\begin_inset Formula $T_{2}\left(T\left(h\right)\right)$
+\end_inset
+
+ הוא אי זוגי.
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-צעדים רגילים + הפרש המעלות(
+\begin_inset Formula $T\left(h\right)$
+\end_inset
+
+ ממעלה 
+\begin_inset Formula $n+1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $T_{2}\left(T\left(h\right)\right)$
+\end_inset
+
+ ממעלה 
+\begin_inset Formula $n+1-s$
+\end_inset
+
+.
+ נזכיר כי מ
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $T^{2}\left(h\right)=T^{2r}\left(f\right)$
+\end_inset
+
+ זוגי כלומר 
+\begin_inset Formula $s\ge2$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n+1-s<n$
+\end_inset
+
+ ואם כך מהנחת האינדוקציה:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(T_{2}\left(T\left(h\right)\right),T\right) & = & 2t_{\min}\left(T_{2}\left(T\left(h\right)\right),T_{3}\right)+\left(n+1-s\right)
+\end{eqnarray*}
+
+\end_inset
+
+ובשילוב עם 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ו
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(2\left(r-1\right)+1+s\right)+t_{\min}\left(f,T\right) & = & 2\left(t_{\min}\left(f,T_{3}\right)+r\right)+\left(n+1-s\right)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
