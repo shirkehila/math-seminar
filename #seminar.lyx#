@@ -1995,6 +1995,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--אי"
+
+\end_inset
+
 יהי 
 \begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
 \end_inset
@@ -2327,7 +2333,7 @@ t_{\min}\left(f,T\right) & = & 2t_{\min}\left(f,T_{3}\right)+n
 \end_layout
 
 \begin_layout Definition
-יהי המיפוי 
+יהי מיפוי היפוך סדר המקדמים 
 \begin_inset Formula $^{\hat{}}:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
 \end_inset
 
@@ -2360,6 +2366,12 @@ f & \mapsto & \widehat{f}=x^{\deg\left(f\right)}f\left(\frac{1}{x}\right)
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:תכונות-של-המיפוי"
+
+\end_inset
+
 תכונות של המיפוי 
 \begin_inset Formula $f\mapsto\widehat{f}$
 \end_inset
@@ -2655,11 +2667,73 @@ f & \mapsto & \widehat{f}=x^{\deg\left(f\right)}f\left(\frac{1}{x}\right)
 
 \end_inset
 
-ועל ידי החלפת אינדקס:
+ועל ידי החלפת אינדקס נוספת נקבל:
 \begin_inset Formula 
 \[
-\hat{\hat{g}}\left(x\right)=\sum_{i=0}^{m}b_{m-i}x^{i}=\sum_{i=0}^{m}a_{m}x^{i}
+\hat{\hat{g}}\left(x\right)=\sum_{i=0}^{m}b_{m-i}x^{i}=\sum_{i=0}^{m}a_{m}x^{i}=g\left(x\right)
 \]
+
+\end_inset
+
+כעת ניעזר בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\hat{\hat{f}} & = & \widehat{\widehat{x^{r}g}}=\hat{\hat{g}}=g=\frac{f}{x^{r}}
+\end{eqnarray*}
 
 \end_inset
 
@@ -2667,6 +2741,764 @@ f & \mapsto & \widehat{f}=x^{\deg\left(f\right)}f\left(\frac{1}{x}\right)
 \end_layout
 
 \end_deeper
+\begin_layout Definition
+עבור 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ יהיו:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $S_{1}\left(f\right)=\left(x+1\right)f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{2}\left(f\right)=f+x^{\deg\left(f\right)}$
+\end_inset
+
+ )מאחר ו
+\begin_inset Formula $f$
+\end_inset
+
+ מעל השדה 
+\begin_inset Formula $\mathbb{F}_{2}$
+\end_inset
+
+ הפעלה של 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ מאפסת את המקדם העליון(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{3}\left(f\right)=\left(S_{2}\circ S_{1}\right)\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--פולינום"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום אי זוגי, אז מתקיים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\widehat{T_{3}\left(f\right)}=S_{3}\left(\hat{f}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נוכיח:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\widehat{T_{3}\left(f\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}$
+\end_inset
+
+.
+ לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{1}\left(f\right)}$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי, הפעולה 
+\begin_inset Formula $g\mapsto\widehat{g+1}$
+\end_inset
+
+ מאפסת את המקדם התחתון והופכת את סדר המקדמים ולכן שקולה לפעולה 
+\begin_inset Formula $g\mapsto S_{2}\left(\hat{g}\right)$
+\end_inset
+
+ שהופכת את סדר המקדמים ואז מאפסת את המקדם העליון.
+ נשתמש בתכונה זו עבור 
+\begin_inset Formula $g=\left(x+1\right)f$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{T_{1}\left(f\right)} & = & \widehat{\underbrace{\left(x+1\right)f}_{g}+1}=S_{2}\left(\widehat{\left(x+1\right)f}\right)
+\end{eqnarray*}
+
+\end_inset
+
+לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{2}\left(\widehat{\left(x+1\right)f}\right) & = & S_{2}\left(\widehat{\left(x+1\right)}\hat{f}\right)=S_{2}\left(\left(x+1\right)\hat{f}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב כי הביטוי האחרון שווה ל
+\begin_inset Formula $S_{2}\left(S_{1}\left(\hat{f}\right)\right)$
+\end_inset
+
+ כלומר ל
+\begin_inset Formula $S_{3}\left(\hat{f}\right)$
+\end_inset
+
+ ולכן הוכחנו 
+\begin_inset Formula $\widehat{T_{3}\left(f\right)}=S_{3}\left(\hat{f}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלים באינדוקציה מיידית כי לכל 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{T_{3}^{n}\left(f\right)} & = & S_{3}^{n}\left(\widehat{f}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $n=t_{\min}\left(f,T_{3}\right)$
+\end_inset
+
+ ונתבונן בסדרה:
+\begin_inset Formula 
+\[
+f,T_{3}\left(f\right),T_{3}^{2}\left(f\right)...,T_{3}^{n}\left(f\right)=1
+\]
+
+\end_inset
+
+ אם נפעיל את המיפוי 
+\begin_inset Formula $f\mapsto\hat{f}$
+\end_inset
+
+ על כל איברי הסדרה נקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f},\widehat{T_{3}\left(f\right)},\widehat{T_{3}^{2}\left(f\right)}...,\widehat{1} & = & \widehat{f},S_{3}\left(\hat{f}\right),S_{3}^{2}\left(\widehat{f}\right),...,1
+\end{eqnarray*}
+
+\end_inset
+
+ובסדרה זו האיבר 
+\begin_inset Formula $1$
+\end_inset
+
+ מופיע רק במקום האחרון שכן עבור 
+\begin_inset Formula $m<n$
+\end_inset
+
+, 
+\begin_inset Formula $T_{3}^{m}\left(f\right)\ne1$
+\end_inset
+
+ ומהיותו של 
+\begin_inset Formula $T_{3}^{m}\left(f\right)$
+\end_inset
+
+ פולינום אי זוגי נקבל 
+\begin_inset Formula $\widehat{T_{3}^{m}\left(f\right)}\ne1$
+\end_inset
+
+ כי אילו היה מתקיים השוויון 
+\begin_inset Formula $\widehat{T_{3}^{m}\left(f\right)}=1$
+\end_inset
+
+ היינו יכולים להפעיל את מיפוי היפוך המקדמים שוב ולקבל 
+\begin_inset Formula $\widehat{\widehat{T_{3}^{m}\left(f\right)}}=\widehat{1}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $T_{3}^{m}\left(f\right)=1$
+\end_inset
+
+ וזו סתירה.
+ מצאנו אם כך שיש להפעיל 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים את 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ על 
+\begin_inset Formula $\widehat{f}$
+\end_inset
+
+ כדי להגיע ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בפעם הראשונה ולכן 
+\begin_inset Formula $t_{\min}\left(\hat{f},S_{3}\right)=n$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הלמה האחרונה מאפשרת לנו להתמקד בחסימה של זמן העצירה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ בלבד, שהוא כאמור מיפוי פשוט יותר.
+ נסכם זאת במסקנה.
+\end_layout
+
+\begin_layout Corollary
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי.
+ אז מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & 2t_{\min}\left(\hat{f},S_{3}\right)+\deg\left(f\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נובע משילוב של סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--פולינום"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ומ
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור פולינום 
+\begin_inset Formula $f\left(x\right)=\sum a_{i}x^{i}$
+\end_inset
+
+ נשתמש בסימון 
+\begin_inset Formula $f\vert_{\le n}$
+\end_inset
+
+ עבור הפולינום 
+\begin_inset Formula $\sum_{i\le n}a_{i}x^{i}$
+\end_inset
+
+ כלומר משמיטים חזקות גבוהות מ
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+נניח כי 
+\begin_inset Formula $f\equiv g\mod x^{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\vert_{\le n}=g\vert_{\le n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $f\left(x\right)=\sum a_{i}x^{i}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $g\left(x\right)=\sum b_{i}x^{i}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x^{n}\vert\left(f-g\right)$
+\end_inset
+
+ ולכן לכל 
+\begin_inset Formula $0\le i\le n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a_{i}-b_{i}=0$
+\end_inset
+
+ כלומר מקדמי החזקות 
+\begin_inset Formula $0\le i\le n$
+\end_inset
+
+ של 
+\begin_inset Formula $f,g$
+\end_inset
+
+ מזדהים ולכן 
+\begin_inset Formula $f\vert_{\le n}=g\vert_{\le n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היתרון של המיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ הוא שאנחנו יכולים לתאר בצורה יחסית פשוטה מה יהיה הפולינום שנקבל על ידי
+ מספר הפעלות חוזרות שלו וזהו התוכן של שלוש הלמות הבאות.
+\end_layout
+
+\begin_layout Lemma
+יהי 
+\begin_inset Formula $f\left(x\right)=x^{n}+g$
+\end_inset
+
+ אי זוגי, כאשר 
+\begin_inset Formula $\deg\left(g\right)<n$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $0\le i\le n-\deg\left(g\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $S_{3}^{i}\left(f\right)=x^{n}+\left(x+1\right)^{i}g=\left(\left(x+1\right)f\right)\vert_{\le n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $r=n-\deg\left(f\right)$
+\end_inset
+
+.
+ נוכיח באינדוקציה על 
+\begin_inset Formula $i$
+\end_inset
+
+ כי לכל 
+\begin_inset Formula $0\le i\le r$
+\end_inset
+
+ מתקיים השוויון הראשון.
+ עבור 
+\begin_inset Formula $i=0$
+\end_inset
+
+ השוויון ברור.
+ יהי 
+\begin_inset Formula $i<r$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $S_{3}^{i}\left(f\right)=x^{n}+\left(x+1\right)^{i}g$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{i}g\right)<n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\deg\left(S_{3}^{i}\left(f\right)\right)=n$
+\end_inset
+
+.
+ נחשב את 
+\begin_inset Formula $S_{1}\left(S_{3}^{i}\left(f\right)\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{1}\left(S_{3}^{i}\left(f\right)\right) & = & \left(x+1\right)\left(x^{n}+\left(x+1\right)^{i}g\right)\\
+ & = & x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g
+\end{eqnarray*}
+
+\end_inset
+
+כעת נחשב את 
+\begin_inset Formula $\left(S_{3}^{i+1}\left(f\right)\right)$
+\end_inset
+
+
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ כלומר נמצא את הפולינום המתקבל מהפעלה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ על 
+\begin_inset Formula $S_{3}^{i}\left(f\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i+1}\left(f\right) & = & S_{3}\left(S_{3}^{i}\left(f\right)\right)=S_{2}\left(S_{1}\left(S_{3}^{i}\left(f\right)\right)\right)\\
+ & = & S_{2}\left(x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g\right)\\
+ & = & x^{n}+\left(x+1\right)^{i+1}g
+\end{eqnarray*}
+
+\end_inset
+
+נסביר את המעבר האחרון - 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{i+1}g\right)\le n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\deg\left(x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g\right)=n+1$
+\end_inset
+
+.
+ בכך הוכחנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Proof
+נוכיח כעת את השוויון השני.
+ לכל 
+\begin_inset Formula $0\le i\le r$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{i}g\right)\le n$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i}\left(f\right) & = & x^{n}+\left(x+1\right)^{i}g=\left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n}
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב שאם שני פולינומים שקולים זה לזה מודולו 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ אז יש להם אותם מקדמים עבור החזקות 
+\begin_inset Formula $0\le m\le n$
+\end_inset
+
+.
+\end_layout
+
 \begin_layout Subsection
 סדרות משהו משהו
 \end_layout
