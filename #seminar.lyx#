@@ -3303,6 +3303,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:mod"
+
+\end_inset
+
 נניח כי 
 \begin_inset Formula $f\equiv g\mod x^{n}$
 \end_inset
@@ -3361,6 +3367,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--אי-1"
+
+\end_inset
+
 יהי 
 \begin_inset Formula $f\left(x\right)=x^{n}+g$
 \end_inset
@@ -3488,15 +3500,190 @@ S_{3}^{i}\left(f\right) & = & x^{n}+\left(x+1\right)^{i}g=\left(x^{n}+\left(x+1\
 
 \end_inset
 
-נשים לב שאם שני פולינומים שקולים זה לזה מודולו 
-\begin_inset Formula $x^{n}$
+מתקיים 
+\begin_inset Formula $x^{n}\equiv\left(x+1\right)^{i}x^{n}\mod x^{n}$
 \end_inset
 
- אז יש להם אותם מקדמים עבור החזקות 
-\begin_inset Formula $0\le m\le n$
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{n}+\left(x+1\right)^{i}g & \equiv_{x^{n}} & \left(x+1\right)^{i}x^{n}+\left(x+1\right)^{i}g=\left(x+1\right)^{i}\left(x^{n}+g\right)=\left(x+1\right)^{i}f
+\end{eqnarray*}
+
+\end_inset
+
+אם כך לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i}\left(f\right) & = & \left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n}=\left(\left(x+1\right)^{i}f\right)\vert_{\le n}
+\end{eqnarray*}
+
+\end_inset
+
+וקיבלנו את השוויון השני.
+\end_layout
+
+\begin_layout Standard
+הלמה הבאה מקשרת בין זמן העצירה של 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי לזמן העצירה של פולינום אי זוגי ממעלה נמוכה יותר.
+\end_layout
+
+\begin_layout Lemma
+יהי 
+\begin_inset Formula $f\left(x\right)=x^{n}+g$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי ו
+\begin_inset Formula $n\ge2$
 \end_inset
 
 .
+ נסמן 
+\begin_inset Formula $r=n-\deg\left(g\right)$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+לפי השוויון הראשון של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{r}\left(f\right) & = & x^{n}+\left(x+1\right)^{r}g
+\end{eqnarray*}
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{r}g\right)=r+\deg\left(g\right)=n$
+\end_inset
+
+ ולכן הוספה של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ לפולינום הזה שקולה להפעלת 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray}
+S_{3}^{r}\left(f\right) & = & S_{2}\left(\left(x+1\right)^{r}g\right)=S_{2}\left(S_{1}\left(\left(x+1\right)^{r-1}g\right)\right)=S_{3}\left(\left(x+1\right)^{r-1}g\right)\label{eq:3}
+\end{eqnarray}
+
+\end_inset
+
+נשים לב כי מ
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי לכל 
+\begin_inset Formula $0\le i\le r-1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\deg\left(S_{3}^{i}\left(f\right)\right)=n$
+\end_inset
+
+ ולכן בפרט 
+\begin_inset Formula $S_{3}^{i}\left(f\right)\ne1$
+\end_inset
+
+.
+ אם כך:
+\begin_inset Formula 
+\begin{eqnarray}
+t_{\min}\left(f,S_{3}\right) & = & r+t_{\min}\left(f,S_{3}^{r}\left(f\right)\right)\overbrace{=}^{\left(3\right)}r+t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right)\label{eq:4}
+\end{eqnarray}
+
+\end_inset
+
+אם 
+\begin_inset Formula $\left(x+1\right)^{r-1}g\ne1$
+\end_inset
+
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right) & = & t_{\min}\left(f,\left(x+1\right)^{r-1}g\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+והצבה של השוויון הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל ב)
+\numeric on
+4
+\numeric off
+( נותנת את השוויון הדרוש.
+ נניח בשלילה כי 
+\begin_inset Formula $\left(x+1\right)^{r-1}g=1$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $g=1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(x+1\right)^{r-1}=1$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $r=1$
+\end_inset
+
+.
+ במקרה זה 
+\begin_inset Formula $n=r+\deg\left(g\right)=1+0=1$
+\end_inset
+
+ ולכן תנאי הטענה לא מתקיימים.
 \end_layout
 
 \begin_layout Subsection
