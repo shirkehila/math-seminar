@@ -3309,12 +3309,12 @@ name "lem:mod"
 
 \end_inset
 
-נניח כי 
+ 
 \begin_inset Formula $f\equiv g\mod x^{n}$
 \end_inset
 
- אז 
-\begin_inset Formula $f\vert_{\le n}=g\vert_{\le n}$
+ אם ורק אם 
+\begin_inset Formula $f\vert_{\le n-1}=g\vert_{\le n-1}$
 \end_inset
 
 
@@ -3331,11 +3331,15 @@ name "lem:mod"
 
 .
  
+\begin_inset Formula $f\equiv g\mod x^{n}$
+\end_inset
+
+ אם ורק אם 
 \begin_inset Formula $x^{n}\vert\left(f-g\right)$
 \end_inset
 
- ולכן לכל 
-\begin_inset Formula $0\le i\le n$
+ וזה שקול לכך שלכל 
+\begin_inset Formula $0\le i<n$
 \end_inset
 
  מתקיים 
@@ -3343,15 +3347,15 @@ name "lem:mod"
 \end_inset
 
  כלומר מקדמי החזקות 
-\begin_inset Formula $0\le i\le n$
+\begin_inset Formula $0\le i\le n-1$
 \end_inset
 
  של 
 \begin_inset Formula $f,g$
 \end_inset
 
- מזדהים ולכן 
-\begin_inset Formula $f\vert_{\le n}=g\vert_{\le n}$
+ מזדהים, וזה מתקיים אם ורק אם 
+\begin_inset Formula $f\vert_{\le n-1}=g\vert_{\le n-1}$
 \end_inset
 
 .
@@ -3512,7 +3516,7 @@ x^{n}+\left(x+1\right)^{i}g & \equiv_{x^{n}} & \left(x+1\right)^{i}x^{n}+\left(x
 
 \end_inset
 
-אם כך לפי 
+לכן אם כך לפי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:mod"
@@ -3523,6 +3527,72 @@ noprefix "false"
 \end_inset
 
 :
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i}\left(f\right) & = & \left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n-1}=\left(\left(x+1\right)^{i}f\right)\vert_{\le n-1}
+\end{eqnarray*}
+
+\end_inset
+
+כמו כן 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ מופיע עם מקדם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשני הביטויים לכן:
 \begin_inset Formula 
 \begin{eqnarray*}
 S_{3}^{i}\left(f\right) & = & \left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n}=\left(\left(x+1\right)^{i}f\right)\vert_{\le n}
@@ -3666,7 +3736,7 @@ t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right) & = & t_{\min}\
 \begin_inset Formula $\left(x+1\right)^{r-1}g=1$
 \end_inset
 
- אז אם 
+ אז 
 \begin_inset Formula $g=1$
 \end_inset
 
@@ -3684,6 +3754,648 @@ t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right) & = & t_{\min}\
 \end_inset
 
  ולכן תנאי הטענה לא מתקיימים.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהיו--פולינומים"
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פולינומים אי זוגיים.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\deg\left(S_{3}\left(f\right)\right)\le\deg\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $S_{3}^{k}\left(f\right)=\left(\left(x+1\right)^{k}f\right)\vert_{\le m}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m=\deg\left(S_{3}^{k}\left(f\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $g=f\vert_{\le n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $t_{\min}\left(g,S_{3}\right)\le t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+נוכיח את הסעיפים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נשים לב ש
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ מקטין את המעלה של כל פולינום שונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+\deg\left(S_{3}\left(f\right)\right) & = & \deg\left(S_{2}\left(S_{1}\left(f\right)\right)\right)<\deg\left(S_{1}\left(f\right)\right)\\
+ & = & \deg\left(\left(x+1\right)f\right)=\deg\left(f\right)+1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נוכיח את הטענה באינדוקציה על 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ המקרה של 
+\begin_inset Formula $k=0$
+\end_inset
+
+ ברור, נניח כעת שהטענה נכונה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $h_{1}=S_{3}^{k}\left(f\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $h_{2}=S_{3}^{k+1}\left(f\right)=S_{3}\left(h_{1}\right)$
+\end_inset
+
+.
+ נסמן גם 
+\begin_inset Formula $d_{1}=\deg\left(h_{1}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $d_{2}=\deg\left(h_{2}\right)$
+\end_inset
+
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+h_{1} & \equiv & \left(x+1\right)^{k}f\mod\left(x^{d_{1}+1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נכפול את שני האגפים ב
+\begin_inset Formula $\left(x+1\right)$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)h_{1} & \equiv & \left(x+1\right)^{k+1}f\mod\left(x^{d_{1}+1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+שוב לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{1}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{1}}$
+\end_inset
+
+.
+ מחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של טענה זו 
+\begin_inset Formula $d_{2}\le d_{1}$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=S_{3}\left(h_{1}\right)$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $h_{2}=S_{3}\left(h_{1}\right)=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נסמן לכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{k}=S_{3}^{k}\left(f\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $g_{k}=S_{3}^{k}\left(g\right)$
+\end_inset
+
+.
+ נוכיח באינדוקציה שלכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\deg\left(g_{k}\right)\le\deg\left(f_{k}\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $f_{k}\equiv g_{k}\mod x^{1+\deg\left(g_{k}\right)}$
+\end_inset
+
+.
+ המקרה 
+\begin_inset Formula $k=0$
+\end_inset
+
+ ברור.
+ נניח שהטענה נכונה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ונכפול את שני אגפי השקילות ב
+\begin_inset Formula $\left(x+1\right)$
+\end_inset
+
+ כך שנקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)f_{k} & \equiv & \left(x+1\right)g_{k}\mod x^{1+\deg\left(g_{k}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+כמו כן מ
+\begin_inset Formula $\deg\left(g_{k}\right)\le\deg\left(f_{k}\right)$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\mod x^{1+\deg\left(g_{k}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+מכאן נקבל על ידי סכימה של השקילויות:
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{k+1} & = & \left(x+1\right)f_{k}+x^{\deg\left(\left(x+1\right)f_{k}\right)}=\left(x+1\right)f_{k}+x^{1+\deg\left(f_{k}\right)}\\
+ & \equiv & \left(x+1\right)g_{k}+x^{1+\deg\left(g_{k}\right)}=g_{k+1}\mod x^{1+\deg\left(g_{k}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+ומכיוון ש
+\begin_inset Formula $\deg\left(g_{k}\right)\ge\deg\left(g_{k+1}\right)$
+\end_inset
+
+ מתקיים גם:
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{k+1} & \equiv & g_{k+1}\mod x^{1+\deg\left(g_{k+1}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+וזה גורר לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ כי 
+\begin_inset Formula $f_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\deg\left(g_{k+1}\right)\le\deg\left(f_{k+1}\right)$
+\end_inset
+
+.
+ בכך השלמנו את צעד האינדוקציה.
+ כדי לקבל את טענת חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נסמן 
+\begin_inset Formula $k_{0}=t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f_{k_{0}}=1$
+\end_inset
+
+ ומ
+\begin_inset Formula $\deg\left(g_{k_{0}}\right)\le\deg\left(f_{k_{0}}\right)$
+\end_inset
+
+ מתחייב כי גם 
+\begin_inset Formula $g_{k_{0}}=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $t_{\min}\left(g,S_{3}\right)\le k_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Lemma
+יהי 
+\begin_inset Formula $f=\left(x+1\right)^{r}g$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי )ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ גם אי זוגי( אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & \le & 2\deg\left(f\right)-r+t_{\min}\left(g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $s$
+\end_inset
+
+ שלם כך שמתקיים 
+\begin_inset Formula $2^{s-1}\le\deg\left(f\right)<2^{s}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $k=2^{s}-r$
+\end_inset
+
+ וכן 
+\begin_inset Formula $d=\deg\left(S_{3}^{k}\left(f\right)\right)$
+\end_inset
+
+.
+ לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{k}\left(f\right) & = & \left(\left(x+1\right)^{k}f\right)\vert_{\le d}=\left(\left(x+1\right)^{2^{s}}g\right)\vert_{\le d}\\
+ & = & \left(\left(x^{2^{s}}+1\right)g\right)\vert_{\le d}=\left(x^{2^{s}}g+g\right)\vert_{\le d}
+\end{eqnarray*}
+
+\end_inset
+
+השתמשנו גם בשוויון 
+\begin_inset Formula $\left(x+1\right)^{2^{s}}=x^{2^{s}}+1$
+\end_inset
+
+ שניתן לוודא את נכונותו בקלות באינדוקציה.
+ לבסוף נבחין כי 
+\begin_inset Formula $\deg\left(x^{2^{s}}g\right)\ge2^{s}>d$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $S_{3}^{k}\left(f\right)=g\vert_{\le d}$
+\end_inset
+
+.
+ כעת נשתמש בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & \le & k+t_{\min}\left(g\vert_{\le d},S_{3}\right)\le k+t_{\min}\left(g,S_{3}\right)\\
+ & = & 2^{s}-r+t_{\min}\left(g,S_{3}\right)\\
+ & \le & 2\deg\left(f\right)-r+t_{\min}\left(g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
