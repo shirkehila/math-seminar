@@ -3188,6 +3188,12 @@ f,T_{3}\left(f\right),T_{3}^{2}\left(f\right)...,T_{3}^{n}\left(f\right)=1
 \end_layout
 
 \begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:יהי--אי"
+
+\end_inset
+
 יהי 
 \begin_inset Formula $f$
 \end_inset
@@ -3612,8 +3618,14 @@ S_{3}^{i}\left(f\right) & = & \left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--כאשר"
+
+\end_inset
+
 יהי 
-\begin_inset Formula $f\left(x\right)=x^{n}+g$
+\begin_inset Formula $f\left(x\right)=x^{n}+g\left(x\right)$
 \end_inset
 
  כאשר 
@@ -4192,6 +4204,12 @@ noprefix "false"
 
 \end_deeper
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--כאשר-1"
+
+\end_inset
+
 יהי 
 \begin_inset Formula $f=\left(x+1\right)^{r}g$
 \end_inset
@@ -4396,6 +4414,261 @@ t_{\min}\left(f,S_{3}\right) & \le & k+t_{\min}\left(g\vert_{\le d},S_{3}\right)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:יהי--פולינום"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום אי זוגי, אז 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)\le\sqrt{2}\left(\deg\left(f\right)\right)^{1.5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $n=\deg\left(f\right)$
+\end_inset
+
+ ונוכיח את ההטענה באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $n=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $f=1$
+\end_inset
+
+ ו
+\begin_inset Formula $t_{\min}\left(1,S_{3}\right)=0$
+\end_inset
+
+ לכן הטענה מתקיימת.
+\end_layout
+
+\begin_layout Proof
+נניח שהטענה נכונה לפולינומים ממעלה קטנה מ
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח שהיא נכונה לפולינומים ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נרשום 
+\begin_inset Formula $f\left(x\right)=x^{n}+g\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\deg\left(g\right)=n-r$
+\end_inset
+
+ עבור 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כאשר"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & = & r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נבחין בין שני מקרים אפשריים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r\le\sqrt{2n}$
+\end_inset
+
+.
+ נשתמש בהנחת האינדוקציה על הפולינום 
+\begin_inset Formula $\left(x+1\right)^{r-1}g$
+\end_inset
+
+ שמעלתו 
+\begin_inset Formula $n-1$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & = & r-1+\sqrt{2}\left(n-1\right)^{1.5}<\sqrt{2n}+\left(n-1\right)\sqrt{2n}\\
+ & = & n\sqrt{2n}=\sqrt{2}n^{1.5}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r>\sqrt{2n}$
+\end_inset
+
+.
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כאשר-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & = & r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)\\
+ & \le & r-1+2\left(n-1\right)-\left(r-1\right)+t_{\min}\left(g,S_{3}\right)\\
+ & < & 2n+t_{\min}\left(g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $\deg\left(g\right)=n-r$
+\end_inset
+
+ ולכן מהנחת האינדוקציה 
+\begin_inset Formula $t_{\min}\left(g,S_{3}\right)\le\sqrt{2}\left(n-r\right)^{1.5}$
+\end_inset
+
+ נשתמש בחסם זה כדי להמשיך ולחסום את 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & < & 2n+\sqrt{2}\left(n-r\right)^{1.5}\le2n+\left(n-r\right)\sqrt{2n}\\
+ & < & 2n+\left(n-\sqrt{2n}\right)\sqrt{2n}=n\sqrt{2n}=\sqrt{2}n^{1.5}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+בכך השלמנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Standard
+כעת לא נותר אלא לשלב את התוצאות שקיבלנו על מנת להגיע לחסום המשופר על זמן
+ העצירה של 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+יהי 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נרשום 
+\begin_inset Formula $f=x^{r}g$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי.
+ אז 
+\begin_inset Formula $t_{\min}\left(f,T\right)=r+t_{\min}\left(g,T\right)$
+\end_inset
+
+.
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & = & 2t_{\min}\left(\hat{g},S_{3}\right)+\deg\left(g\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב 
+\begin_inset Formula $\deg\left(\hat{g}\right)=\deg\left(g\right)=n-r$
+\end_inset
+
+ ולכן לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:יהי--פולינום"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & \le & 2\sqrt{2}\left(n-r\right)^{1.5}+\left(n-r\right)=\left(2\left(n-r\right)\right)^{1.5}+n-r
+\end{eqnarray*}
+
+\end_inset
+
+לכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)\le r+\left(2\left(n-r\right)\right)^{1.5}+n-r\\
+ & = & \left(2\left(n-r\right)\right)^{1.5}+n<\left(2n\right)^{1.5}+n
+\end{eqnarray*}
+
+\end_inset
+
+כנדרש.
 \end_layout
 
 \begin_layout Subsection
