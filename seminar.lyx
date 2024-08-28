@@ -833,6 +833,24 @@ t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\ri
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לסיום, נוכיח תוצאה נוספת שגם היא אנלוג להשערה על 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+.
+ נגדיר יותר במדויק בהמשך 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 תוצאות
 \end_layout
@@ -2333,6 +2351,12 @@ t_{\min}\left(f,T\right) & = & 2t_{\min}\left(f,T_{3}\right)+n
 \end_layout
 
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:יהי-מיפוי-היפוך"
+
+\end_inset
+
 יהי מיפוי היפוך סדר המקדמים 
 \begin_inset Formula $^{\hat{}}:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
 \end_inset
@@ -2742,6 +2766,12 @@ name "lem:תכונות-של-המיפוי"
 
 \end_deeper
 \begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:עבור--יהיו:"
+
+\end_inset
+
 עבור 
 \begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
 \end_inset
@@ -4672,11 +4702,951 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)\le r+\left(2\left(n-r\
 \end_layout
 
 \begin_layout Subsection
-סדרות משהו משהו
+קיום סדרות חשבוניות בזמני העצירה של 
+\begin_inset Formula $T$
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-אין לי שמץ עוד לא קראתי
+\begin_layout Standard
+נגדיר כעת במדויק מה התוצאה שנרצה להוכיח.
+\end_layout
+
+\begin_layout Definition
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n\ge0}$
+\end_inset
+
+ סדרה ויהי 
+\begin_inset Formula $r\ge0$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $\left(a_{n}\right)_{n\ge0}$
+\end_inset
+
+ מכילה סדרות חשבוניות באורך לא חסום ובעלות הפרש משותף 
+\begin_inset Formula $r$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $m\ge1$
+\end_inset
+
+ קיים 
+\begin_inset Formula $l\ge0$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{l+1} & = & a_{l}+r\\
+a_{l+2} & = & a_{l}+2r\\
+ & ...\\
+a_{l+\left(m-2\right)} & = & a_{l}+\left(m-2\right)r\\
+a_{l+\left(m-1\right)} & = & a_{l}+\left(m-1\right)r
+\end{eqnarray*}
+
+\end_inset
+
+כלומר התת סדרה 
+\begin_inset Formula $\left(a_{l+k}\right)_{k=0}^{m-1}$
+\end_inset
+
+ היא סדרה חשבונית עם הפרש 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+יהיו 
+\begin_inset Formula $a,b$
+\end_inset
+
+ מספרים שלמים אי שליליים כך ש
+\begin_inset Formula $\left(a,b\right)\ne\left(0,0\right)$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $f_{a,b,n}=\left(x^{a}\left(1-x\right)^{b}\right)^{n}+1$
+\end_inset
+
+.
+ הסדרה 
+\begin_inset Formula $\left(t_{\min}\left(f_{a,b,n}\right),T\right)_{n\ge1}$
+\end_inset
+
+ מכילה סדרות חשבוניות באורך לא חסום ובעלות הפרש משותף 
+\begin_inset Formula $a-b$
+\end_inset
+
+.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+להחריג את 
+\begin_inset Formula $n=b=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בחלק זה נוכיח את המשפט הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל על ידי מציאת הסדרות האלו באופן מפורש.
+ גם כאן ניעזר במיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ )הגדרה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:עבור--יהיו:"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( ובמיפוי 
+\begin_inset Formula $f\mapsto\hat{f}$
+\end_inset
+
+ של היפוך סדר המקדמים )הגדרה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:יהי-מיפוי-היפוך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Lemma
+לכל 
+\begin_inset Formula $a,b$
+\end_inset
+
+ שלמים אי שליליים כך ש
+\begin_inset Formula $\left(a,b\right)\ne\left(0,0\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ מתקיים פרט למקרה 
+\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)+3na+nb-2
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right)+n\left(a+b\right)\label{eq:5}
+\end{eqnarray}
+
+\end_inset
+
+נחשב את 
+\begin_inset Formula $\widehat{f_{a,b,n}}$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:יהי-מיפוי-היפוך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & x^{\deg\left(f_{a,b,n}\right)}f_{a,b,n}\left(\frac{1}{x}\right)=x^{n\left(a+b\right)}\left(\left(\left(\frac{1}{x}\right)^{a}\left(1-\frac{1}{x}\right)^{b}\right)^{n}+1\right)\\
+ & = & \left(x+1\right)^{nb}+x^{na+nb}
+\end{eqnarray*}
+
+\end_inset
+
+נפריד מכאן למקרים 
+\begin_inset Formula $a=0$
+\end_inset
+
+ ו
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $a=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\widehat{f_{a,b,n}}$
+\end_inset
+
+ מתקבל מ
+\begin_inset Formula $\left(x+1\right)^{nb-1}$
+\end_inset
+
+ על ידי הפעלה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+ הנחנו 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $nb-1>0$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x+1\right)^{nb-1}\ne1$
+\end_inset
+
+ ומכאן ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & t_{\min}\left(\left(x+1\right)^{nb-1},S_{3}\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+הצבה של השוויון הנ״ל ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מניבה את השוויון הדרוש.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $a>0$
+\end_inset
+
+ אז תנאי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כאשר"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיימים עבור 
+\begin_inset Formula $\widehat{f_{a,b,n}}$
+\end_inset
+
+ שכן:
+\begin_inset Formula 
+\[
+\deg\left(x^{na+nb}+\left(x+1\right)^{nb}\right)>\deg\left(\left(x+1\right)^{nb}\right)
+\]
+
+\end_inset
+
+ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & \left(na+nb-nb\right)-1+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)\\
+ & = & na-1+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+ושוב הצבה ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מניבה את השוויון הדרוש.
+\end_layout
+
+\begin_layout Standard
+מהלמה האחרונה נובע שכדי לחשב את 
+\begin_inset Formula $t_{\min}\left(f_{a,b,n},T\right)$
+\end_inset
+
+ מספיק לחשב את 
+\begin_inset Formula $t_{\min}\left(\left(x+1\right)^{n},S_{3}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+יהי 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $2^{d-1}\le n<2^{d}$
+\end_inset
+
+.
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\left(x+1\right)^{n},S_{3}\right) & = & 2^{d}-n
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בטרם נוכיח את הלמה, נתבונן בהמחשה של הפולינומים הללו:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{0} &  & ◻◻◻◻◻◻◻◼\\
+\left(x+1\right)^{1} &  & ◻◻◻◻◻◻◼◼\\
+\left(x+1\right)^{2} &  & ◻◻◻◻◻◼◻◼\\
+\left(x+1\right)^{3} &  & ◻◻◻◻◼◼◼◼\\
+\left(x+1\right)^{4} &  & ◻◻◻◼◻◻◻◼\\
+\left(x+1\right)^{5} &  & ◻◻◼◼◻◻◼◼\\
+\left(x+1\right)^{6} &  & ◻◼◻◼◻◼◻◼\\
+\left(x+1\right)^{7} &  & ◼◼◼◼◼◼◼◼
+\end{eqnarray*}
+
+\end_inset
+
+קיבלנו את משולש שרפינסקי והסיבה לכך היא כזו - מצד אחד, את משולש שרפינסקי
+ ניתן לבנות רקורסיבית בעזרת
+\family roman
+\series medium
+\shape italic
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape italic
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עותקים של גרסה קטנה יותר שלו.
+ מצד שני, את חישוב המקדמים של הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,2^{d+1}-1\right]$
+\end_inset
+
+ ניתן גם לבצע רקורסיבית.
+ נפריד לשני מקרים אפשריים של 
+\begin_inset Formula $n$
+\end_inset
+
+ והם: 
+\begin_inset Formula $n\in\left[0,2^{d}-1\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $n\in\left[2^{d},2^{d+1}-1\right]$
+\end_inset
+
+.
+ הפולינומים בקבוצה השנייה מתקבלים מאלו בקבוצה הראשונה על ידי כפל ב
+\begin_inset Formula $\left(x+1\right)^{2^{d}}$
+\end_inset
+
+ בהתאמה כשהם מסודרים בסדר עולה של המעלות.
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{2^{d}} & = & x^{2^{d}}+1
+\end{eqnarray*}
+
+\end_inset
+
+ולכן כפל של פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ בפולינום 
+\begin_inset Formula $\left(x+1\right)^{2^{d}}$
+\end_inset
+
+ יוצר שני עותקים של 
+\begin_inset Formula $f$
+\end_inset
+
+ שאחד מהם מוזז ב
+\begin_inset Formula $2^{d}$
+\end_inset
+
+ מקומות שמאלה.
+ אם כך, הקבוצה 
+\begin_inset Formula $\left\{ \left(x+1\right)^{n}:n\in\left[0,2^{d}-1\right]\right\} $
+\end_inset
+
+ תורמת משולש אחד מסדר 
+\begin_inset Formula $d$
+\end_inset
+
+, והקבוצה 
+\begin_inset Formula $\left\{ \left(x+1\right)^{n}:n\in\left[2^{d},2^{d+1}-1\right]\right\} $
+\end_inset
+
+ תורמת שני משולשים מסדר 
+\begin_inset Formula $d$
+\end_inset
+
+, זה לצד זה.
+ נדגים: את הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,7\right]$
+\end_inset
+
+ ניתן לחלק לקבוצות 
+\begin_inset Formula $\left(x+1\right)^{0},...,\left(x+1\right)^{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x+1\right)^{4},...,\left(x+1\right)^{7}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{4} & = & \left(x+1\right)^{4}\left(x+1\right)^{0}=\left(x^{4}+1\right)\left(x+1\right)^{0}\\
+\left(x+1\right)^{5} & = & \left(x+1\right)^{4}\left(x+1\right)^{1}=\left(x^{4}+1\right)\left(x+1\right)^{1}\\
+\left(x+1\right)^{6} & = & \left(x+1\right)^{4}\left(x+1\right)^{2}=\left(x^{4}+1\right)\left(x+1\right)^{2}\\
+\left(x+1\right)^{7} & = & \left(x+1\right)^{4}\left(x+1\right)^{3}=\left(x^{4}+1\right)\left(x+1\right)^{3}
+\end{eqnarray*}
+
+\end_inset
+
+ואז ניתן לקבל את המקדמים של ארבעת הפולינומים האחרונים על ידי שני עותקים
+ של המקדמים של ארבעת הפולינומים הראשונים שאחד מהעותקים מוזז ארבע מקומות
+ שמאלה.
+\end_layout
+
+\begin_layout Standard
+להרחבה בנושא מומלץ מאוד לצפות ב
+\begin_inset CommandInset href
+LatexCommand href
+name "סרטון היוטיוב הזה"
+target "https://www.youtube.com/watch?v=2SUvWfNJSsM&t=239s"
+literal "false"
+
+\end_inset
+
+ ו
+\begin_inset CommandInset href
+LatexCommand href
+name "בחלק השני שלו"
+target "https://www.youtube.com/watch?v=bdMfjfT0lKk&t=591s"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+נשים לב במיוחד לרווח שבין 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נוכיח ראשית כי 
+\begin_inset Formula $t_{\min}\left(\left(x+1\right)^{n},S_{3}\right)\le2^{d}-n$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $m=\deg\left(S_{3}^{2^{d}-n}\left(\left(x+1\right)^{n}\right)\right)$
+\end_inset
+
+.
+ לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{2^{d}-n}\left(\left(x+1\right)^{n}\right) & = & \left(\left(x+1\right)^{2^{d}}\right)\vert_{\le m}=\left(x^{2^{d}}+1\right)\vert_{\le m}
+\end{eqnarray*}
+
+\end_inset
+
+אבל לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של אותה הלמה:
+\begin_inset Formula 
+\[
+m\le\left(\deg\left(x+1\right)^{n}\right)=n<2^{d}
+\]
+
+\end_inset
+
+ ולכן בהכרח 
+\begin_inset Formula $S_{3}^{2^{d}-n}\left(\left(x+1\right)^{n}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בשביל להוכיח את האי שוויון ההפוך, נשים לב לתכונה הבאה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+ אם פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ מכיל את החזקות 
+\begin_inset Formula $x^{k_{1}},x^{k_{2}}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $k_{2}-k_{1}>1$
+\end_inset
+
+ ולא מכיל אף חזקה ביניהן, הפולינום 
+\begin_inset Formula $S_{3}\left(f\right)$
+\end_inset
+
+ יכיל את החזקות 
+\begin_inset Formula $x^{k_{1}+1},x^{k_{2}}$
+\end_inset
+
+ ולא יכיל אף חזקה ביניהן.
+ נוכיח:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}\left(f\right) & = & xf+f+x^{\deg\left(f\right)+1}
+\end{eqnarray*}
+
+\end_inset
+
+החזקות 
+\begin_inset Formula $x^{k_{1}+1},x^{k_{2}}$
+\end_inset
+
+ מופיעות בדיוק במחובר אחד מהשלושה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x^{k_{1}+1}$
+\end_inset
+
+: מופיע ב
+\begin_inset Formula $xf$
+\end_inset
+
+, לא מופיע ב
+\begin_inset Formula $f$
+\end_inset
+
+ ולא מופיע ב
+\begin_inset Formula $x^{\deg\left(f\right)+1}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\deg\left(f\right)+1\ge k_{2}+1>k_{1}+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x^{k_{2}}$
+\end_inset
+
+: מופיע ב
+\begin_inset Formula $f$
+\end_inset
+
+, לא מופיע ב
+\begin_inset Formula $xf$
+\end_inset
+
+ )אילו היה מופיע, אז ב
+\begin_inset Formula $f$
+\end_inset
+
+ הייתה החזקה 
+\begin_inset Formula $x^{k_{2}-1}$
+\end_inset
+
+( ולא מופיע ב
+\begin_inset Formula $x^{\deg\left(f\right)+1}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\deg\left(f\right)+1>k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+והחזקות 
+\begin_inset Formula $x^{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k_{1}+1<i<k_{2}$
+\end_inset
+
+ לא מופיעות באף אחד מהמחוברים.
+ אם כך הפולינומים 
+\begin_inset Formula $S_{3}^{j}\left(f\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $0\le j\le k_{2}-k_{1}-1$
+\end_inset
+
+ לובשים את הצורה: 
+\begin_inset Formula 
+\begin{eqnarray*}
+f &  & ...+x^{k_{1}}+x^{k_{2}}+...\\
+S_{3}\left(f\right) &  & ...+x^{k_{1}+1}+x^{k_{2}}+...\\
+ & \vdots\\
+S_{3}^{\left(k_{2}-k_{1}-2\right)}\left(f\right) &  & ...+x^{k_{1}+\left(k_{2}-k_{1}-2\right)}+x^{k_{2}}+...\\
+S_{3}^{\left(k_{2}-k_{1}-1\right)}\left(f\right) &  & ...+x^{k_{1}+\left(k_{2}-k_{1}-1\right)}+x^{k_{2}}+...
+\end{eqnarray*}
+
+\end_inset
+
+הם שונים כולם מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)\ge k_{2}-k_{1}$
+\end_inset
+
+.
+ כדי לסיים נוכיח כי החזקות 
+\begin_inset Formula $x^{n-2^{d-1}},x^{2^{d-1}}$
+\end_inset
+
+ מופיעות ב
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+, והחזקות שביניהן לא ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\left(x+1\right)^{n},S_{3}\right) & \ge & 2^{d-1}-\left(n-2^{d-1}\right)=2^{d}-n
+\end{eqnarray*}
+
+\end_inset
+
+נרשום:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{n} & = & \left(x+1\right)^{2^{d-1}}\left(x+1\right)^{n-2^{d-1}}=\left(x^{2^{d-1}}+1\right)\left(x+1\right)^{n-2^{d-1}}\\
+ & = & x^{2^{d-1}}\left(x+1\right)^{n-2^{d-1}}+\left(x+1\right)^{n-2^{d-1}}\\
+ & = & x^{2^{d-1}}\left(x^{n-2^{d-1}}+...+1\right)+x^{n-2^{d-1}}+...+1\\
+ & = & x^{n}+...+x^{2^{d-1}}+x^{n-2^{d-1}}+...+1
+\end{eqnarray*}
+
+\end_inset
+
+ובכך נקבל את הנדרש.
+\end_layout
+
+\begin_layout Standard
+נשים לב שהפולינום 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $2^{d-1}\le n<2^{d}$
+\end_inset
+
+ הוא בחצי השני של משולש שרפינסקי שיוצרים הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,2^{d}-1\right]$
+\end_inset
+
+, החזקה 
+\begin_inset Formula $x^{n-2^{d-1}}$
+\end_inset
+
+ היא הגבוהה ביותר בעותק הרגיל של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ והחזקה 
+\begin_inset Formula $x^{2^{d-1}}$
+\end_inset
+
+ היא הנמוכה ביותר בעותק המוזז שמאלה של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ כלומר הן מהוות את ההפרדה בין שני העותקים של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Section
