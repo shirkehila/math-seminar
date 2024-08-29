@@ -15,7 +15,7 @@ theorems-sec
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "Arial"
+\font_roman "default" "David"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
@@ -5774,7 +5774,7 @@ noprefix "false"
 
 \end_inset
 
-:
+.
 \end_layout
 
 \begin_layout Proof
@@ -5862,7 +5862,7 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 \begin_inset Formula $A$
 \end_inset
 
- שהיא אורך התת סדרה המבוקשת תהיה גדולה כרצוננו.
+ שמהווה את אורך התת סדרה המבוקשת תהיה גדולה כרצוננו.
 \end_layout
 
 \begin_layout Section
