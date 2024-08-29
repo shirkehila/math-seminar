@@ -4763,6 +4763,12 @@ a_{l+\left(m-1\right)} & = & a_{l}+\left(m-1\right)r
 \end_layout
 
 \begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:יהיו--מספרים"
+
+\end_inset
+
 יהיו 
 \begin_inset Formula $a,b$
 \end_inset
@@ -4787,20 +4793,6 @@ a_{l+\left(m-1\right)} & = & a_{l}+\left(m-1\right)r
 
 .
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-להחריג את 
-\begin_inset Formula $n=b=1$
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -4841,6 +4833,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:לכל--שלמים"
+
+\end_inset
+
 לכל 
 \begin_inset Formula $a,b$
 \end_inset
@@ -5036,6 +5034,12 @@ noprefix "false"
 \end_layout
 
 \begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--ונניח"
+
+\end_inset
+
 יהי 
 \begin_inset Formula $n\ge1$
 \end_inset
@@ -5614,15 +5618,222 @@ t_{\min}\left(\left(x+1\right)^{n},S_{3}\right) & \ge & 2^{d-1}-\left(n-2^{d-1}\
 \begin_inset Formula $\left(x+1\right)^{n}$
 \end_inset
 
- עבושהחזקה 
+ עבור 
+\begin_inset Formula $2^{d-1}\le n<2^{d}$
+\end_inset
+
+ הוא ב
+\begin_inset Formula $2^{d-1}$
+\end_inset
+
+ השורות התחתונות של משולש שרפינסקי שיוצרים הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,2^{d}-1\right]$
+\end_inset
+
+.
+ אם כך הוא מורכב מהפולינום 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ ומעותק שלו המוזז 
+\begin_inset Formula $2^{d-1}$
+\end_inset
+
+ מקומות שמאלה.
+\end_layout
+
+\begin_layout Standard
+החזקה 
+\begin_inset Formula $x^{n-2^{d-1}}$
+\end_inset
+
+ היא הגבוהה ביותר בעותק הרגיל של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ והחזקה 
 \begin_inset Formula $x^{2^{d-1}}$
 \end_inset
 
- מסמנת במשולש שרפינסקי את תחילת ו
-\begin_inset Formula $x$
+ היא הנמוכה ביותר בעותק המוזז שמאלה של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
 \end_inset
 
- 
+ כלומר הן מהוות את ההפרדה בין שני העותקים של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:לכל--שלמים"
+
+\end_inset
+
+לכל 
+\begin_inset Formula $a,b$
+\end_inset
+
+ שלמים אי שליליים כך ש
+\begin_inset Formula $\left(a,b\right)\ne\left(0,0\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ מתקיים פרט למקרה 
+\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2^{d+1}+\left(a-b\right)n
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $d$
+\end_inset
+
+ שלם המקיים 
+\begin_inset Formula $2^{d-1}<n\left(a+b\right)\le2^{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+האי שוויון של מספרים שלמים 
+\begin_inset Formula $2^{d-1}<n\left(a+b\right)\le2^{d}$
+\end_inset
+
+ שקול ל
+\begin_inset Formula $2^{d-1}\le n\left(a+b\right)-1<2^{d}$
+\end_inset
+
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--ונניח"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right) & = & 2^{d}-n\left(a+b\right)+1
+\end{eqnarray*}
+
+\end_inset
+
+נציב בשוויון שהוכחנו ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:לכל--שלמים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)+3na+nb-2\\
+ & = & 2\left(2^{d}-n\left(a+b\right)+1\right)+3na+nb-2\\
+ & = & 2^{d+1}+na-nb
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נשתמש בחישובים שערכנו כדי להוכיח את 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:יהיו--מספרים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+, אז בהכרח 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
+
+.
+ נניח גם ש
+\begin_inset Formula $n$
+\end_inset
+
+ מקיים:
+\begin_inset Formula 
+\[
+2^{d-1}<n\left(a+b\right)\le2^{d}
+\]
+
+\end_inset
+
+מצאנו ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:לכל--שלמים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ שבתנאים אלו מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2^{d+1}+\left(a-b\right)n
+\end{eqnarray*}
+
+\end_inset
+
+המספרים 
+\begin_inset Formula $n$
+\end_inset
+
+ המקיימים את התנאים האלו מהווים רצף של אינדקסים בסדרה 
+\begin_inset Formula $\left(t_{\min}\left(f_{a,b,n},T\right)\right)_{n\ge1}$
+\end_inset
+
+, ליתר דיוק:
+\begin_inset Formula 
+\begin{eqnarray*}
+n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac{2^{d-1}}{a+b}\right\rceil +1,...,\left\lfloor \frac{2^{d}}{a+b}\right\rfloor \right\} \backslash\left\{ 1\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
