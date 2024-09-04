@@ -15,7 +15,7 @@ theorems-sec
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman "default" "David"
+\font_roman "default" "David CLM"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
 \font_math "auto" "auto"
@@ -81,6 +81,7 @@ theorems-sec
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\bullet 0 2 5 -1
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -111,7 +112,7 @@ theorems-sec
 \begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
 \end_inset
 
- )בלי לקרוא לו חוג(
+
 \end_layout
 
 \begin_layout Itemize
@@ -292,7 +293,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-לצרף פה גרף
+#לצרף פה גרף
 \end_layout
 
 \end_inset
@@ -592,7 +593,7 @@ x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
 status open
 
 \begin_layout Plain Layout
-להוסיף הפנייה למבנים?
+#להוסיף הפנייה למבנים?
 \end_layout
 
 \end_inset
@@ -716,7 +717,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-לצרף פה גרף
+#לצרף פה גרף
 \end_layout
 
 \end_inset
@@ -834,21 +835,120 @@ t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\ri
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-לסיום, נוכיח תוצאה נוספת שגם היא אנלוג להשערה על 
+לסיום, נוכיח תוצאה נוספת שמהווה אנלוג להשערה בנוגע לזמני העצירה של מספרים
+ העונים לתבנית מסוימת, ביחס למיפוי 
 \begin_inset Formula $\mathcal{C}$
 \end_inset
 
 .
- נגדיר יותר במדויק בהמשך 
+\end_layout
+
+\begin_layout Standard
+הוכח )
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לשים רפרנס
 \end_layout
 
 \end_inset
 
+( כי סדרת זמני העצירה של המספרים 
+\begin_inset Formula $2^{n}+1$
+\end_inset
 
+ מכילה תתי סדרות חשבוניות עם הפרש משותף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאורכן גדול כרצוננו.
+ אותה תופעה זוהתה גם במספרים מתבניות אחרות דומות, מה שהוביל לניסוח ההשערה
+ הבאה:
+\end_layout
+
+\begin_layout Conjecture
+יהיו מספרים שלמים 
+\begin_inset Formula $a,b\ge0$
+\end_inset
+
+.
+ סדרת זמני העצירה של המספרים 
+\begin_inset Formula $\left(2^{a}3^{b}\right)^{n}+1$
+\end_inset
+
+ מכילה תתי סדרות חשבוניות שאורכן גדול כרצוננו, ובעלות הפרש משותף 
+\begin_inset Formula $a-b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נביא בהמשך הגדרה מדויקת למושג 
+\begin_inset Quotes eld
+\end_inset
+
+מכילה תת סדרה חשבונית שאורכה גדול כרצוננו
+\begin_inset Quotes erd
+\end_inset
+
+.
+ התוצאה האנלוגית שנוכיח תהיה בנוגע לפולינומים מהצורה 
+\begin_inset Formula $\left(x^{a}\left(1+x\right)^{b}\right)^{n}+1$
+\end_inset
+
+, והיא תיעשה על ידי חישוב נוסחה מדויקת לזמני העצירה של אותם הפולינומים.
 \end_layout
 
 \begin_layout Section
@@ -1848,7 +1948,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-תמונה
+#לצרף תמונה
 \end_layout
 
 \end_inset
@@ -1903,8 +2003,8 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 status open
 
 \begin_layout Plain Layout
-פסקה של הסבר למה צריך את הפולינום ההדדי ושזה הופך את המיפוי למשהו שניתן
- לחזות יותר בקלות מה קורה אחרי מספר צעדים שלו
+#לכתוב פסקה של הסבר למה צריך את הפולינום ההדדי ושזה הופך את המיפוי למשהו
+ שניתן לחזות יותר בקלות מה קורה אחרי מספר צעדים שלו
 \end_layout
 
 \end_inset
@@ -4779,11 +4879,14 @@ name "thm:יהיו--מספרים"
 
 .
  נסמן 
-\begin_inset Formula $f_{a,b,n}=\left(x^{a}\left(1-x\right)^{b}\right)^{n}+1$
+\begin_inset Formula 
+\[
+f_{a,b,n}=\left(x^{a}\left(1+x\right)^{b}\right)^{n}+1
+\]
+
 \end_inset
 
-.
- הסדרה 
+הסדרה 
 \begin_inset Formula $\left(t_{\min}\left(f_{a,b,n}\right),T\right)_{n\ge1}$
 \end_inset
 
@@ -5260,7 +5363,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-נשים לב במיוחד לרווח שבין 
+#להמשיך את המשפט: נשים לב במיוחד לרווח שבין 
 \end_layout
 
 \end_inset
@@ -5718,8 +5821,12 @@ t_{\min}\left(f_{a,b,n},T\right) & = & 2^{d+1}+\left(a-b\right)n
 \begin_inset Formula $2^{d-1}<n\left(a+b\right)\le2^{d}$
 \end_inset
 
- שקול ל
-\begin_inset Formula $2^{d-1}\le n\left(a+b\right)-1<2^{d}$
+ שקול ל:
+\begin_inset Formula 
+\[
+2^{d-1}\le n\left(a+b\right)-1<2^{d}
+\]
+
 \end_inset
 
  לפי 
