@@ -100,6 +100,200 @@ theorems-sec
 \end_layout
 
 \begin_layout Standard
+בכדי להבין את התוכן המוצג בסמינר זה, נדרשת היכרות עם סימונים אסימפטוטיים
+ אותה ניתן לרכוש מעיון בפרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הספר 
+\series bold
+מבוא לאלגוריתמים
+\series default
+ )תומאס ה’ קורמן, צ’ארלס א’ לייזרסון, רונלד ל’ ריבסט, קליפורד שטיין, מהדורה
+ שנייה, בית ההוצאה לאור של האוניברסיטה הפתוחה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2008
+\numeric off
+(.
+\end_layout
+
+\begin_layout Standard
+כמו כן נדרש ידע בסיסי בחוגים, ובפרט היכרות עם 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+, חוג הפולינומים מעל השדה הסופי 
+\begin_inset Formula $\mathbb{F}_{2}$
+\end_inset
+
+.
+ היכרות זו ניתן לרכוש מעיון בפרקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14-18
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הספר 
+\series bold
+מבנים אלגבריים
+\series default
+ )אברהם אורנשטיין, מהדורה מתוקנת, בית ההוצאה לאור של האוניברסיטה הפתוחה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1995
+\numeric off
+(.
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 סוג של נספח שאפשר לקרוא או לא או חלקית, לחשוב איפה לשים
 \end_layout
 
@@ -117,6 +311,11 @@ theorems-sec
 
 \begin_layout Itemize
 יחסים אסימפטוטיים
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -181,11 +380,15 @@ status open
 20
 \numeric off
 .
- )ראו [
-\numeric on
-1
-\numeric off
-](
+ )ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+literal "false"
+
+\end_inset
+
+(
 \end_layout
 
 \begin_layout Standard
@@ -281,11 +484,15 @@ status open
 \begin_layout Standard
 למרות שההשערה עצמה טרם הוכחה או הופרכה, נעשו נסיונות רבים לפתור אותה ואף
  התקבלו תוצאות חלקיות מעניינות.
- )הבולטת בהן היא עבודתו של טרנס טאו, ראו [
-\numeric on
-4
-\numeric off
-](
+ )הבולטת בהן היא עבודתו של טרנס טאו, ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+literal "false"
+
+\end_inset
+
+(
 \end_layout
 
 \begin_layout Standard
@@ -422,13 +629,21 @@ Zavislak
 \noun off
 \color none
 \lang hebrew
- )ראו [
+ 
+)ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+literal "false"
+
+\end_inset
+
+
 \family default
 \series default
 \shape default
 \size default
 \emph default
-\numeric on
 \bar default
 \strikeout default
 \xout default
@@ -436,9 +651,7 @@ Zavislak
 \uwave default
 \noun default
 \color inherit
-2
-\numeric off
-](.
+(.
 \end_layout
 
 \begin_layout Standard
@@ -588,17 +801,6 @@ x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
 \end_inset
 
  לפנות.
- 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-#להוסיף הפנייה למבנים?
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -844,22 +1046,14 @@ t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\ri
 \end_layout
 
 \begin_layout Standard
-הוכח )
-\numeric on
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\numeric on
-5
-\end_layout
+הוכח )ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-5"
+literal "false"
 
 \end_inset
 
-
-\numeric off
 ( כי סדרת זמני העצירה של המספרים 
 \begin_inset Formula $2^{n}+1$
 \end_inset
@@ -2005,17 +2199,97 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
+פולינום אי זוגי עובר על ידי הצעד 
+\begin_inset Formula $f\mapsto\left(x+1\right)f+1$
+\end_inset
 
-\begin_layout Plain Layout
-#לכתוב פסקה של הסבר למה צריך את הפולינום ההדדי ושזה הופך את המיפוי למשהו
- שניתן לחזות יותר בקלות מה קורה אחרי מספר צעדים שלו
+ לפולינום זוגי שבתורו עובר לפולינום אי זוגי לאחר רצף של צעדים מסוג 
+\begin_inset Formula $f\mapsto\frac{f}{x}$
+\end_inset
+
+.
+ נוכל לקבץ את רצף הפעולות האלו למיפוי שבהמשך נקרא לו 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+.
+ מהגדרתו, 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ מעביר פולינום אי זוגי לפולינום האי זוגי הבא אחריו בסדרה 
+\begin_inset Formula $\left(T^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+.
 \end_layout
+
+\begin_layout Standard
+מצאנו שמספיק לחקור את זמן העצירה של 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ עבור פולינומים אי זוגיים, ומתברר שאם הופכים את סדר המקדמים של הפולינומים
+ )האי זוגיים( בסדרה 
+\begin_inset Formula $\left(T_{3}^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ מקבלים סדרת פולינומים, אי זוגיים גם הם, שבה המעבר מפולינום לפולינום הבא
+ מתואר על ידי מיפוי פשוט יותר מ
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ שנקרא לו בהמשך 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היתרון של המיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ הוא שהפולינום 
+\begin_inset Formula $S_{3}^{n}\left(f\right)$
+\end_inset
+
+ שווה לפולינום 
+\begin_inset Formula $\left(x+1\right)^{n}f$
+\end_inset
+
+ ללא חלק מהמקדמים המובילים שלו )ראו 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
+(
+\end_layout
 
+\begin_layout Standard
+נוכיח כי עבור פולינומים אי זוגיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+ ובעזרת הקשר בין 
+\begin_inset Formula $T$
+\end_inset
+
+ שאותה רצינו לחקור מלכתחילה לבין 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ נוכל לגזור את החסם הרצוי לגבי 
+\begin_inset Formula $T$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -5365,19 +5639,6 @@ literal "false"
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-#להמשיך את המשפט: נשים לב במיוחד לרווח שבין 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Proof
 נוכיח ראשית כי 
 \begin_inset Formula $t_{\min}\left(\left(x+1\right)^{n},S_{3}\right)\le2^{d}-n$
@@ -5983,28 +6244,184 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 שאלות פתוחות
 \end_layout
 
-\begin_layout Section
-ביבליוגרפיה
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lagarias, J.
+ C.
+ (1985).
+ The 3x + 1 Problem and Its Generalizations.
+ The American Mathematical Monthly, 92(1), 3–23.
+ https://doi.org/10.2307/2322189
 \end_layout
 
-\begin_layout Enumerate
-מאמר של לגריאן
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ 
+\lang english
+Hicks, K., Mullen, G.
+ L., Yucas, J.
+ L., & Zavislak, R.
+ (2008).
+ A Polynomial Analogue of the 3n + 1 Problem.
+ The American Mathematical Monthly, 115(7), 615–622.
+ http://www.jstor.org/stable/27642557
 \end_layout
 
-\begin_layout Enumerate
-מאמר ראשון
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+literal "false"
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Alon, G., Behajaina, A., & Paran, E.
+ (2024).
+ On the stopping time of the Collatz map in 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+.
+ arXiv:2401.03210.
+ https://doi.org/10.48550/arXiv.2401.03210 
 \end_layout
 
-\begin_layout Enumerate
-מאמר שני
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+literal "false"
+
+\end_inset
+
+ 
+\lang english
+Tao, T.
+ (2022), Almost all orbits of the Collatz map attain almost bounded values.
+ Forum of Mathematics Pi 10 (e12), 1-56.
 \end_layout
 
-\begin_layout Enumerate
-עבודה של טרי טאו
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+literal "false"
+
+\end_inset
+
+ 
+\lang english
+Yuzuriha Inori (https://mathoverflow.net/users/124627/yuzuriha-inori), Arithmetic
+ progressions in stopping time of Collatz sequences, URL (version: 2019-12-20):
+ https://mathoverflow.net/q/348733
 \end_layout
 
-\begin_layout Enumerate
-פוסט על סדרות חשבוניות 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+ אורנשטיין, א'.
+ )
+\numeric on
+1995
+\numeric off
+(.
+ 
+\series bold
+מבנים אלגבריים
+\series default
+.
+ האוניברסיטה הפתוחה.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-13"
+
+\end_inset
+
+ קורמן, ת.ה., לייזרסון, צ.א., ריבסט ר.ל., ושטיין, ק'.
+ )
+\numeric on
+2008
+\numeric off
+(.
+ 
+\series bold
+מבוא לאלגוריתמים
+\series default
+ )סופר, ע', מתרגם(.
+ )מהדורה שנייה(.
+ האוניברסיטה הפתוחה.
+ )פרסום ראשון במקור 
 \end_layout
 
 \end_body

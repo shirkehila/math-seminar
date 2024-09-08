@@ -845,15 +845,21 @@ t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\ri
 
 \begin_layout Standard
 הוכח )
+\numeric on
+
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-לשים רפרנס
+
+\numeric on
+5
 \end_layout
 
 \end_inset
 
+
+\numeric off
 ( כי סדרת זמני העצירה של המספרים 
 \begin_inset Formula $2^{n}+1$
 \end_inset
@@ -4810,7 +4816,8 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)\le r+\left(2\left(n-r\
 \end_layout
 
 \begin_layout Standard
-נגדיר כעת במדויק מה התוצאה שנרצה להוכיח.
+נגדיר כעת במדויק את מושג ״קיום תתי סדרות חשבוניות שאורכן לא חסום״ מה התוצאה
+ שנרצה להוכיח.
 \end_layout
 
 \begin_layout Definition
@@ -5994,6 +6001,10 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 
 \begin_layout Enumerate
 עבודה של טרי טאו
+\end_layout
+
+\begin_layout Enumerate
+פוסט על סדרות חשבוניות 
 \end_layout
 
 \end_body
