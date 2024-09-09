@@ -159,37 +159,19 @@ theorems-sec
 \series bold
 מבוא לאלגוריתמים
 \series default
- )תומאס ה’ קורמן, צ’ארלס א’ לייזרסון, רונלד ל’ ריבסט, קליפורד שטיין, מהדורה
- שנייה, בית ההוצאה לאור של האוניברסיטה הפתוחה,
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
 \numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2008
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-12"
+literal "false"
+
+\end_inset
+
+
 \numeric off
-(.
+.
 \end_layout
 
 \begin_layout Standard
@@ -260,62 +242,15 @@ theorems-sec
 \series bold
 מבנים אלגבריים
 \series default
- )אברהם אורנשטיין, מהדורה מתוקנת, בית ההוצאה לאור של האוניברסיטה הפתוחה,
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
  
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1995
-\numeric off
-(.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-סוג של נספח שאפשר לקרוא או לא או חלקית, לחשוב איפה לשים
-\end_layout
-
-\begin_layout Itemize
-השדה 
-\begin_inset Formula $\mathbb{F}_{2}$
-\end_inset
-
- - הגדרה, טבלת כפל וחיבור, הגדרה של החוג 
-\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-יחסים אסימפטוטיים
-\end_layout
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-13"
+literal "false"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
@@ -493,19 +428,6 @@ literal "false"
 \end_inset
 
 (
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-#לצרף פה גרף
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Subsection
@@ -5448,14 +5370,22 @@ t_{\min}\left(\left(x+1\right)^{n},S_{3}\right) & = & 2^{d}-n
 בטרם נוכיח את הלמה, נתבונן בהמחשה של הפולינומים הללו:
 \begin_inset Formula 
 \begin{eqnarray*}
-\left(x+1\right)^{0} &  & ◻◻◻◻◻◻◻◼\\
-\left(x+1\right)^{1} &  & ◻◻◻◻◻◻◼◼\\
-\left(x+1\right)^{2} &  & ◻◻◻◻◻◼◻◼\\
-\left(x+1\right)^{3} &  & ◻◻◻◻◼◼◼◼\\
-\left(x+1\right)^{4} &  & ◻◻◻◼◻◻◻◼\\
-\left(x+1\right)^{5} &  & ◻◻◼◼◻◻◼◼\\
-\left(x+1\right)^{6} &  & ◻◼◻◼◻◼◻◼\\
-\left(x+1\right)^{7} &  & ◼◼◼◼◼◼◼◼
+\left(x+1\right)^{0} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◻◻◻◼\\
+\left(x+1\right)^{1} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◻◻◼◼\\
+\left(x+1\right)^{2} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◻◼◻◼\\
+\left(x+1\right)^{3} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◼◼◼◼\\
+\left(x+1\right)^{4} &  & ◻◻◻◻◻◻◻◻◻◻◻◼◻◻◻◼\\
+\left(x+1\right)^{5} &  & ◻◻◻◻◻◻◻◻◻◻◼◼◻◻◼◼\\
+\left(x+1\right)^{6} &  & ◻◻◻◻◻◻◻◻◻◼◻◼◻◼◻◼\\
+\left(x+1\right)^{7} &  & ◻◻◻◻◻◻◻◻◼◼◼◼◼◼◼◼\\
+\left(x+1\right)^{8} &  & ◻◻◻◻◻◻◻◼◻◻◻◻◻◻◻◼\\
+\left(x+1\right)^{9} &  & ◻◻◻◻◻◻◼◼◻◻◻◻◻◻◼◼\\
+\left(x+1\right)^{10} &  & ◻◻◻◻◻◼◻◼◻◻◻◻◻◼◻◼\\
+\left(x+1\right)^{11} &  & ◻◻◻◻◼◼◼◼◻◻◻◻◼◼◼◼\\
+\left(x+1\right)^{12} &  & ◻◻◻◼◻◻◻◼◻◻◻◼◻◻◻◼\\
+\left(x+1\right)^{13} &  & ◻◻◼◼◻◻◼◼◻◻◼◼◻◻◼◼\\
+\left(x+1\right)^{14} &  & ◻◼◻◼◻◼◻◼◻◼◻◼◻◼◻◼\\
+\left(x+1\right)^{15} &  & ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
 \end{eqnarray*}
 
 \end_inset
@@ -6421,7 +6351,36 @@ key "key-13"
  )סופר, ע', מתרגם(.
  )מהדורה שנייה(.
  האוניברסיטה הפתוחה.
- )פרסום ראשון במקור 
+ )פרסום ראשון במקור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2001
+\numeric off
+(
 \end_layout
 
 \end_body
