@@ -2066,12 +2066,9 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-#לצרף תמונה
-\end_layout
+\begin_inset Graphics
+	filename graphics/T.png
+	scale 8
 
 \end_inset
 
@@ -2079,11 +2076,11 @@ status open
 \end_layout
 
 \begin_layout Standard
-סימנו בירוק צעדים מסוג 
+חץ מודגש מתאים לצעדים מסוג 
 \begin_inset Formula $f\mapsto\frac{f}{x}$
 \end_inset
 
- ובסגול צעדים מסוג 
+ וחץ רגיל לצעדים מסוג 
 \begin_inset Formula $f\mapsto\left(x+1\right)f+1$
 \end_inset
 
@@ -2144,6 +2141,17 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \end_inset
 
 .
+ נתבונן בגרף הבא להמחשה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename graphics/T-T3.png
+	scale 13
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
