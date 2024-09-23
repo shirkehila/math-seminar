@@ -767,7 +767,7 @@ x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
 \begin_inset Formula $f\left(0\right)$
 \end_inset
 
- היא לפולינום הקבוע שהמקדם החופשי שלו תוצאת ההצבה של
+ היא לפולינום הקבוע שהמקדם החופשי שלו הוא תוצאת ההצבה של
 \family roman
 \series medium
 \shape up
@@ -1218,15 +1218,15 @@ x^{7}+x^{5}+1 &  & ◼◻◼◻◻◻◻◼
 \begin_inset Formula 
 \[
 \begin{array}{cc}
-0 & ◻◼◻◼◻◻◻◻◼\\
+0 & ◻◼◻\underline{◼◻◻◻◻◼}\\
 1 & ◼◼◼◼◻◻◻◼◻\\
-2 & ◻◼◼◼◼◻◻◻◼\\
+2 & ◻◼◼◼\underline{◼◻◻◻◼}\\
 3 & ◼◻◻◻◼◻◻◼◻\\
-4 & ◻◼◻◻◻◼◻◻◼\\
+4 & ◻◼◻◻◻\underline{◼◻◻◼}\\
 5 & ◼◼◻◻◼◼◻◼◻\\
-6 & ◻◼◼◻◻◼◼◻◼\\
+6 & ◻◼◼◻◻◼\underline{◼◻◼}\\
 7 & ◼◻◼◻◼◻◼◼◻\\
-8 & ◻◼◻◼◻◼◻◼◼\\
+8 & ◻◼◻◼◻◼◻\underline{◼◼}\\
 9 & ◼◼◼◼◼◼◼◻◻\\
 10 & ◻◼◼◼◼◼◼◼◻\\
 11 & ◻◻◼◼◼◼◼◼◼
@@ -5114,7 +5114,11 @@ f_{a,b,n}=\left(x^{a}\left(1+x\right)^{b}\right)^{n}+1
 \begin_inset Quotes erd
 \end_inset
 
-ל על ידי מציאת הסדרות האלו באופן מפורש.
+ל על ידי חישוב מפורש של 
+\begin_inset Formula $t_{\min}\left(f_{a,b,n},T\right)$
+\end_inset
+
+.
  גם כאן ניעזר במיפוי 
 \begin_inset Formula $S_{3}$
 \end_inset
@@ -5573,7 +5577,7 @@ literal "false"
 
 \end_inset
 
-ו
+ ו
 \begin_inset CommandInset href
 LatexCommand href
 name "שלו השני בחלק"
