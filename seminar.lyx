@@ -1920,7 +1920,8 @@ t_{\min}\left(T^{m}\left(f\right),T\right) & \le & \left(d-1\right)^{2}+2\left(d
 ומכאן 
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
+t_{\min}\left(f,T\right) & \le & t_{\min}\left(T^{m}\left(f\right),T\right)+m\\
+ & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
  & \le & \left(d-1\right)^{2}+2\left(d-1\right)+2d+1=d^{2}+2d
 \end{eqnarray*}
 
