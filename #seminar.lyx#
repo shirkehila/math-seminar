@@ -1988,6 +1988,13 @@ status open
 
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:חסם-משופר-לזמן-1"
+
+\end_inset
+
 כפי שציינו במבוא, קיבלנו חסם אסימפטוטי ריבועי ל
 \begin_inset Formula $t_{\min}\left(f,T\right)$
 \end_inset
@@ -2579,8 +2586,18 @@ T_{3}^{r-1}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
 
 \end_inset
 
-בכך הוכחנו את המעבר הראשון בכל שורה של .
- לגבי המעברים האחרים, 
+בכך הוכחנו את המעבר הראשון בכל שורה של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ לגבי המעברים האחרים, הפולינום 
 \begin_inset Formula $\left(x+1\right)^{r-1}xg+1$
 \end_inset
 
@@ -2669,7 +2686,7 @@ t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+2t_{\min}\left(\frac{\left(
 
 \end_inset
 
-
+ובכך הושלם צעד האינדוקציה.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2686,28 +2703,38 @@ t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+2t_{\min}\left(\frac{\left(
 \end_inset
 
  אי זוגי.
- מתברר כי אם נבצע היפוך של סדר המקדמים עבור כל הפולינומים שבסדרה נקבל שוב
- סדרה של פולינומים אי זוגיים.
- בסדרה זו נוכל לתאר את המעבר מפולינום נתון לפולינום הבא אחריו בעזרת מיפוי
- פשוט יותר מאשר 
-\begin_inset Formula $T_{3}$
+ בחלק זה נגדיר את המיפוי 
+\begin_inset Formula $S_{3}$
 \end_inset
 
- שנגדיר ונסמן ב
-\begin_inset Formula $S_{3}$
+ שאת תפקידו תיארנו במבוא ל
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:חסם-משופר-לזמן-1"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-הפולינום המתקבל מפולינום נתון בעזרת היפוך סדר המקדמים נקרא הפולינום ההדדי.
- בחלק זה נציג תכונות בסיסיות של הפולינום ההדדי, נגדיר את המיפוי 
-\begin_inset Formula $S_{3}$
+הפולינום המתקבל מפולינום נתון בעזרת היפוך סדר המקדמים נקרא הפולינום ההדדי
+ שלו.
+ בחלק זה נציג תכונות בסיסיות של הפולינום ההדדי.
+ לאחר מכן נוכיח סדרת למות שמהן ינבע כי עבור פולינומים אי זוגיים מתקיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
 \end_inset
 
- ונוכיח שעבור פולינומים אי זוגיים מתקיים 
-\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+.
+ לבסוף נשלב את התוצאות הקודמות כדי להוכיח שמתקיים 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\ne0$
 \end_inset
 
 .
@@ -2844,7 +2871,10 @@ name "lem:תכונות-של-המיפוי"
 \end_layout
 
 \begin_layout Proof
-נוכיח את התכונות:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3208,12 +3238,33 @@ name "lem:יהי--פולינום"
 
 \end_deeper
 \begin_layout Proof
-נוכיח:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\widehat{T_{3}\left(f\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $T_{1}\left(f\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $T_{1}\left(f\right)=x^{r}T_{2}\left(T_{1}\left(f\right)\right)$
 \end_inset
 
 .
@@ -3244,7 +3295,7 @@ name "lem:יהי--פולינום"
 \uwave default
 \noun default
 \color inherit
-4
+3
 \family roman
 \series medium
 \shape up
@@ -3281,12 +3332,15 @@ noprefix "false"
 
 \end_inset
 
- מתקיים 
-\begin_inset Formula $\widehat{T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{1}\left(f\right)}$
+ מתקיים: 
+\begin_inset Formula 
+\begin{align*}
+\widehat{T_{1}\left(f\right)} & =\widehat{x^{r}T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}
+\end{align*}
+
 \end_inset
 
-.
- עבור 
+עבור 
 \begin_inset Formula $g$
 \end_inset
 

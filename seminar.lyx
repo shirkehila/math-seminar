@@ -1988,6 +1988,13 @@ status open
 
 \end_inset
 
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:חסם-משופר-לזמן-1"
+
+\end_inset
+
 כפי שציינו במבוא, קיבלנו חסם אסימפטוטי ריבועי ל
 \begin_inset Formula $t_{\min}\left(f,T\right)$
 \end_inset
@@ -2696,28 +2703,38 @@ t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+2t_{\min}\left(\frac{\left(
 \end_inset
 
  אי זוגי.
- מתברר כי אם נבצע היפוך של סדר המקדמים עבור כל הפולינומים שבסדרה נקבל שוב
- סדרה של פולינומים אי זוגיים.
- בסדרה זו נוכל לתאר את המעבר מפולינום נתון לפולינום הבא אחריו בעזרת מיפוי
- פשוט יותר מאשר 
-\begin_inset Formula $T_{3}$
+ בחלק זה נגדיר את המיפוי 
+\begin_inset Formula $S_{3}$
 \end_inset
 
- שנגדיר ונסמן ב
-\begin_inset Formula $S_{3}$
+ שאת תפקידו תיארנו במבוא ל
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:חסם-משופר-לזמן-1"
+plural "false"
+caps "false"
+noprefix "false"
+
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Standard
-הפולינום המתקבל מפולינום נתון בעזרת היפוך סדר המקדמים נקרא הפולינום ההדדי.
- בחלק זה נציג תכונות בסיסיות של הפולינום ההדדי, נגדיר את המיפוי 
-\begin_inset Formula $S_{3}$
+הפולינום המתקבל מפולינום נתון בעזרת היפוך סדר המקדמים נקרא הפולינום ההדדי
+ שלו.
+ בחלק זה נציג תכונות בסיסיות של הפולינום ההדדי.
+ לאחר מכן נוכיח סדרת למות שמהן ינבע כי עבור פולינומים אי זוגיים מתקיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
 \end_inset
 
- ונוכיח שעבור פולינומים אי זוגיים מתקיים 
-\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+.
+ לבסוף נשלב את התוצאות הקודמות כדי להוכיח שמתקיים 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\ne0$
 \end_inset
 
 .
