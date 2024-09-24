@@ -2128,7 +2128,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \end_inset
 
 .
- נוכל לקבץ את רצף הפעולות האלו למיפוי שבהמשך נקרא לו 
+ נוכל לקבץ את רצף הפעולות האלו, למיפוי שבהמשך נקרא לו 
 \begin_inset Formula $T_{3}$
 \end_inset
 
@@ -2142,7 +2142,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \end_inset
 
 .
- נתבונן בגרף הבא להמחשה:
+ נתבונן בגרף הבא להמחשה )מומלץ להגדיל את המסמך בכדי לקרוא בבירור את התוויות(:
 \end_layout
 
 \begin_layout Standard
@@ -2170,7 +2170,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \begin_inset Formula $T_{3}$
 \end_inset
 
- שנקרא לו בהמשך 
+ שנגדיר ונסמן בהמשך בתור 
 \begin_inset Formula $S_{3}$
 \end_inset
 
@@ -2316,11 +2316,7 @@ noprefix "false"
 \begin_inset Formula $T$
 \end_inset
 
- עד להגעה לפולינום אי זוגי )שאינו 
-\begin_inset Formula $f$
-\end_inset
-
- עצמו(.
+ עד להגעה לפולינום אי זוגי שוב בפעם הראשונה.
 \end_layout
 
 \begin_layout Lemma
@@ -2372,26 +2368,21 @@ name "lem:יהי--אי"
 \end_layout
 
 \begin_layout Proof
-נניח שהטענה נכונה לפולינומים אי זוגיים ממעלה קטנה מ
-\begin_inset Formula $n$
-\end_inset
-
- ונוכיח אותה לפולינומים אי זוגיים ממעלה 
-\begin_inset Formula $n$
+יהי 
+\begin_inset Formula $d>1$
 \end_inset
 
 .
- ב
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "lem:יהי--כך"
-plural "false"
-caps "false"
-noprefix "false"
-
+ נניח שהטענה נכונה לפולינומים אי זוגיים ממעלה קטנה מ
+\begin_inset Formula $d$
 \end_inset
 
- הוכחנו כי עבור 
+ ונוכיח אותה לפולינומים אי זוגיים ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ יהי 
 \begin_inset Formula $f$
 \end_inset
 
@@ -2415,7 +2406,101 @@ f & = & x^{r}g+1
 \begin_inset Formula $f-1$
 \end_inset
 
-, מתקיים כי לכל 
+.
+ תהי 
+\begin_inset Formula $s$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את הפולינום 
+\begin_inset Formula $\left(x+1\right)^{r}xg+x$
+\end_inset
+
+.
+ נשים לב ש
+\begin_inset Formula $s\ge2$
+\end_inset
+
+ כי:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{r}xg+x & = & x\left[\left(x+1\right)^{r}g+1\right]
+\end{eqnarray*}
+
+\end_inset
+
+והפולינום 
+\begin_inset Formula $\left(x+1\right)^{r}g+1$
+\end_inset
+
+ זוגי כסכום של פולינומים אי זוגיים.
+ נוכיח שמתקיים:
+\begin_inset Formula 
+\begin{eqnarray}
+T^{2\left(r-1\right)+1+s}\left(f\right) & =T_{3}^{\left(r-1\right)+1}\left(f\right)= & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}\label{eq:1}
+\end{eqnarray}
+
+\end_inset
+
+ונוכל להשתמש בהנחת האינדוקציה על הפולינום 
+\begin_inset Formula $\frac{\left(x+1\right)^{r}xg+x}{x^{s}}$
+\end_inset
+
+ שכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{\ensuremath{\deg\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}}\right)}} & = & \deg\left(\frac{\left(x+1\right)^{r}g+1}{x^{s-1}}\right)\\
+ & = & \deg\left(\left(x+1\right)^{r}g+1\right)-\deg\left(x^{s-1}\right)\\
+ & = & \deg\left(\left(x+1\right)^{r}g\right)-\deg\left(x^{s-1}\right)\\
+ & = & r+\deg\left(g\right)-\left(s-1\right)=d-\left(s-1\right)\\
+ & = & d-s+1\le d-1<d
+\end{eqnarray*}
+
+\end_inset
+
+כדי להוכיח את 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נוכיח שהתהליך שעובר 
+\begin_inset Formula $f$
+\end_inset
+
+ עד להגעה ל
+\begin_inset Formula $\frac{\left(x+1\right)^{r}xg+x}{x^{s}}$
+\end_inset
+
+ על ידי כל אחד מהמיפויים נראה כך:
+\begin_inset Formula 
+\begin{equation}
+\begin{alignedat}{4}f & \overbrace{\to}^{T^{2\left(r-1\right)}} & \left(x+1\right)^{r-1}xg+1 & \overbrace{\to}^{T} & \left(x+1\right)^{r}xg+x & \overbrace{\to}^{T^{s}} & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}\\
+f & \overbrace{\to}^{T_{3}^{r-1}} & \left(x+1\right)^{r-1}xg+1 & \overbrace{\to}^{T_{3}} &  &  & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}
+\end{alignedat}
+\label{eq:1-1}
+\end{equation}
+
+\end_inset
+
+ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ הוכחנו כי מתקיים כי לכל 
 \begin_inset Formula $1\le j\le r$
 \end_inset
 
@@ -2439,6 +2524,19 @@ T^{2\left(r-1\right)}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
 
 \end_inset
 
+כאשר מפעילים את 
+\begin_inset Formula $T$
+\end_inset
+
+ קורית אחת מהפעולות:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(1\right) &  & f\mapsto\left(x+1\right)f+1\\
+\left(2\right) &  & f\mapsto\frac{f}{x}
+\end{eqnarray*}
+
+\end_inset
+
 נשים לב כי מההוכחה ב
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -2457,15 +2555,19 @@ noprefix "false"
 \begin_inset Formula $T$
 \end_inset
 
- הן לסירוגין מסוג 
-\begin_inset Formula $f\mapsto\left(x+1\right)f+1$
+ הן לסירוגין מסוג )
+\numeric on
+1
+\numeric off
+( ו)
+\numeric on
+2
+\numeric off
+( כלומר מתחלקות ל
+\begin_inset Formula $r-1$
 \end_inset
 
- ומסוג 
-\begin_inset Formula $f\mapsto\frac{f}{x}$
-\end_inset
-
- כלומר מתחלקות לזוגות של הפעלות שכל אחת מהן שקולה להפעלה אחת של 
+ זוגות של הפעלות כך שכל זוג הפעלות שקול להפעלה אחת של 
 \begin_inset Formula $T_{3}$
 \end_inset
 
@@ -2477,113 +2579,55 @@ T_{3}^{r-1}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
 
 \end_inset
 
-נסמן 
-\begin_inset Formula $h\left(x\right)=\left(x+1\right)^{r-1}xg+1$
-\end_inset
-
-.
- 
-\begin_inset Formula 
-\begin{eqnarray*}
-T\left(h\right) & = & \left(x+1\right)^{r}xg+x
-\end{eqnarray*}
-
-\end_inset
-
-תהי כעת 
-\begin_inset Formula $s$
-\end_inset
-
- החזקה המקסימלית של 
-\begin_inset Formula $x$
-\end_inset
-
- המחלקת את 
-\begin_inset Formula $T\left(h\right)$
-\end_inset
-
-, אז 
-\begin_inset Formula 
-\begin{eqnarray*}
-T^{s}\left(T\left(h\right)\right) & = & T_{2}\left(T\left(h\right)\right)
-\end{eqnarray*}
-
-\end_inset
-
-מצד שני מהגדרת 
-\begin_inset Formula $T_{3}$
-\end_inset
-
-:
-\begin_inset Formula 
-\begin{eqnarray*}
-T_{3}\left(h\right) & = & T_{2}\left(T_{1}\left(h\right)\right)=T_{2}\left(T\left(h\right)\right)
-\end{eqnarray*}
-
-\end_inset
-
-קיבלנו:
-\begin_inset Formula 
-\begin{eqnarray}
-f\overbrace{\to}^{T^{2\left(r-1\right)}}h\overbrace{\to}^{T^{1+s}}T_{2}\left(T\left(h\right)\right) &  & T^{2\left(r-1\right)+1+s}\left(f\right)=T_{2}\left(T\left(h\right)\right)\label{eq:1}\\
-f\overbrace{\to}^{T_{3}^{r-1}}h\overbrace{\to}^{T_{3}}T_{2}\left(T\left(h\right)\right) &  & T_{3}^{r}\left(f\right)=T_{2}\left(T\left(h\right)\right)\label{eq:2}
-\end{eqnarray}
-
-\end_inset
-
-הפולינום 
-\begin_inset Formula $T_{2}\left(T\left(h\right)\right)$
-\end_inset
-
- הוא אי זוגי.
- 
-\begin_inset Formula $T\left(h\right)$
-\end_inset
-
- ממעלה 
-\begin_inset Formula $n+1$
-\end_inset
-
- ולכן 
-\begin_inset Formula $T_{2}\left(T\left(h\right)\right)$
-\end_inset
-
- ממעלה 
-\begin_inset Formula $n+1-s$
-\end_inset
-
-.
- נזכיר כי מ
+בכך הוכחנו את המעבר הראשון בכל שורה של 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lem:יהי--כך"
+reference "eq:1-1"
 plural "false"
 caps "false"
 noprefix "false"
 
 \end_inset
 
- נובע כי 
-\begin_inset Formula $T^{2}\left(h\right)=T^{2r}\left(f\right)$
+.
+ לגבי המעברים האחרים, הפולינום 
+\begin_inset Formula $\left(x+1\right)^{r-1}xg+1$
 \end_inset
 
- זוגי כלומר 
-\begin_inset Formula $s\ge2$
-\end_inset
+ אי זוגי ולכן:
+\end_layout
 
- ולכן 
-\begin_inset Formula $n+1-s<n$
-\end_inset
-
- ואם כך מהנחת האינדוקציה:
+\begin_layout Proof
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(T_{2}\left(T\left(h\right)\right),T\right) & = & 2t_{\min}\left(T_{2}\left(T\left(h\right)\right),T_{3}\right)+\left(n+1-s\right)
+T\left(\left(x+1\right)^{r-1}xg+1\right) & = & \left(x+1\right)^{r}xg+x\\
+T_{1}\left(\left(x+1\right)^{r-1}xg+1\right) & = & \left(x+1\right)^{r}xg+x
 \end{eqnarray*}
 
 \end_inset
 
-ובשילוב עם 
+נזכיר כי 
+\begin_inset Formula $s$
+\end_inset
+
+ החזקה הגבוהה ביותר של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $\left(x+1\right)^{r}xg+x$
+\end_inset
+
+ ולכן מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{s}\left(\left(x+1\right)^{r}xg+x\right) & = & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}\\
+T_{2}\left(\left(x+1\right)^{r}xg+x\right) & = & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}
+\end{eqnarray*}
+
+\end_inset
+
+כעת מ
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:1"
@@ -2593,7 +2637,28 @@ noprefix "false"
 
 \end_inset
 
- ו
+ נובע:
+\begin_inset Formula 
+\begin{eqnarray}
+t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T\right)\nonumber \\
+t_{\min}\left(f,T_{3}\right) & = & \left(r-1\right)+1+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)\label{eq:2}
+\end{eqnarray}
+
+\end_inset
+
+מצאנו כי 
+\begin_inset Formula $\text{\ensuremath{\deg\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}}\right)=d-s+1}}$
+\end_inset
+
+ לכן מהנחת האינדוקציה:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T\right) & = & 2t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)+d-s+1
+\end{eqnarray*}
+
+\end_inset
+
+נציב את זה ב
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:2"
@@ -2603,21 +2668,18 @@ noprefix "false"
 
 \end_inset
 
- נקבל:
+:
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,T\right)-\left(2\left(r-1\right)+1+s\right) & = & 2\left(t_{\min}\left(f,T_{3}\right)-r\right)+\left(n+1-s\right)\\
-t_{\min}\left(f,T\right)-\left(2r-1+s\right) & = & 2t_{\min}\left(f,T_{3}\right)-2r+\left(n+1-s\right)\\
-t_{\min}\left(f,T\right) & = & 2t_{\min}\left(f,T_{3}\right)+n
+t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+2t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)+d-s+1\\
+ & = & 2\left(r-1\right)+2+2t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)+d\\
+ & = & 2\left[\left(r-1\right)+1+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)\right]+d\\
+ & = & 2t_{\min}\left(f,T_{3}\right)+d
 \end{eqnarray*}
 
 \end_inset
 
-והוכחנו את השוויון עבור פולינומים אי זוגיים ממעלה 
-\begin_inset Formula $n$
-\end_inset
-
-.
+ובכך הושלם צעד האינדוקציה.
 \end_layout
 
 \begin_layout Subsubsection

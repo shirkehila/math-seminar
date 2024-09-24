@@ -1920,7 +1920,8 @@ t_{\min}\left(T^{m}\left(f\right),T\right) & \le & \left(d-1\right)^{2}+2\left(d
 ומכאן 
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
+t_{\min}\left(f,T\right) & \le & t_{\min}\left(T^{m}\left(f\right),T\right)+m\\
+ & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
  & \le & \left(d-1\right)^{2}+2\left(d-1\right)+2d+1=d^{2}+2d
 \end{eqnarray*}
 
@@ -2127,7 +2128,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \end_inset
 
 .
- נוכל לקבץ את רצף הפעולות האלו למיפוי שבהמשך נקרא לו 
+ נוכל לקבץ את רצף הפעולות האלו, למיפוי שבהמשך נקרא לו 
 \begin_inset Formula $T_{3}$
 \end_inset
 
@@ -2141,7 +2142,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \end_inset
 
 .
- נתבונן בגרף הבא להמחשה:
+ נתבונן בגרף הבא להמחשה )מומלץ להגדיל את המסמך בכדי לקרוא בבירור את התוויות(:
 \end_layout
 
 \begin_layout Standard
@@ -2169,7 +2170,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 \begin_inset Formula $T_{3}$
 \end_inset
 
- שנקרא לו בהמשך 
+ שנגדיר ונסמן בהמשך בתור 
 \begin_inset Formula $S_{3}$
 \end_inset
 
@@ -2315,11 +2316,7 @@ noprefix "false"
 \begin_inset Formula $T$
 \end_inset
 
- עד להגעה לפולינום אי זוגי )שאינו 
-\begin_inset Formula $f$
-\end_inset
-
- עצמו(.
+ עד להגעה לפולינום אי זוגי שוב בפעם הראשונה.
 \end_layout
 
 \begin_layout Lemma
