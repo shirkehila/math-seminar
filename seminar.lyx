@@ -5155,8 +5155,8 @@ t_{\min}\left(f,S_{3}\right) & = & r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{
  ונקבל:
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,S_{3}\right) & = & r-1+\sqrt{2}\left(n-1\right)^{1.5}<\sqrt{2n}+\left(n-1\right)\sqrt{2n}\\
- & = & n\sqrt{2n}=\sqrt{2}n^{1.5}
+t_{\min}\left(f,S_{3}\right) & = & r-1+\sqrt{2}\left(n-1\right)^{1.5}<\sqrt{2n}+\sqrt{2}\left(n-1\right)^{1.5}\\
+ & = & \sqrt{2n}+\left(n-1\right)\sqrt{2n}=n\sqrt{2n}=\sqrt{2}n^{1.5}
 \end{eqnarray*}
 
 \end_inset
