@@ -2871,7 +2871,10 @@ name "lem:תכונות-של-המיפוי"
 \end_layout
 
 \begin_layout Proof
-נוכיח את התכונות:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3227,7 +3230,7 @@ name "lem:יהי--פולינום"
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=t_{\min}\left(f,S_{3}\right)$
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=t_{\min}\left(\hat{f},S_{3}\right)$
 \end_inset
 
 
@@ -3235,12 +3238,33 @@ name "lem:יהי--פולינום"
 
 \end_deeper
 \begin_layout Proof
-נוכיח:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\widehat{T_{3}\left(f\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $T_{1}\left(f\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $T_{1}\left(f\right)=x^{r}T_{2}\left(T_{1}\left(f\right)\right)$
 \end_inset
 
 .
@@ -3271,7 +3295,7 @@ name "lem:יהי--פולינום"
 \uwave default
 \noun default
 \color inherit
-4
+3
 \family roman
 \series medium
 \shape up
@@ -3308,12 +3332,15 @@ noprefix "false"
 
 \end_inset
 
- מתקיים 
-\begin_inset Formula $\widehat{T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{1}\left(f\right)}$
+ מתקיים: 
+\begin_inset Formula 
+\begin{align*}
+\widehat{T_{1}\left(f\right)} & =\widehat{x^{r}T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}
+\end{align*}
+
 \end_inset
 
-.
- עבור 
+עבור 
 \begin_inset Formula $g$
 \end_inset
 
@@ -3709,7 +3736,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-עבור פולינום 
+בהינתן פולינום 
 \begin_inset Formula $f\left(x\right)=\sum a_{i}x^{i}$
 \end_inset
 
@@ -3721,7 +3748,11 @@ noprefix "false"
 \begin_inset Formula $\sum_{i\le n}a_{i}x^{i}$
 \end_inset
 
- כלומר משמיטים חזקות גבוהות מ
+ כלומר זהו הפולינום המתקבל מ
+\begin_inset Formula $f$
+\end_inset
+
+ על ידי השמטת חזקות גבוהות מ
 \begin_inset Formula $n$
 \end_inset
 
