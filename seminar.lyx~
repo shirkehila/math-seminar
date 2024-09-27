@@ -2871,7 +2871,10 @@ name "lem:תכונות-של-המיפוי"
 \end_layout
 
 \begin_layout Proof
-נוכיח את התכונות:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -3227,7 +3230,7 @@ name "lem:יהי--פולינום"
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=t_{\min}\left(f,S_{3}\right)$
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=t_{\min}\left(\hat{f},S_{3}\right)$
 \end_inset
 
 
@@ -3235,12 +3238,33 @@ name "lem:יהי--פולינום"
 
 \end_deeper
 \begin_layout Proof
-נוכיח:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 \begin_inset Formula $\widehat{T_{3}\left(f\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $T_{1}\left(f\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $T_{1}\left(f\right)=x^{r}T_{2}\left(T_{1}\left(f\right)\right)$
 \end_inset
 
 .
@@ -3271,7 +3295,7 @@ name "lem:יהי--פולינום"
 \uwave default
 \noun default
 \color inherit
-4
+3
 \family roman
 \series medium
 \shape up
@@ -3308,12 +3332,15 @@ noprefix "false"
 
 \end_inset
 
- מתקיים 
-\begin_inset Formula $\widehat{T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{1}\left(f\right)}$
+ מתקיים: 
+\begin_inset Formula 
+\begin{align*}
+\widehat{T_{1}\left(f\right)} & =\widehat{x^{r}T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}
+\end{align*}
+
 \end_inset
 
-.
- עבור 
+עבור 
 \begin_inset Formula $g$
 \end_inset
 
@@ -3321,7 +3348,36 @@ noprefix "false"
 \begin_inset Formula $g\mapsto\widehat{g+1}$
 \end_inset
 
- מאפסת את המקדם התחתון והופכת את סדר המקדמים ולכן שקולה לפעולה 
+ מאפסת את המקדם התחתון )שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( והופכת את סדר המקדמים ולכן שקולה לפעולה 
 \begin_inset Formula $g\mapsto S_{2}\left(\hat{g}\right)$
 \end_inset
 
@@ -3544,7 +3600,71 @@ f,T_{3}\left(f\right),T_{3}^{2}\left(f\right)...,T_{3}^{n}\left(f\right)=1
 \begin_inset Formula $\widehat{\widehat{T_{3}^{m}\left(f\right)}}=\widehat{1}$
 \end_inset
 
- כלומר 
+ כלומר לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ לקבל 
 \begin_inset Formula $T_{3}^{m}\left(f\right)=1$
 \end_inset
 
@@ -3709,7 +3829,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-עבור פולינום 
+בהינתן פולינום 
 \begin_inset Formula $f\left(x\right)=\sum a_{i}x^{i}$
 \end_inset
 
@@ -3721,7 +3841,11 @@ noprefix "false"
 \begin_inset Formula $\sum_{i\le n}a_{i}x^{i}$
 \end_inset
 
- כלומר משמיטים חזקות גבוהות מ
+ כלומר זהו הפולינום המתקבל מ
+\begin_inset Formula $f$
+\end_inset
+
+ על ידי השמטת חזקות גבוהות מ
 \begin_inset Formula $n$
 \end_inset
 
@@ -3904,12 +4028,15 @@ S_{3}^{i+1}\left(f\right) & = & S_{3}\left(S_{3}^{i}\left(f\right)\right)=S_{2}\
 \begin_inset Formula $\deg\left(\left(x+1\right)^{i+1}g\right)\le n$
 \end_inset
 
- ולכן 
-\begin_inset Formula $\deg\left(x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g\right)=n+1$
+ ולכן:
+\begin_inset Formula 
+\[
+\deg\left(x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g\right)=n+1
+\]
+
 \end_inset
 
-.
- בכך הוכחנו את צעד האינדוקציה.
+בכך הוכחנו את צעד האינדוקציה.
 \end_layout
 
 \begin_layout Proof
@@ -3942,7 +4069,7 @@ x^{n}+\left(x+1\right)^{i}g & \equiv_{x^{n}} & \left(x+1\right)^{i}x^{n}+\left(x
 
 \end_inset
 
-לכן אם כך לפי 
+אם כך לפי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:mod"
@@ -4112,7 +4239,7 @@ S_{3}^{r}\left(f\right) & = & S_{2}\left(\left(x+1\right)^{r}g\right)=S_{2}\left
 
 \end_inset
 
-נשים לב כי מ
+נשים לב כי מהוכחת 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:יהי--אי-1"
@@ -4138,7 +4265,7 @@ noprefix "false"
  אם כך:
 \begin_inset Formula 
 \begin{eqnarray}
-t_{\min}\left(f,S_{3}\right) & = & r+t_{\min}\left(f,S_{3}^{r}\left(f\right)\right)\overbrace{=}^{\left(3\right)}r+t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right)\label{eq:4}
+t_{\min}\left(f,S_{3}\right) & = & r+t_{\min}\left(S_{3}^{r}\left(f\right),S_{3}\right)\overbrace{=}^{\ref{eq:3}}r+t_{\min}\left(S_{3}\left(\left(x+1\right)^{r-1}g\right),S_{3}\right)\label{eq:4}
 \end{eqnarray}
 
 \end_inset
@@ -4150,7 +4277,7 @@ t_{\min}\left(f,S_{3}\right) & = & r+t_{\min}\left(f,S_{3}^{r}\left(f\right)\rig
  אז:
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right) & = & t_{\min}\left(f,\left(x+1\right)^{r-1}g\right)-1
+t_{\min}\left(S_{3}\left(\left(x+1\right)^{r-1}g\right),S_{3}\right) & = & t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)-1
 \end{eqnarray*}
 
 \end_inset
@@ -4159,11 +4286,17 @@ t_{\min}\left(f,S_{3}\left(\left(x+1\right)^{r-1}g\right)\right) & = & t_{\min}\
 \begin_inset Quotes erd
 \end_inset
 
-ל ב)
-\numeric on
-4
-\numeric off
-( נותנת את השוויון הדרוש.
+ל ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נותנת את השוויון הדרוש.
  נניח בשלילה כי 
 \begin_inset Formula $\left(x+1\right)^{r-1}g=1$
 \end_inset
@@ -4240,7 +4373,10 @@ name "lem:יהיו--פולינומים"
 
 \end_deeper
 \begin_layout Proof
-נוכיח את הסעיפים:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -4282,7 +4418,8 @@ name "lem:יהיו--פולינומים"
 \begin_inset Formula 
 \begin{eqnarray*}
 \deg\left(S_{3}\left(f\right)\right) & = & \deg\left(S_{2}\left(S_{1}\left(f\right)\right)\right)<\deg\left(S_{1}\left(f\right)\right)\\
- & = & \deg\left(\left(x+1\right)f\right)=\deg\left(f\right)+1
+ & = & \deg\left(\left(x+1\right)f\right)=\deg\left(x+1\right)+\deg\left(f\right)\\
+ & = & 1+\deg\left(f\right)
 \end{eqnarray*}
 
 \end_inset
@@ -4367,11 +4504,14 @@ noprefix "false"
 \end_inset
 
 , 
-\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{1}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{1}}$
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{1}} & = & \left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{1}}
+\end{eqnarray*}
+
 \end_inset
 
-.
- מחלק
+מחלק
 \family roman
 \series medium
 \shape up
@@ -4429,16 +4569,29 @@ noprefix "false"
 \begin_inset Formula $d_{2}\le d_{1}$
 \end_inset
 
- ולכן מתקיים 
-\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}$
+ ולכן מתקיים בפרט: 
+\begin_inset Formula 
+\[
+\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}
+\]
+
 \end_inset
 
- אבל 
+ אבל מהגדרת 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ מתקיים 
 \begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=S_{3}\left(h_{1}\right)$
 \end_inset
 
- ולכן מתקיים 
-\begin_inset Formula $h_{2}=S_{3}\left(h_{1}\right)=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}$
+.
+ נציב זאת בשוויון הקודם ונקבל: 
+\begin_inset Formula 
+\[
+h_{2}=S_{3}\left(h_{1}\right)=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}
+\]
+
 \end_inset
 
  כנדרש.
@@ -4499,7 +4652,7 @@ noprefix "false"
  נקבל:
 \begin_inset Formula 
 \begin{eqnarray*}
-x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\mod x^{1+\deg\left(g_{k}\right)}
+x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\equiv0\mod x^{1+\deg\left(g_{k}\right)}
 \end{eqnarray*}
 
 \end_inset
@@ -4508,16 +4661,70 @@ x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\mod x^{1+\d
 \begin_inset Formula 
 \begin{eqnarray*}
 f_{k+1} & = & \left(x+1\right)f_{k}+x^{\deg\left(\left(x+1\right)f_{k}\right)}=\left(x+1\right)f_{k}+x^{1+\deg\left(f_{k}\right)}\\
- & \equiv & \left(x+1\right)g_{k}+x^{1+\deg\left(g_{k}\right)}=g_{k+1}\mod x^{1+\deg\left(g_{k}\right)}
+ & \equiv & \underbrace{\left(x+1\right)g_{k}+x^{1+\deg\left(g_{k}\right)}}_{g_{k+1}}\mod x^{1+\deg\left(g_{k}\right)}
 \end{eqnarray*}
 
 \end_inset
 
-ומכיוון ש
+לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של טענה זו 
 \begin_inset Formula $\deg\left(g_{k}\right)\ge\deg\left(g_{k+1}\right)$
 \end_inset
 
- מתקיים גם:
+ ולכן מתקיים בפ
 \begin_inset Formula 
 \begin{eqnarray*}
 f_{k+1} & \equiv & g_{k+1}\mod x^{1+\deg\left(g_{k+1}\right)}
@@ -4535,11 +4742,15 @@ noprefix "false"
 
 \end_inset
 
- כי 
-\begin_inset Formula $f_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}$
+ כי:
+\begin_inset Formula 
+\[
+f_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}
+\]
+
 \end_inset
 
- ולכן 
+ולכן מתקיים גם 
 \begin_inset Formula $\deg\left(g_{k+1}\right)\le\deg\left(f_{k+1}\right)$
 \end_inset
 

@@ -4373,7 +4373,10 @@ name "lem:יהיו--פולינומים"
 
 \end_deeper
 \begin_layout Proof
-נוכיח את הסעיפים:
+\begin_inset Formula $ $
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -4415,7 +4418,8 @@ name "lem:יהיו--פולינומים"
 \begin_inset Formula 
 \begin{eqnarray*}
 \deg\left(S_{3}\left(f\right)\right) & = & \deg\left(S_{2}\left(S_{1}\left(f\right)\right)\right)<\deg\left(S_{1}\left(f\right)\right)\\
- & = & \deg\left(\left(x+1\right)f\right)=\deg\left(f\right)+1
+ & = & \deg\left(\left(x+1\right)f\right)=\deg\left(x+1\right)+\deg\left(f\right)\\
+ & = & 1+\deg\left(f\right)
 \end{eqnarray*}
 
 \end_inset
@@ -4500,11 +4504,14 @@ noprefix "false"
 \end_inset
 
 , 
-\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{1}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{1}}$
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{1}} & = & \left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{1}}
+\end{eqnarray*}
+
 \end_inset
 
-.
- מחלק
+מחלק
 \family roman
 \series medium
 \shape up
@@ -4562,16 +4569,29 @@ noprefix "false"
 \begin_inset Formula $d_{2}\le d_{1}$
 \end_inset
 
- ולכן מתקיים 
-\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}$
+ ולכן מתקיים בפרט: 
+\begin_inset Formula 
+\[
+\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}
+\]
+
 \end_inset
 
- אבל 
+ אבל מהגדרת 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ מתקיים 
 \begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=S_{3}\left(h_{1}\right)$
 \end_inset
 
- ולכן מתקיים 
-\begin_inset Formula $h_{2}=S_{3}\left(h_{1}\right)=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}$
+.
+ נציב זאת בשוויון הקודם ונקבל: 
+\begin_inset Formula 
+\[
+h_{2}=S_{3}\left(h_{1}\right)=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}
+\]
+
 \end_inset
 
  כנדרש.
@@ -4632,7 +4652,7 @@ noprefix "false"
  נקבל:
 \begin_inset Formula 
 \begin{eqnarray*}
-x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\mod x^{1+\deg\left(g_{k}\right)}
+x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\equiv0\mod x^{1+\deg\left(g_{k}\right)}
 \end{eqnarray*}
 
 \end_inset
@@ -4641,16 +4661,70 @@ x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\mod x^{1+\d
 \begin_inset Formula 
 \begin{eqnarray*}
 f_{k+1} & = & \left(x+1\right)f_{k}+x^{\deg\left(\left(x+1\right)f_{k}\right)}=\left(x+1\right)f_{k}+x^{1+\deg\left(f_{k}\right)}\\
- & \equiv & \left(x+1\right)g_{k}+x^{1+\deg\left(g_{k}\right)}=g_{k+1}\mod x^{1+\deg\left(g_{k}\right)}
+ & \equiv & \underbrace{\left(x+1\right)g_{k}+x^{1+\deg\left(g_{k}\right)}}_{g_{k+1}}\mod x^{1+\deg\left(g_{k}\right)}
 \end{eqnarray*}
 
 \end_inset
 
-ומכיוון ש
+לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של טענה זו 
 \begin_inset Formula $\deg\left(g_{k}\right)\ge\deg\left(g_{k+1}\right)$
 \end_inset
 
- מתקיים גם:
+ ולכן מתקיים בפ
 \begin_inset Formula 
 \begin{eqnarray*}
 f_{k+1} & \equiv & g_{k+1}\mod x^{1+\deg\left(g_{k+1}\right)}
@@ -4668,11 +4742,15 @@ noprefix "false"
 
 \end_inset
 
- כי 
-\begin_inset Formula $f_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}$
+ כי:
+\begin_inset Formula 
+\[
+f_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}
+\]
+
 \end_inset
 
- ולכן 
+ולכן מתקיים גם 
 \begin_inset Formula $\deg\left(g_{k+1}\right)\le\deg\left(f_{k+1}\right)$
 \end_inset
 
@@ -4796,16 +4874,16 @@ t_{\min}\left(f,S_{3}\right) & \le & 2\deg\left(f\right)-r+t_{\min}\left(g,S_{3}
 \end_inset
 
 .
- יהי 
-\begin_inset Formula $k=2^{s}-r$
+ נסמן: 
+\begin_inset Formula 
+\begin{eqnarray*}
+k & = & 2^{s}-r\\
+d & = & \deg\left(S_{3}^{k}\left(f\right)\right)
+\end{eqnarray*}
+
 \end_inset
 
- וכן 
-\begin_inset Formula $d=\deg\left(S_{3}^{k}\left(f\right)\right)$
-\end_inset
-
-.
- לפי חלק
+לפי חלק
 \family roman
 \series medium
 \shape up
@@ -4883,8 +4961,12 @@ S_{3}^{k}\left(f\right) & = & \left(\left(x+1\right)^{k}f\right)\vert_{\le d}=\l
 \end_inset
 
  שניתן לוודא את נכונותו בקלות באינדוקציה.
- לבסוף נבחין כי 
-\begin_inset Formula $\deg\left(x^{2^{s}}g\right)\ge2^{s}>d$
+ לבסוף נבחין כי:
+\begin_inset Formula 
+\[
+\deg\left(x^{2^{s}}g\right)\ge2^{s}>\deg\left(f\right)\ge d
+\]
+
 \end_inset
 
  ולכן 
@@ -4959,7 +5041,7 @@ noprefix "false"
  ונקבל:
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,S_{3}\right) & \le & k+t_{\min}\left(g\vert_{\le d},S_{3}\right)\le k+t_{\min}\left(g,S_{3}\right)\\
+t_{\min}\left(f,S_{3}\right) & \le & k+t_{\min}\left(\overbrace{S_{3}^{k}\left(f\right)}^{g\vert_{\le d}},S_{3}\right)\le k+t_{\min}\left(g,S_{3}\right)\\
  & = & 2^{s}-r+t_{\min}\left(g,S_{3}\right)\\
  & \le & 2\deg\left(f\right)-r+t_{\min}\left(g,S_{3}\right)
 \end{eqnarray*}
