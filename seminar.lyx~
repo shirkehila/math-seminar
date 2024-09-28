@@ -5155,8 +5155,8 @@ t_{\min}\left(f,S_{3}\right) & = & r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{
  ונקבל:
 \begin_inset Formula 
 \begin{eqnarray*}
-t_{\min}\left(f,S_{3}\right) & = & r-1+\sqrt{2}\left(n-1\right)^{1.5}<\sqrt{2n}+\left(n-1\right)\sqrt{2n}\\
- & = & n\sqrt{2n}=\sqrt{2}n^{1.5}
+t_{\min}\left(f,S_{3}\right) & = & r-1+\sqrt{2}\left(n-1\right)^{1.5}<\sqrt{2n}+\sqrt{2}\left(n-1\right)^{1.5}\\
+ & = & \sqrt{2n}+\left(n-1\right)\sqrt{2n}=n\sqrt{2n}=\sqrt{2}n^{1.5}
 \end{eqnarray*}
 
 \end_inset
@@ -5315,7 +5315,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)\le r+\left(2\left(n-r\
 \end_layout
 
 \begin_layout Standard
-נגדיר כעת במדויק את מושג ״קיום תתי סדרות חשבוניות שאורכן לא חסום״ מה התוצאה
+נגדיר כעת במדויק את מושג ״קיום תתי סדרות חשבוניות שאורכן לא חסום״ ואת התוצאה
  שנרצה להוכיח.
 \end_layout
 
@@ -5357,7 +5357,7 @@ a_{l+\left(m-1\right)} & = & a_{l}+\left(m-1\right)r
 
 \end_inset
 
-כלומר התת סדרה 
+כלומר תת הסדרה 
 \begin_inset Formula $\left(a_{l+k}\right)_{k=0}^{m-1}$
 \end_inset
 
@@ -5465,8 +5465,8 @@ name "lem:לכל--שלמים"
 \end_inset
 
 .
- מתקיים פרט למקרה 
-\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right)$
+ מתקיים פרט למקרים 
+\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right),\left(a,b,n\right)=\left(1,0,1\right)$
 \end_inset
 
 :
@@ -5481,7 +5481,29 @@ t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\left(x+1\right)^{na+nb-1}
 \end_layout
 
 \begin_layout Proof
-לפי 
+נפריד למקרים 
+\begin_inset Formula $a=0$
+\end_inset
+
+ ו
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ נתחיל במקרה 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ במקרה זה 
+\begin_inset Formula $f_{a,b,n}$
+\end_inset
+
+ 
+\series bold
+אי זוגי
+\series default
+ ולכן לפי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cor:יהי--אי"
@@ -5516,77 +5538,13 @@ noprefix "false"
 :
 \begin_inset Formula 
 \begin{eqnarray*}
-\widehat{f_{a,b,n}} & = & x^{\deg\left(f_{a,b,n}\right)}f_{a,b,n}\left(\frac{1}{x}\right)=x^{n\left(a+b\right)}\left(\left(\left(\frac{1}{x}\right)^{a}\left(1-\frac{1}{x}\right)^{b}\right)^{n}+1\right)\\
+\widehat{f_{a,b,n}} & = & x^{\deg\left(f_{a,b,n}\right)}f_{a,b,n}\left(\frac{1}{x}\right)=x^{n\left(a+b\right)}\left(\left(\left(\frac{1}{x}\right)^{a}\left(1+\frac{1}{x}\right)^{b}\right)^{n}+1\right)\\
  & = & \left(x+1\right)^{nb}+x^{na+nb}
 \end{eqnarray*}
 
 \end_inset
 
-נפריד מכאן למקרים 
-\begin_inset Formula $a=0$
-\end_inset
-
- ו
-\begin_inset Formula $a>0$
-\end_inset
-
-.
- אם 
-\begin_inset Formula $a=0$
-\end_inset
-
- אז 
-\begin_inset Formula $\widehat{f_{a,b,n}}$
-\end_inset
-
- מתקבל מ
-\begin_inset Formula $\left(x+1\right)^{nb-1}$
-\end_inset
-
- על ידי הפעלה של 
-\begin_inset Formula $S_{3}$
-\end_inset
-
-.
- הנחנו 
-\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
-\end_inset
-
- ולכן 
-\begin_inset Formula $nb-1>0$
-\end_inset
-
- ו
-\begin_inset Formula $\left(x+1\right)^{nb-1}\ne1$
-\end_inset
-
- ומכאן ש:
-\begin_inset Formula 
-\begin{eqnarray*}
-t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & t_{\min}\left(\left(x+1\right)^{nb-1},S_{3}\right)-1
-\end{eqnarray*}
-
-\end_inset
-
-הצבה של השוויון הנ״ל ב
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:5"
-plural "false"
-caps "false"
-noprefix "false"
-
-\end_inset
-
- מניבה את השוויון הדרוש.
-\end_layout
-
-\begin_layout Proof
-אם 
-\begin_inset Formula $a>0$
-\end_inset
-
- אז תנאי 
+אז תנאי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:יהי--כאשר"
@@ -5601,13 +5559,19 @@ noprefix "false"
 \end_inset
 
  שכן:
-\begin_inset Formula 
-\[
-\deg\left(x^{na+nb}+\left(x+1\right)^{nb}\right)>\deg\left(\left(x+1\right)^{nb}\right)
-\]
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+הסבר למה הם מתקיימים
+\end_layout
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Proof
 ולכן:
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -5617,7 +5581,7 @@ t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & \left(na+nb-nb\right)-1+t_{
 
 \end_inset
 
-ושוב הצבה ב
+והצבה ב
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:5"
@@ -5628,6 +5592,19 @@ noprefix "false"
 \end_inset
 
  מניבה את השוויון הדרוש.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ועכשיו למקרה השני
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -6314,8 +6291,8 @@ name "cor:לכל--שלמים"
 \end_inset
 
 .
- מתקיים פרט למקרה 
-\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right)$
+ מתקיים פרט למקרים 
+\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right),\left(a,b,n\right)=\left(1,0,1\right)$
 \end_inset
 
 :
@@ -6411,6 +6388,10 @@ noprefix "false"
 \end_inset
 
 , אז בהכרח 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
+
+ וכן 
 \begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
 \end_inset
 
