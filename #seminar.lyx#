@@ -3801,11 +3801,29 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)
 
 \end_inset
 
+ עבור 
+\begin_inset Formula $g$
+\end_inset
 
-\end_layout
+ מתקיים לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
 
-\begin_layout Proof
-נובע משילוב של סעיף
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & = & 2t_{\min}\left(g,T_{3}\right)+\deg\left(g\right)
+\end{eqnarray*}
+
+\end_inset
+
+ולפי סעיף
 \family roman
 \series medium
 \shape up
@@ -3869,14 +3887,89 @@ noprefix "false"
 
 \end_inset
 
- ומ
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T_{3}\right) & = & t_{\min}\left(\hat{g},S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשלב את השוויונות ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)=r+2t_{\min}\left(g,T_{3}\right)+\deg\left(g\right)\\
+ & = & r+2t_{\min}\left(\hat{g},S_{3}\right)+\deg g=2t_{\min}\left(\hat{g},S_{3}\right)+\deg\left(f\right)
+\end{eqnarray*}
+
+\end_inset
+
+כדי לקבל את הנדרש נזכור כי לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lem:יהי--אי"
+reference "lem:תכונות-של-המיפוי"
 plural "false"
 caps "false"
 noprefix "false"
 
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\hat{f}=\hat{g}$
 \end_inset
 
 .
@@ -5590,7 +5683,63 @@ noprefix "false"
 \end_inset
 
 .
- אז תנאי 
+ במקרה זה נסמן 
+\begin_inset Formula $g=\left(x+1\right)^{nb}$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & x^{na+nb}+g\\
+na+nb & > & \deg\left(g\right)=nb\\
+na+nb & \ge & 2
+\end{eqnarray*}
+
+\end_inset
+
+האי שוויון האחרון נכון שכן אחרת 
+\begin_inset Formula $n\left(a+b\right)=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n=a+b=1$
+\end_inset
+
+ מה שגורר 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\backslash
+left(a,b,n
+\backslash
+right)=
+\backslash
+left(1,0,1
+\backslash
+right)
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן תנאי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:יהי--כאשר"

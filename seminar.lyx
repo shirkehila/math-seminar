@@ -5683,7 +5683,34 @@ noprefix "false"
 \end_inset
 
 .
- אז תנאי 
+ במקרה זה נסמן 
+\begin_inset Formula $g=\left(x+1\right)^{nb}$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & x^{na+nb}+g\\
+na+nb & > & \deg\left(g\right)=nb\\
+na+nb & \ge & 2
+\end{eqnarray*}
+
+\end_inset
+
+האי שוויון האחרון נכון שכן אחרת 
+\begin_inset Formula $n\left(a+b\right)=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n=a+b=1$
+\end_inset
+
+ מה שגורר 
+\begin_inset Formula $\left(a,b,n\right)=\left(1,0,1\right)$
+\end_inset
+
+ שזה מקרה שהוחרג בתנאי המשפט.
+ אם כך תנאי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:יהי--כאשר"
@@ -5697,21 +5724,7 @@ noprefix "false"
 \begin_inset Formula $\widehat{f_{a,b,n}}$
 \end_inset
 
- שכן:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-הסבר למה הם מתקיימים
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-ולכן:
+ ולכן:
 \begin_inset Formula 
 \begin{eqnarray*}
 t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & \left(na+nb-nb\right)-1+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)\\

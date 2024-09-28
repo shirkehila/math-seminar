@@ -3738,7 +3738,36 @@ name "cor:יהי--אי"
 \begin_inset Formula $f$
 \end_inset
 
- אי זוגי.
+ פולינום שאינו
+\family roman
+\series medium
+\shape italic
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
  אז מתקיים:
 \begin_inset Formula 
 \begin{eqnarray*}
@@ -3751,7 +3780,50 @@ t_{\min}\left(f,T\right) & = & 2t_{\min}\left(\hat{f},S_{3}\right)+\deg\left(f\r
 \end_layout
 
 \begin_layout Proof
-נובע משילוב של סעיף
+נרשום:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & = & x^{r}g
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי.
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)
+\end{eqnarray*}
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $g$
+\end_inset
+
+ מתקיים לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & = & 2t_{\min}\left(g,T_{3}\right)+\deg\left(g\right)
+\end{eqnarray*}
+
+\end_inset
+
+ולפי סעיף
 \family roman
 \series medium
 \shape up
@@ -3815,14 +3887,89 @@ noprefix "false"
 
 \end_inset
 
- ומ
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T_{3}\right) & = & t_{\min}\left(\hat{g},S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשלב את השוויונות ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)=r+2t_{\min}\left(g,T_{3}\right)+\deg\left(g\right)\\
+ & = & r+2t_{\min}\left(\hat{g},S_{3}\right)+\deg g=2t_{\min}\left(\hat{g},S_{3}\right)+\deg\left(f\right)
+\end{eqnarray*}
+
+\end_inset
+
+כדי לקבל את הנדרש נזכור כי לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "lem:יהי--אי"
+reference "lem:תכונות-של-המיפוי"
 plural "false"
 caps "false"
 noprefix "false"
 
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\hat{f}=\hat{g}$
 \end_inset
 
 .
@@ -5481,29 +5628,7 @@ t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\left(x+1\right)^{na+nb-1}
 \end_layout
 
 \begin_layout Proof
-נפריד למקרים 
-\begin_inset Formula $a=0$
-\end_inset
-
- ו
-\begin_inset Formula $a>0$
-\end_inset
-
-.
- נתחיל במקרה 
-\begin_inset Formula $a>0$
-\end_inset
-
-.
- במקרה זה 
-\begin_inset Formula $f_{a,b,n}$
-\end_inset
-
- 
-\series bold
-אי זוגי
-\series default
- ולכן לפי 
+לפי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "cor:יהי--אי"
@@ -5544,7 +5669,21 @@ noprefix "false"
 
 \end_inset
 
-אז תנאי 
+נפריד כעת למקרים 
+\begin_inset Formula $a=0$
+\end_inset
+
+ ו
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ נתחיל במקרה 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ אז תנאי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:יהי--כאשר"
@@ -5595,16 +5734,49 @@ noprefix "false"
 \end_layout
 
 \begin_layout Proof
-\begin_inset Note Note
-status open
+אם 
+\begin_inset Formula $a=0$
+\end_inset
 
-\begin_layout Plain Layout
-ועכשיו למקרה השני
-\end_layout
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & \left(x+1\right)^{nb}+x^{nb}=S_{3}\left(\left(x+1\right)^{nb-1}\right)
+\end{eqnarray*}
 
 \end_inset
 
+הנחנו 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
 
+ ולכן 
+\begin_inset Formula $nb-1\ge b-1>0$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x+1\right)^{nb-1}\ne1$
+\end_inset
+
+ ומכאן ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & t_{\min}\left(\left(x+1\right)^{nb-1},S_{3}\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+ושוב הצבה של השוויון הנ״ל ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מניבה את השוויון הדרוש.
 \end_layout
 
 \begin_layout Standard
