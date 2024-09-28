@@ -6052,6 +6052,7 @@ literal "false"
 \end_inset
 
 .
+ ניגש כעת להוכחת הלמה.
 \end_layout
 
 \begin_layout Proof
@@ -6661,6 +6662,66 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 
 \begin_layout Section
 שאלות פתוחות
+\end_layout
+
+\begin_layout Standard
+ניתן להמשיך את המחקר של בעיית קולאץ הפולינומיאלית במספר כיוונים:
+\end_layout
+
+\begin_layout Itemize
+בדיקה אם החסם האסימפטוטי 
+\begin_inset Formula $O\left(d^{1.5}\right)$
+\end_inset
+
+ לזמן העצירה המקסימלי של פולינום ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+ הוא אופטימלי או ניתן לשיפור
+\end_layout
+
+\begin_layout Itemize
+מציאת חסם אסימפטוטלי לזמן העצירה הממוצע של פולינום ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הכללת הבעיה מהחוג 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ והתאמתה לחוג 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ עבור 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני
+\end_layout
+
+\begin_layout Standard
+להרחבה וניסוחים מדויקים של השאלות הפתוחות וההשערות ניתן לעיין בחלק 
+\begin_inset Quotes eld
+\end_inset
+
+השאלות הפתוחות
+\begin_inset Quotes erd
+\end_inset
+
+ במאמר 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Bibliography

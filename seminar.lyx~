@@ -5683,7 +5683,34 @@ noprefix "false"
 \end_inset
 
 .
- אז תנאי 
+ במקרה זה נסמן 
+\begin_inset Formula $g=\left(x+1\right)^{nb}$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & x^{na+nb}+g\\
+na+nb & > & \deg\left(g\right)=nb\\
+na+nb & \ge & 2
+\end{eqnarray*}
+
+\end_inset
+
+האי שוויון האחרון נכון שכן אחרת 
+\begin_inset Formula $n\left(a+b\right)=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n=a+b=1$
+\end_inset
+
+ מה שגורר 
+\begin_inset Formula $\left(a,b,n\right)=\left(1,0,1\right)$
+\end_inset
+
+ שזה מקרה שהוחרג בתנאי המשפט.
+ אם כך תנאי 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lem:יהי--כאשר"
@@ -5697,21 +5724,7 @@ noprefix "false"
 \begin_inset Formula $\widehat{f_{a,b,n}}$
 \end_inset
 
- שכן:
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-הסבר למה הם מתקיימים
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Proof
-ולכן:
+ ולכן:
 \begin_inset Formula 
 \begin{eqnarray*}
 t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & \left(na+nb-nb\right)-1+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)\\
@@ -6039,6 +6052,7 @@ literal "false"
 \end_inset
 
 .
+ ניגש כעת להוכחת הלמה.
 \end_layout
 
 \begin_layout Proof
@@ -6648,6 +6662,66 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 
 \begin_layout Section
 שאלות פתוחות
+\end_layout
+
+\begin_layout Standard
+ניתן להמשיך את המחקר של בעיית קולאץ הפולינומיאלית במספר כיוונים:
+\end_layout
+
+\begin_layout Itemize
+בדיקה אם החסם האסימפטוטי 
+\begin_inset Formula $O\left(d^{1.5}\right)$
+\end_inset
+
+ לזמן העצירה המקסימלי של פולינום ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+ הוא אופטימלי או ניתן לשיפור
+\end_layout
+
+\begin_layout Itemize
+מציאת חסם אסימפטוטלי לזמן העצירה הממוצע של פולינום ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הכללת הבעיה מהחוג 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ לחוג 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ עבור 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני
+\end_layout
+
+\begin_layout Standard
+להרחבה וניסוחים מדויקים של השאלות הפתוחות וההשערות ניתן לעיין בחלק 
+\begin_inset Quotes eld
+\end_inset
+
+השאלות הפתוחות
+\begin_inset Quotes erd
+\end_inset
+
+ במאמר 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+literal "false"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Bibliography
