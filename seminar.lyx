@@ -331,7 +331,7 @@ literal "false"
 \begin_inset Formula $\mathcal{C}:\mathbb{N}\to\mathbb{N}$
 \end_inset
 
- באופן הבא:
+ באופן הבא: 
 \begin_inset Formula 
 \begin{eqnarray*}
 \mathcal{C}\left(n\right) & = & \begin{cases}
@@ -551,8 +551,7 @@ Zavislak
 \noun off
 \color none
 \lang hebrew
- 
-)ראו 
+ )ראו 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "key-2"
@@ -2154,7 +2153,7 @@ t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\tex
 
 \begin_layout Standard
 \begin_inset Graphics
-	filename graphics/T-T3.png
+	filename graphics/T-T3-fixed.png
 	scale 13
 
 \end_inset
@@ -6681,7 +6680,7 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 \end_layout
 
 \begin_layout Itemize
-מציאת חסם אסימפטוטלי לזמן העצירה הממוצע של פולינום ממעלה 
+מציאת חסם אסימפטוטי לזמן העצירה הממוצע של פולינום ממעלה 
 \begin_inset Formula $d$
 \end_inset
 

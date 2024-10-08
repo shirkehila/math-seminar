@@ -93,6 +93,12 @@ theorems-sec
 
 \begin_layout Title
 סמינר בנושא אנלוג להשערת קולץ בפולינומים
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -577,11 +583,6 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-מגדירים מיפוי 
-\begin_inset Formula $T:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
-\end_inset
-
- באופן הבא:
 \begin_inset Formula 
 \begin{eqnarray*}
 T\left(f\right) & = & \begin{cases}
@@ -6665,7 +6666,7 @@ n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac
 \end_layout
 
 \begin_layout Standard
-ניתן להמשיך את המחקר של בעיית קולאץ הפולינומיאלית במספר כיוונים:
+ניתן להמשיך את המחקר על בעיית קולאץ הפולינומיאלית במספר כיוונים:
 \end_layout
 
 \begin_layout Itemize
