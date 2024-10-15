@@ -1,0 +1,7012 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+theorems-sec
+\end_modules
+\maintain_unincluded_children false
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David CLM"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format pdf4
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\bullet 0 2 5 -1
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+סמינר בנושא אנלוג להשערת קולץ בפולינומים
+\end_layout
+
+\begin_layout Author
+מגישה: שיר קהילה | מנחה: פרופסור אלעד פארן
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+רקע מתמטי
+\end_layout
+
+\begin_layout Standard
+בכדי להבין את התוכן המוצג בסמינר זה, נדרשת היכרות עם סימונים אסימפטוטיים
+ אותה ניתן לרכוש מעיון בפרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הספר 
+\series bold
+מבוא לאלגוריתמים
+\series default
+ 
+\numeric on
+
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-12"
+literal "false"
+
+\end_inset
+
+
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן נדרש ידע בסיסי בחוגים, ובפרט היכרות עם 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+, חוג הפולינומים מעל השדה הסופי 
+\begin_inset Formula $\mathbb{F}_{2}$
+\end_inset
+
+.
+ היכרות זו ניתן לרכוש מעיון בפרקים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14-18
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של הספר 
+\series bold
+מבנים אלגבריים
+\series default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-13"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+מבוא
+\end_layout
+
+\begin_layout Subsection
+הצגת השערת קולץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+מה זו השערת קולץ, דוגמה וגרף של איזה מספר הולך לאיזה עבור מספרים קטנים,
+ רקע היסטורי שלה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השערת קולץ, הידועה גם כבעיית 
+\begin_inset Formula $"3n+1"$
+\end_inset
+
+ היא בעיה פתוחה מפורסמת במתמטיקה המיוחסת באופן מסורתי ללותר קולץ, אשר נהגתה
+ בשנות ה-
+\numeric on
+30
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של המאה ה-
+\numeric on
+20
+\numeric off
+.
+ )ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-1"
+literal "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+מגדירים מיפוי 
+\begin_inset Formula $\mathcal{C}:\mathbb{N}\to\mathbb{N}$
+\end_inset
+
+ באופן הבא: 
+\begin_inset Formula 
+\begin{eqnarray*}
+\mathcal{C}\left(n\right) & = & \begin{cases}
+\frac{n}{2} & n\equiv0\left(\mod2\right)\\
+3n+1 & n\equiv1\left(\mod2\right)
+\end{cases}
+\end{eqnarray*}
+
+\end_inset
+
+ההשערה היא שתהליך של הפעלה חוזרת של המיפוי 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+, על כל מספר טבעי שנבחר, תביא לאחר מספר סופי של צעדים למספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ באופן פורמלי, לכל 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\mathcal{C}^{k}\left(n\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נפעיל לדוגמה את התהליך על המספר 
+\begin_inset Formula $n=11$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+11\to34\to17\to52\to26\to13\to40\to20\to10\to5\to16\to8\to4\to2\to1
+\]
+
+\end_inset
+
+מצאנו כי 
+\begin_inset Formula $\mathcal{C}^{14}\left(11\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ההשערה הפכה למפורסמת בעיקר בשל פשטות הניסוח שלה, שהופכת אותה לנגישה גם למי
+ שאינו מתמטיקאי.
+\end_layout
+
+\begin_layout Standard
+למרות שההשערה עצמה טרם הוכחה או הופרכה, נעשו נסיונות רבים לפתור אותה ואף
+ התקבלו תוצאות חלקיות מעניינות.
+ )הבולטת בהן היא עבודתו של טרנס טאו, ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-4"
+literal "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection
+בעיה אנלוגית ב
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+הצגה של המיפוי, דוגמה וגרף של איזה פולינום הולך לאיזה עבור מעלות קטנות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור בעיות אריתמטיות רבות, טבעי לבחון בעיה אנלוגית בחוגי פולינומים.
+ בעיה אנלוגית כזו נחקרה בשנת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2008
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+על ידי 
+\lang english
+Hicks, Mullen, Yucas
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ ו
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Zavislak
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\lang hebrew
+ )ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-2"
+literal "false"
+
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+(.
+\end_layout
+
+\begin_layout Standard
+מגדירים מיפוי 
+\begin_inset Formula $T:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ באופן הבא:
+\begin_inset Formula 
+\begin{eqnarray*}
+T\left(f\right) & = & \begin{cases}
+\frac{f}{x} & f\equiv0\left(\mod x\right)\\
+\left(x+1\right)f+1 & f\equiv1\left(\mod x\right)
+\end{cases}
+\end{eqnarray*}
+
+\end_inset
+
+ושואלים - האם לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ כך ש
+\begin_inset Formula $T^{k}\left(f\right)=1$
+\end_inset
+
+? לבעיה זו נקרא בהמשך 
+\begin_inset Quotes eld
+\end_inset
+
+בעיית קולץ הפולינומיאלית
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבצע לדוגמה הפעלה חוזרת של 
+\begin_inset Formula $T$
+\end_inset
+
+ על הפולינום 
+\begin_inset Formula $x^{2}+1$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+x^{2}+1\to x^{3}+x^{2}+x\to x^{2}+x+1\to x^{3}\to x^{2}\to x\to1
+\]
+
+\end_inset
+
+כלומר 
+\begin_inset Formula $T^{6}\left(x^{2}+1\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מהשוואה בין 
+\begin_inset Formula $T$
+\end_inset
+
+ לבין 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ ניתן לראות כי האיבר הראשוני 
+\begin_inset Formula $x$
+\end_inset
+
+ בחוג 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ ממלא את תפקידו של המספר הראשוני
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: ההתחלקות בו מורה לאיזה ענף של 
+\begin_inset Formula $T$
+\end_inset
+
+ לפנות כשם שההתחלקות ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מורה לאיזה ענף של 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+ לפנות.
+\end_layout
+
+\begin_layout Standard
+בהמשך להשוואה זו, לפולינום 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ המתחלק ב
+\begin_inset Formula $x$
+\end_inset
+
+, כלומר מקיים 
+\begin_inset Formula $f\equiv0\left(\mod x\right)$
+\end_inset
+
+ אנו קוראים פולינום 
+\begin_inset Quotes eld
+\end_inset
+
+זוגי
+\begin_inset Quotes erd
+\end_inset
+
+ ולפולינום שאינו מתחלק ב
+\begin_inset Formula $x$
+\end_inset
+
+ אנו קוראים פולינום 
+\begin_inset Quotes eld
+\end_inset
+
+אי-זוגי
+\begin_inset Quotes erd
+\end_inset
+
+.
+ נעיר כי 
+\begin_inset Formula $f\equiv f\left(0\right)\left(\mod x\right)$
+\end_inset
+
+ )הכוונה ב
+\begin_inset Formula $f\left(0\right)$
+\end_inset
+
+ היא לפולינום הקבוע שהמקדם החופשי שלו הוא תוצאת ההצבה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $f$
+\end_inset
+
+( ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא זוגי אם ורק אם 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+#לצרף פה גרף
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Quotes eld
+\end_inset
+
+מבט על
+\begin_inset Quotes erd
+\end_inset
+
+ של הסמינר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+הצגה במבט על של השאלות שנשאל ושל התוצאות שנשיג
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסמינר זה נציג תשובה חיובית לבעיית קולץ הפולינומיאלית.
+ לאחר קבלת תשובה חיובית זו טבעי לשאול - 
+\begin_inset Quotes eld
+\end_inset
+
+כמה מהר
+\begin_inset Quotes erd
+\end_inset
+
+ לוקח להגיע ל-
+\numeric on
+1
+\numeric off
+?
+\end_layout
+
+\begin_layout Standard
+לכל מיפוי 
+\begin_inset Formula $M:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ נגדיר:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,M\right) & = & \min\left\{ k\ge0:M^{k}\left(f\right)=1\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+אם קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כזה, ואחרת נגדיר 
+\begin_inset Formula $t_{\min}\left(f,M\right)=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+למעשה, נוכיח שזמן העצירה סופי על ידי הוכחה כי לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים: 
+\begin_inset Formula 
+\[
+t_{\min}\left(f,T\right)\le\deg\left(f\right)^{2}+2\deg\left(f\right)
+\]
+
+\end_inset
+
+ובסימונים אסימפטוטיים, 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\deg\left(f\right)^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בשלב הבא, שמהווה את חלק הארי של הסמינר, נשפר את החסם הזה ונוכיח כי לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\[
+t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\right)
+\]
+
+\end_inset
+
+משמע 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\deg\left(f\right)^{1.5}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לסיום, נוכיח תוצאה נוספת שמהווה אנלוג להשערה בנוגע לזמני העצירה של מספרים
+ העונים לתבנית מסוימת, ביחס למיפוי 
+\begin_inset Formula $\mathcal{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכח )ראו 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-5"
+literal "false"
+
+\end_inset
+
+( כי סדרת זמני העצירה של המספרים 
+\begin_inset Formula $2^{n}+1$
+\end_inset
+
+ מכילה תתי סדרות חשבוניות עם הפרש משותף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שאורכן גדול כרצוננו.
+ אותה תופעה זוהתה גם במספרים מתבניות אחרות דומות, מה שהוביל לניסוח ההשערה
+ הבאה:
+\end_layout
+
+\begin_layout Conjecture
+יהיו מספרים שלמים 
+\begin_inset Formula $a,b\ge0$
+\end_inset
+
+.
+ סדרת זמני העצירה של המספרים 
+\begin_inset Formula $\left(2^{a}3^{b}\right)^{n}+1$
+\end_inset
+
+ מכילה תתי סדרות חשבוניות שאורכן גדול כרצוננו, ובעלות הפרש משותף 
+\begin_inset Formula $a-b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נביא בהמשך הגדרה מדויקת למושג 
+\begin_inset Quotes eld
+\end_inset
+
+מכילה תת סדרה חשבונית שאורכה גדול כרצוננו
+\begin_inset Quotes erd
+\end_inset
+
+.
+ התוצאה האנלוגית שנוכיח תהיה בנוגע לפולינומים מהצורה 
+\begin_inset Formula $\left(x^{a}\left(1+x\right)^{b}\right)^{n}+1$
+\end_inset
+
+, והיא תיעשה על ידי חישוב נוסחה מדויקת לזמני העצירה של אותם הפולינומים.
+\end_layout
+
+\begin_layout Section
+תוצאות
+\end_layout
+
+\begin_layout Subsection
+הוכחה שזמן העצירה סופי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+הוכחה שמגיעים בסוף ל
+\numeric on
+1
+\end_layout
+
+\begin_layout Itemize
+גזירת חסם ריבועי
+\end_layout
+
+\end_inset
+
+כדי להוכיח שזמן העצירה סופי, נתחיל בלהוכיח שלאחר מספר צעדים שחסום על ידי
+ ביטוי התלוי במעלה של 
+\begin_inset Formula $f$
+\end_inset
+
+, המעלה של 
+\begin_inset Formula $f$
+\end_inset
+
+ חייבת לקטון.
+ עבור פולינום זוגי, נדרש צעד אחד להורדת המעלה.
+ עבור פולינום אי זוגי, המצב מעט יותר מסובך.
+ נתבונן למשל בפולינום 
+\begin_inset Formula $x^{7}+x^{5}+1$
+\end_inset
+
+.
+ על מנת להמחיש ויזואלית את הסדרה המתקבלת מהפעלות חוזרות של 
+\begin_inset Formula $T$
+\end_inset
+
+, נאמץ את הסימון הבא של פולינום כוקטור בינארי:
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{7}+x^{5}+1 &  & ◼◻◼◻◻◻◻◼
+\end{eqnarray*}
+
+\end_inset
+
+ריבוע שחור מייצג את המקדמים שערכם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וריבוע לבן מייצג את המקדמים שערכם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+, וככל שמתקדמים שמאלה, החזקה של 
+\begin_inset Formula $x$
+\end_inset
+
+ עולה.
+ 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+0 & ◻◼◻\underline{◼◻◻◻◻◼}\\
+1 & ◼◼◼◼◻◻◻◼◻\\
+2 & ◻◼◼◼\underline{◼◻◻◻◼}\\
+3 & ◼◻◻◻◼◻◻◼◻\\
+4 & ◻◼◻◻◻\underline{◼◻◻◼}\\
+5 & ◼◼◻◻◼◼◻◼◻\\
+6 & ◻◼◼◻◻◼\underline{◼◻◼}\\
+7 & ◼◻◼◻◼◻◼◼◻\\
+8 & ◻◼◻◼◻◼◻\underline{◼◼}\\
+9 & ◼◼◼◼◼◼◼◻◻\\
+10 & ◻◼◼◼◼◼◼◼◻\\
+11 & ◻◻◼◼◼◼◼◼◼
+\end{array}
+\]
+
+\end_inset
+
+נתבונן בשורות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $0,2,4,6,8$
+\end_inset
+
+.
+ ניתן לראות שבשורה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ קיים מרווח של 
+\begin_inset Formula $4$
+\end_inset
+
+ מקומות בין החזקה הנמוכה ביותר לחזקה הבאה, לאחר מכן בשורה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+המרווח הוא של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקומות.
+ זה ממשיך עד שהמרווח נעלם בשורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+.
+ לאחר מכן נדרשים עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+צעדים כדי להגיע לפולינום ממעלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--כך"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\deg\left(f\right)\ge1$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $1\le m\le2\deg\left(f\right)+1$
+\end_inset
+
+ כך שמתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+\deg\left(T^{m}\left(f\right)\right) & = & \deg\left(f\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $d=\deg\left(f\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ זוגי אז 
+\begin_inset Formula $T\left(f\right)=\frac{f}{x}$
+\end_inset
+
+ ולכן,
+\begin_inset Formula 
+\[
+\deg\left(T\left(f\right)\right)=d-1
+\]
+
+\end_inset
+
+במקרה זה 
+\begin_inset Formula $m=1$
+\end_inset
+
+ מקיים את הטענה.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי, נרשום:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & = & x^{r}g+1
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $1\le r\le d$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f-1$
+\end_inset
+
+, כלומר 
+\begin_inset Formula $x\nmid g$
+\end_inset
+
+.
+ כמו כן 
+\begin_inset Formula $\deg g=d-r$
+\end_inset
+
+.
+ נעיר כי 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא למעשה החזקה הנמוכה ביותר של 
+\begin_inset Formula $x$
+\end_inset
+
+ המופיעה ב
+\begin_inset Formula $f$
+\end_inset
+
+ פרט ל
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח באינדוקציה כי לכל 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j}\left(f\right) & = & \left(x+1\right)^{j}x^{r-j}g+1
+\end{eqnarray*}
+
+\end_inset
+
+עבור 
+\begin_inset Formula $j=1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T\left(f\right) & = & \left(x+1\right)\left(x^{r}g+1\right)+1=\left(x+1\right)x^{r}g+x\\
+T^{2}\left(f\right) & = & \left(x+1\right)x^{r-1}g+1
+\end{eqnarray*}
+
+\end_inset
+
+נניח כעת כי התוצאה נכונה עבור 
+\begin_inset Formula $1\le j<r$
+\end_inset
+
+ ונוכיח שהיא נכונה עבור 
+\begin_inset Formula $j+1$
+\end_inset
+
+.
+ מהנחת האינדוקציה:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j}\left(f\right) & = & \left(x+1\right)^{j}x^{r-j}g+1
+\end{eqnarray*}
+
+\end_inset
+
+מכיוון ש
+\begin_inset Formula $j<r$
+\end_inset
+
+, הפולינום 
+\begin_inset Formula $\left(x+1\right)^{j}x^{r-j}g$
+\end_inset
+
+ זוגי ולכן 
+\begin_inset Formula $T^{2j}\left(f\right)$
+\end_inset
+
+ אי זוגי.
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j+1}\left(f\right) & = & \left(x+1\right)^{j+1}\left(x^{r-j}g+1\right)+1=\left(x+1\right)^{j+1}x^{r-j}g+x\\
+T^{2j+2}\left(f\right) & = & \left(x+1\right)^{j+1}x^{r-\left(j+1\right)}g+1
+\end{eqnarray*}
+
+\end_inset
+
+ובכך הוכחנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Proof
+נקבל בפרט עבור 
+\begin_inset Formula $j=r$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2r}\left(f\right) & = & \left(x+1\right)^{r}g+1
+\end{eqnarray*}
+
+\end_inset
+
+נזכיר כי 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי ולכן 
+\begin_inset Formula $\left(x+1\right)^{r}g$
+\end_inset
+
+ אי זוגי.
+ זה גורר ש
+\begin_inset Formula $T^{2r}\left(f\right)$
+\end_inset
+
+ זוגי לכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2r+1}\left(f\right) & = & \frac{\left(x+1\right)^{r}g+1}{x}
+\end{eqnarray*}
+
+\end_inset
+
+ומתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+\deg\left(T^{2r+1}\left(f\right)\right) & = & \deg\left(T^{2r}\left(f\right)\right)-1=d-1
+\end{eqnarray*}
+
+\end_inset
+
+במקרה זה 
+\begin_inset Formula $m=2r+1\le2d+1$
+\end_inset
+
+ מקיים את הטענה.
+\end_layout
+
+\begin_layout Standard
+כעת נקל להוכיח באינדוקציה על מעלת הפולינום את החסם שתיארנו בהקדמה.
+\end_layout
+
+\begin_layout Theorem
+יהי 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+, אז 
+\begin_inset Formula $t_{\min}\left(f,T\right)\le\deg\left(f\right)^{2}+2\deg\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+נוכיח את הטענה באינדוקציה על מעלת 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בסיס האינדוקציה: 
+\begin_inset Formula $\deg f=0$
+\end_inset
+
+.
+ הפולינום היחיד ב
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ שמעלתו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן 
+\begin_inset Formula $t_{\min}\left(f,T\right)=0$
+\end_inset
+
+ והחסם מתקיים.
+\end_layout
+
+\begin_layout Proof
+צעד האינדוקציה: יהי 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\deg f=d>1$
+\end_inset
+
+.
+ על פי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, קיים 
+\begin_inset Formula 
+\[
+1\le m\le2d+1
+\]
+
+\end_inset
+
+ כך ש
+\begin_inset Formula $\deg\left(T^{m}\left(f\right)\right)=d-1$
+\end_inset
+
+.
+ מהנחת האינדוקציה, 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(T^{m}\left(f\right),T\right) & \le & \left(d-1\right)^{2}+2\left(d-1\right)
+\end{eqnarray*}
+
+\end_inset
+
+ומכאן 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & \le & t_{\min}\left(T^{m}\left(f\right),T\right)+m\\
+ & \le & \left(d-1\right)^{2}+2\left(d-1\right)+m\\
+ & \le & \left(d-1\right)^{2}+2\left(d-1\right)+2d+1=d^{2}+2d
+\end{eqnarray*}
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:חסם-משופר-לזמן"
+
+\end_inset
+
+חסם משופר לזמן העצירה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Itemize
+צמצום למקרה של פולינום אי זוגי
+\end_layout
+
+\begin_layout Itemize
+הגדרת הפולינום ההדדי ומיפויי העזר המתאימים, והראשי שבהם - 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+טענות בסיסיות על התנהגות שלהם
+\end_layout
+
+\begin_layout Itemize
+קישור בין זמן העצירה שלנו לזמן העצירה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חסימת זמן העצירה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+חיבור כל התוצאות כדי לחסום את זמן העצירה של 
+\begin_inset Formula $T$
+\end_inset
+
+ לכל פולינום
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:חסם-משופר-לזמן-1"
+
+\end_inset
+
+כפי שציינו במבוא, קיבלנו חסם אסימפטוטי ריבועי ל
+\begin_inset Formula $t_{\min}\left(f,T\right)$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\deg f$
+\end_inset
+
+.
+ בחלק זה נשפר את החסם ונוכיח 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתבונן במסלול שעושים פולינומים ממעלה עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עד שהם מגיעים ל
+\numeric on
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename graphics/T.png
+	scale 8
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חץ מודגש מתאים לצעדים מסוג 
+\begin_inset Formula $f\mapsto\frac{f}{x}$
+\end_inset
+
+ וחץ רגיל לצעדים מסוג 
+\begin_inset Formula $f\mapsto\left(x+1\right)f+1$
+\end_inset
+
+.
+ נשים לב שכל פולינום זוגי מגיע לפולינום אי זוגי לאחר רצף של חלוקות ב
+\begin_inset Formula $x$
+\end_inset
+
+, ואם כך נוכל להוכיח חסם לפולינומים אי זוגיים בלבד ולאחר מכן להסיק ממנו
+ חסם לכל פולינום שונה מ
+\numeric on
+0
+\numeric off
+ בעזרת הקשר הבא:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(\overbrace{\frac{f}{x^{r}}}^{\text{odd}},T\right)
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה הגבוהה ביותר של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פולינום אי זוגי עובר על ידי הצעד 
+\begin_inset Formula $f\mapsto\left(x+1\right)f+1$
+\end_inset
+
+ לפולינום זוגי שבתורו עובר לפולינום אי זוגי לאחר רצף של צעדים מסוג 
+\begin_inset Formula $f\mapsto\frac{f}{x}$
+\end_inset
+
+.
+ נוכל לקבץ את רצף הפעולות האלו, למיפוי שבהמשך נקרא לו 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+.
+ מהגדרתו, 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ מעביר פולינום אי זוגי לפולינום האי זוגי הבא אחריו בסדרה 
+\begin_inset Formula $\left(T^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+.
+ נתבונן בגרף הבא להמחשה )מומלץ להגדיל את המסמך בכדי לקרוא בבירור את התוויות(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename graphics/T-T3-fixed.png
+	scale 13
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצאנו שמספיק לחקור את זמן העצירה של 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ עבור פולינומים אי זוגיים, ומתברר שאם הופכים את סדר המקדמים של הפולינומים
+ )האי זוגיים( בסדרה 
+\begin_inset Formula $\left(T_{3}^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ מקבלים סדרת פולינומים, אי זוגיים גם הם, שבה המעבר מפולינום לפולינום הבא
+ מתואר על ידי מיפוי פשוט יותר מ
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ שנגדיר ונסמן בהמשך בתור 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היתרון של המיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ הוא שהפולינום 
+\begin_inset Formula $S_{3}^{n}\left(f\right)$
+\end_inset
+
+ שווה לפולינום 
+\begin_inset Formula $\left(x+1\right)^{n}f$
+\end_inset
+
+ ללא חלק מהמקדמים המובילים שלו )ראו 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נוכיח כי עבור פולינומים אי זוגיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+ ובעזרת הקשר בין 
+\begin_inset Formula $T$
+\end_inset
+
+ שאותה רצינו לחקור מלכתחילה לבין 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ נוכל לגזור את החסם הרצוי לגבי 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+צמצום למקרה של פולינום אי זוגי
+\end_layout
+
+\begin_layout Standard
+כפי שציינו במבוא ל
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:חסם-משופר-לזמן"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, ניתן לצמצם את הבעיה לפולינומים אי זוגיים בלבד.
+ נתחיל בלהציג מספר מיפויי עזר.
+\end_layout
+
+\begin_layout Definition
+לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ נגדיר את המיפויים הבאים:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{1}\left(f\right)=\left(x+1\right)f+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{2}\left(f\right)=\frac{f}{x^{r}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\ne0$
+\end_inset
+
+ ונגדיר גם 
+\begin_inset Formula $T_{2}\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $T_{3}\left(f\right)=\left(T_{2}\circ T_{1}\right)\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ אי זוגי, הסדרה 
+\begin_inset Formula $\left(T_{3}^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ מהווה תת סדרה של 
+\begin_inset Formula $\left(T^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ שכן עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי הפעלה יחידה של 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ שקולה להפעלה חוזרת של 
+\begin_inset Formula $T$
+\end_inset
+
+ עד להגעה לפולינום אי זוגי שוב בפעם הראשונה.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--אי"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ אי זוגי.
+ 
+\begin_inset Formula $t_{\min}\left(f,T\right)=2t_{\min}\left(f,T_{3}\right)+\deg\left(f\right)$
+\end_inset
+
+ )בפרט 
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)$
+\end_inset
+
+ סופי(
+\end_layout
+
+\begin_layout Proof
+נוכיח את הטענה באינדוקציה שלמה על מעלת הפולינום 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\deg f=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)=1$
+\end_inset
+
+, 
+\begin_inset Formula $t_{\min}\left(f,T\right)=0$
+\end_inset
+
+ וכן 
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=0$
+\end_inset
+
+ ולכן השוויון נכון.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $d>1$
+\end_inset
+
+.
+ נניח שהטענה נכונה לפולינומים אי זוגיים ממעלה קטנה מ
+\begin_inset Formula $d$
+\end_inset
+
+ ונוכיח אותה לפולינומים אי זוגיים ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי, הנתון בצורה:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & = & x^{r}g+1
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $1\le r\le d$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f-1$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $s$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את הפולינום 
+\begin_inset Formula $\left(x+1\right)^{r}xg+x$
+\end_inset
+
+.
+ נשים לב ש
+\begin_inset Formula $s\ge2$
+\end_inset
+
+ כי:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{r}xg+x & = & x\left[\left(x+1\right)^{r}g+1\right]
+\end{eqnarray*}
+
+\end_inset
+
+והפולינום 
+\begin_inset Formula $\left(x+1\right)^{r}g+1$
+\end_inset
+
+ זוגי כסכום של פולינומים אי זוגיים.
+ נוכיח שמתקיים:
+\begin_inset Formula 
+\begin{eqnarray}
+T^{2\left(r-1\right)+1+s}\left(f\right) & =T_{3}^{\left(r-1\right)+1}\left(f\right)= & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}\label{eq:1}
+\end{eqnarray}
+
+\end_inset
+
+ונוכל להשתמש בהנחת האינדוקציה על הפולינום 
+\begin_inset Formula $\frac{\left(x+1\right)^{r}xg+x}{x^{s}}$
+\end_inset
+
+ שכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+\text{\ensuremath{\deg\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}}\right)}} & = & \deg\left(\frac{\left(x+1\right)^{r}g+1}{x^{s-1}}\right)\\
+ & = & \deg\left(\left(x+1\right)^{r}g+1\right)-\deg\left(x^{s-1}\right)\\
+ & = & \deg\left(\left(x+1\right)^{r}g\right)-\deg\left(x^{s-1}\right)\\
+ & = & r+\deg\left(g\right)-\left(s-1\right)=d-\left(s-1\right)\\
+ & = & d-s+1\le d-1<d
+\end{eqnarray*}
+
+\end_inset
+
+כדי להוכיח את 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נוכיח שהתהליך שעובר 
+\begin_inset Formula $f$
+\end_inset
+
+ עד להגעה ל
+\begin_inset Formula $\frac{\left(x+1\right)^{r}xg+x}{x^{s}}$
+\end_inset
+
+ על ידי כל אחד מהמיפויים נראה כך:
+\begin_inset Formula 
+\begin{equation}
+\begin{alignedat}{4}f & \overbrace{\to}^{T^{2\left(r-1\right)}} & \left(x+1\right)^{r-1}xg+1 & \overbrace{\to}^{T} & \left(x+1\right)^{r}xg+x & \overbrace{\to}^{T^{s}} & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}\\
+f & \overbrace{\to}^{T_{3}^{r-1}} & \left(x+1\right)^{r-1}xg+1 & \overbrace{\to}^{T_{3}} &  &  & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}
+\end{alignedat}
+\label{eq:1-1}
+\end{equation}
+
+\end_inset
+
+ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ הוכחנו כי מתקיים כי לכל 
+\begin_inset Formula $1\le j\le r$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2j}\left(f\right) & = & \left(x+1\right)^{j}x^{r-j}g+1
+\end{eqnarray*}
+
+\end_inset
+
+בפרט עבור 
+\begin_inset Formula $j=r-1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{2\left(r-1\right)}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
+\end{eqnarray*}
+
+\end_inset
+
+כאשר מפעילים את 
+\begin_inset Formula $T$
+\end_inset
+
+ קורית אחת מהפעולות:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(1\right) &  & f\mapsto\left(x+1\right)f+1\\
+\left(2\right) &  & f\mapsto\frac{f}{x}
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב כי מההוכחה ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $2\left(r-1\right)$
+\end_inset
+
+ ההפעלות של 
+\begin_inset Formula $T$
+\end_inset
+
+ הן לסירוגין מסוג )
+\numeric on
+1
+\numeric off
+( ו)
+\numeric on
+2
+\numeric off
+( כלומר מתחלקות ל
+\begin_inset Formula $r-1$
+\end_inset
+
+ זוגות של הפעלות כך שכל זוג הפעלות שקול להפעלה אחת של 
+\begin_inset Formula $T_{3}$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+T_{3}^{r-1}\left(f\right) & = & \left(x+1\right)^{r-1}xg+1
+\end{eqnarray*}
+
+\end_inset
+
+בכך הוכחנו את המעבר הראשון בכל שורה של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ לגבי המעברים האחרים, הפולינום 
+\begin_inset Formula $\left(x+1\right)^{r-1}xg+1$
+\end_inset
+
+ אי זוגי ולכן:
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula 
+\begin{eqnarray*}
+T\left(\left(x+1\right)^{r-1}xg+1\right) & = & \left(x+1\right)^{r}xg+x\\
+T_{1}\left(\left(x+1\right)^{r-1}xg+1\right) & = & \left(x+1\right)^{r}xg+x
+\end{eqnarray*}
+
+\end_inset
+
+נזכיר כי 
+\begin_inset Formula $s$
+\end_inset
+
+ החזקה הגבוהה ביותר של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $\left(x+1\right)^{r}xg+x$
+\end_inset
+
+ ולכן מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+T^{s}\left(\left(x+1\right)^{r}xg+x\right) & = & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}\\
+T_{2}\left(\left(x+1\right)^{r}xg+x\right) & = & \frac{\left(x+1\right)^{r}xg+x}{x^{s}}
+\end{eqnarray*}
+
+\end_inset
+
+כעת מ
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע:
+\begin_inset Formula 
+\begin{eqnarray}
+t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T\right)\nonumber \\
+t_{\min}\left(f,T_{3}\right) & = & \left(r-1\right)+1+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)\label{eq:2}
+\end{eqnarray}
+
+\end_inset
+
+מצאנו כי 
+\begin_inset Formula $\text{\ensuremath{\deg\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}}\right)=d-s+1}}$
+\end_inset
+
+ לכן מהנחת האינדוקציה:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T\right) & = & 2t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)+d-s+1
+\end{eqnarray*}
+
+\end_inset
+
+נציב את זה ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & 2\left(r-1\right)+1+s+2t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)+d-s+1\\
+ & = & 2\left(r-1\right)+2+2t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)+d\\
+ & = & 2\left[\left(r-1\right)+1+t_{\min}\left(\frac{\left(x+1\right)^{r}xg+x}{x^{s}},T_{3}\right)\right]+d\\
+ & = & 2t_{\min}\left(f,T_{3}\right)+d
+\end{eqnarray*}
+
+\end_inset
+
+ובכך הושלם צעד האינדוקציה.
+\end_layout
+
+\begin_layout Subsubsection
+הפולינום ההדדי ומיפויים מקבילים
+\end_layout
+
+\begin_layout Standard
+ברצוננו להמשיך ולחקור את הסדרה 
+\begin_inset Formula $\left(T_{3}^{n}\left(f\right)\right)_{n\ge0}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי.
+ בחלק זה נגדיר את המיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ שאת תפקידו תיארנו במבוא ל
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:חסם-משופר-לזמן-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הפולינום המתקבל מפולינום נתון בעזרת היפוך סדר המקדמים נקרא הפולינום ההדדי
+ שלו.
+ בחלק זה נציג תכונות בסיסיות של הפולינום ההדדי.
+ לאחר מכן נוכיח סדרת למות שמהן ינבע כי עבור פולינומים אי זוגיים מתקיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+.
+ לבסוף נשלב את התוצאות הקודמות כדי להוכיח שמתקיים 
+\begin_inset Formula $t_{\min}\left(f,T\right)=O\left(\left(\deg f\right)^{1.5}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $f\ne0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:יהי-מיפוי-היפוך"
+
+\end_inset
+
+יהי מיפוי היפוך סדר המקדמים 
+\begin_inset Formula $^{\hat{}}:\mathbb{F}_{2}\left[x\right]\to\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ הפועל כך:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & \mapsto & \widehat{f}=x^{\deg\left(f\right)}f\left(\frac{1}{x}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נדבוק בקונבנציה ש
+\begin_inset Formula $\deg\left(0\right)=-\infty$
+\end_inset
+
+ ולכן מתקיים 
+\begin_inset Formula $\widehat{0}=0$
+\end_inset
+
+.
+ לפולינום 
+\begin_inset Formula $\hat{f}$
+\end_inset
+
+ נקרא הפולינום ההדדי של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:תכונות-של-המיפוי"
+
+\end_inset
+
+תכונות של המיפוי 
+\begin_inset Formula $f\mapsto\widehat{f}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $f\left(x\right)=\sum_{i=0}^{m}a_{i}x^{i}\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a_{m}\ne0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\widehat{f}\left(x\right)=\sum_{i=0}^{m}a_{i}x^{m-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $f,g\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{fg}=\widehat{f}\widehat{g}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ ו
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\widehat{x^{k}f}=\widehat{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\hat{\hat{f}}=\frac{f}{x^{r}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ בפרט אם 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי אז 
+\begin_inset Formula $\hat{\hat{f}}=f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\deg f=m$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f}\left(x\right) & = & x^{m}\sum_{i=0}^{m}a_{i}\left(\frac{1}{x}\right)^{i}=\sum_{i=0}^{m}a_{i}x^{m-i}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נוכיח על פי ההגדרה:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\widehat{fg}\right)\left(x\right) & = & x^{\deg\left(fg\right)}\left(fg\right)\left(\frac{1}{x}\right)=x^{\deg\left(f\right)+\deg\left(g\right)}f\left(\frac{1}{x}\right)g\left(\frac{1}{x}\right)\\
+ & = & x^{\deg\left(f\right)}f\left(\frac{1}{x}\right)x^{\deg\left(g\right)}g\left(\frac{1}{x}\right)=\hat{f}\left(x\right)\hat{g}\left(x\right)=\left(\hat{f}\hat{g}\right)\left(x\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+על פי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{x^{k}f} & = & \widehat{x^{k}}\hat{f}
+\end{eqnarray*}
+
+\end_inset
+
+אבל 
+\begin_inset Formula $\widehat{x^{k}}=x^{k}\cdot\left(\frac{1}{x}\right)^{k}=1$
+\end_inset
+
+ ומכאן התוצאה הנדרשת.
+\end_layout
+
+\begin_layout Enumerate
+נרשום 
+\begin_inset Formula $f=x^{r}g$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $g\left(x\right)=\sum_{i=0}^{m}a_{i}x^{i}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a_{m}\ne0$
+\end_inset
+
+ אז מחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\begin_inset Formula 
+\[
+\widehat{g}\left(x\right)=\sum_{i=0}^{m}a_{i}x^{m-i}
+\]
+
+\end_inset
+
+על ידי החלפת אינדקס נקבל:
+\begin_inset Formula 
+\[
+\widehat{g}\left(x\right)=\sum_{i=0}^{m}\overbrace{a_{m-i}}^{b_{i}}x^{i}
+\]
+
+\end_inset
+
+הפולינום 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי ולכן 
+\begin_inset Formula $a_{0}\ne0$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $b_{m}\ne0$
+\end_inset
+
+ לכן שוב נקבל מחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כי:
+\begin_inset Formula 
+\[
+\hat{\hat{g}}\left(x\right)=\sum_{i=0}^{m}b_{i}x^{m-i}
+\]
+
+\end_inset
+
+ועל ידי החלפת אינדקס נוספת נקבל:
+\begin_inset Formula 
+\[
+\hat{\hat{g}}\left(x\right)=\sum_{i=0}^{m}b_{m-i}x^{i}=\sum_{i=0}^{m}a_{m}x^{i}=g\left(x\right)
+\]
+
+\end_inset
+
+כעת ניעזר בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\hat{\hat{f}} & = & \widehat{\widehat{x^{r}g}}=\hat{\hat{g}}=g=\frac{f}{x^{r}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Definition
+\begin_inset CommandInset label
+LatexCommand label
+name "def:עבור--יהיו:"
+
+\end_inset
+
+עבור 
+\begin_inset Formula $f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ יהיו:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $S_{1}\left(f\right)=\left(x+1\right)f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{2}\left(f\right)=f+x^{\deg\left(f\right)}$
+\end_inset
+
+ )מאחר ו
+\begin_inset Formula $f$
+\end_inset
+
+ מעל השדה 
+\begin_inset Formula $\mathbb{F}_{2}$
+\end_inset
+
+ הפעלה של 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ מאפסת את המקדם העליון(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S_{3}\left(f\right)=\left(S_{2}\circ S_{1}\right)\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--פולינום"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום אי זוגי, אז מתקיים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\widehat{T_{3}\left(f\right)}=S_{3}\left(\hat{f}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $t_{\min}\left(f,T_{3}\right)=t_{\min}\left(\hat{f},S_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\widehat{T_{3}\left(f\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $r$
+\end_inset
+
+ החזקה המקסימלית של 
+\begin_inset Formula $x$
+\end_inset
+
+ המחלקת את 
+\begin_inset Formula $T_{1}\left(f\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $T_{1}\left(f\right)=x^{r}T_{2}\left(T_{1}\left(f\right)\right)$
+\end_inset
+
+.
+ לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים: 
+\begin_inset Formula 
+\begin{align*}
+\widehat{T_{1}\left(f\right)} & =\widehat{x^{r}T_{2}\left(T_{1}\left(f\right)\right)}=\widehat{T_{2}\left(T_{1}\left(f\right)\right)}
+\end{align*}
+
+\end_inset
+
+עבור 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי, הפעולה 
+\begin_inset Formula $g\mapsto\widehat{g+1}$
+\end_inset
+
+ מאפסת את המקדם התחתון )שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( והופכת את סדר המקדמים ולכן שקולה לפעולה 
+\begin_inset Formula $g\mapsto S_{2}\left(\hat{g}\right)$
+\end_inset
+
+ שהופכת את סדר המקדמים ואז מאפסת את המקדם העליון.
+ נשתמש בתכונה זו עבור 
+\begin_inset Formula $g=\left(x+1\right)f$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{T_{1}\left(f\right)} & = & \widehat{\underbrace{\left(x+1\right)f}_{g}+1}=S_{2}\left(\widehat{\left(x+1\right)f}\right)
+\end{eqnarray*}
+
+\end_inset
+
+לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{2}\left(\widehat{\left(x+1\right)f}\right) & = & S_{2}\left(\widehat{\left(x+1\right)}\hat{f}\right)=S_{2}\left(\left(x+1\right)\hat{f}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב כי הביטוי האחרון שווה ל
+\begin_inset Formula $S_{2}\left(S_{1}\left(\hat{f}\right)\right)$
+\end_inset
+
+ כלומר ל
+\begin_inset Formula $S_{3}\left(\hat{f}\right)$
+\end_inset
+
+ ולכן הוכחנו 
+\begin_inset Formula $\widehat{T_{3}\left(f\right)}=S_{3}\left(\hat{f}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מקבלים באינדוקציה מיידית כי לכל 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{T_{3}^{n}\left(f\right)} & = & S_{3}^{n}\left(\widehat{f}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נסמן 
+\begin_inset Formula $n=t_{\min}\left(f,T_{3}\right)$
+\end_inset
+
+ ונתבונן בסדרה:
+\begin_inset Formula 
+\[
+f,T_{3}\left(f\right),T_{3}^{2}\left(f\right)...,T_{3}^{n}\left(f\right)=1
+\]
+
+\end_inset
+
+ אם נפעיל את המיפוי 
+\begin_inset Formula $f\mapsto\hat{f}$
+\end_inset
+
+ על כל איברי הסדרה נקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f},\widehat{T_{3}\left(f\right)},\widehat{T_{3}^{2}\left(f\right)}...,\widehat{1} & = & \widehat{f},S_{3}\left(\hat{f}\right),S_{3}^{2}\left(\widehat{f}\right),...,1
+\end{eqnarray*}
+
+\end_inset
+
+ובסדרה זו האיבר 
+\begin_inset Formula $1$
+\end_inset
+
+ מופיע רק במקום האחרון שכן עבור 
+\begin_inset Formula $m<n$
+\end_inset
+
+, 
+\begin_inset Formula $T_{3}^{m}\left(f\right)\ne1$
+\end_inset
+
+ ומהיותו של 
+\begin_inset Formula $T_{3}^{m}\left(f\right)$
+\end_inset
+
+ פולינום אי זוגי נקבל 
+\begin_inset Formula $\widehat{T_{3}^{m}\left(f\right)}\ne1$
+\end_inset
+
+ כי אילו היה מתקיים השוויון 
+\begin_inset Formula $\widehat{T_{3}^{m}\left(f\right)}=1$
+\end_inset
+
+ היינו יכולים להפעיל את מיפוי היפוך המקדמים שוב ולקבל 
+\begin_inset Formula $\widehat{\widehat{T_{3}^{m}\left(f\right)}}=\widehat{1}$
+\end_inset
+
+ כלומר לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ לקבל 
+\begin_inset Formula $T_{3}^{m}\left(f\right)=1$
+\end_inset
+
+ וזו סתירה.
+ מצאנו אם כך שיש להפעיל 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים את 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ על 
+\begin_inset Formula $\widehat{f}$
+\end_inset
+
+ כדי להגיע ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בפעם הראשונה ולכן 
+\begin_inset Formula $t_{\min}\left(\hat{f},S_{3}\right)=n$
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+הלמה האחרונה מאפשרת לנו להתמקד בחסימה של זמן העצירה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ בלבד, שהוא כאמור מיפוי פשוט יותר.
+ נסכם זאת במסקנה.
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:יהי--אי"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום שאינו
+\family roman
+\series medium
+\shape italic
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ אז מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & 2t_{\min}\left(\hat{f},S_{3}\right)+\deg\left(f\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נרשום:
+\begin_inset Formula 
+\begin{eqnarray*}
+f & = & x^{r}g
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי.
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)
+\end{eqnarray*}
+
+\end_inset
+
+ עבור 
+\begin_inset Formula $g$
+\end_inset
+
+ מתקיים לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & = & 2t_{\min}\left(g,T_{3}\right)+\deg\left(g\right)
+\end{eqnarray*}
+
+\end_inset
+
+ולפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--פולינום"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T_{3}\right) & = & t_{\min}\left(\hat{g},S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשלב את השוויונות ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)=r+2t_{\min}\left(g,T_{3}\right)+\deg\left(g\right)\\
+ & = & r+2t_{\min}\left(\hat{g},S_{3}\right)+\deg g=2t_{\min}\left(\hat{g},S_{3}\right)+\deg\left(f\right)
+\end{eqnarray*}
+
+\end_inset
+
+כדי לקבל את הנדרש נזכור כי לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:תכונות-של-המיפוי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\hat{f}=\hat{g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בהינתן פולינום 
+\begin_inset Formula $f\left(x\right)=\sum a_{i}x^{i}$
+\end_inset
+
+ נשתמש בסימון 
+\begin_inset Formula $f\vert_{\le n}$
+\end_inset
+
+ עבור הפולינום 
+\begin_inset Formula $\sum_{i\le n}a_{i}x^{i}$
+\end_inset
+
+ כלומר זהו הפולינום המתקבל מ
+\begin_inset Formula $f$
+\end_inset
+
+ על ידי השמטת חזקות גבוהות מ
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:mod"
+
+\end_inset
+
+ 
+\begin_inset Formula $f\equiv g\mod x^{n}$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $f\vert_{\le n-1}=g\vert_{\le n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $f\left(x\right)=\sum a_{i}x^{i}$
+\end_inset
+
+ וכן 
+\begin_inset Formula $g\left(x\right)=\sum b_{i}x^{i}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\equiv g\mod x^{n}$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $x^{n}\vert\left(f-g\right)$
+\end_inset
+
+ וזה שקול לכך שלכל 
+\begin_inset Formula $0\le i<n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a_{i}-b_{i}=0$
+\end_inset
+
+ כלומר מקדמי החזקות 
+\begin_inset Formula $0\le i\le n-1$
+\end_inset
+
+ של 
+\begin_inset Formula $f,g$
+\end_inset
+
+ מזדהים, וזה מתקיים אם ורק אם 
+\begin_inset Formula $f\vert_{\le n-1}=g\vert_{\le n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+היתרון של המיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ הוא שאנחנו יכולים לתאר בצורה יחסית פשוטה מה יהיה הפולינום שנקבל על ידי
+ מספר הפעלות חוזרות שלו וזהו התוכן של שלוש הלמות הבאות.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--אי-1"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f\left(x\right)=x^{n}+g$
+\end_inset
+
+ אי זוגי, כאשר 
+\begin_inset Formula $\deg\left(g\right)<n$
+\end_inset
+
+.
+ אז לכל 
+\begin_inset Formula $0\le i\le n-\deg\left(g\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $S_{3}^{i}\left(f\right)=x^{n}+\left(x+1\right)^{i}g=\left(\left(x+1\right)f\right)\vert_{\le n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $r=n-\deg\left(f\right)$
+\end_inset
+
+.
+ נוכיח באינדוקציה על 
+\begin_inset Formula $i$
+\end_inset
+
+ כי לכל 
+\begin_inset Formula $0\le i\le r$
+\end_inset
+
+ מתקיים השוויון הראשון.
+ עבור 
+\begin_inset Formula $i=0$
+\end_inset
+
+ השוויון ברור.
+ יהי 
+\begin_inset Formula $i<r$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $S_{3}^{i}\left(f\right)=x^{n}+\left(x+1\right)^{i}g$
+\end_inset
+
+.
+ נשים לב כי 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{i}g\right)<n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\deg\left(S_{3}^{i}\left(f\right)\right)=n$
+\end_inset
+
+.
+ נחשב את 
+\begin_inset Formula $S_{1}\left(S_{3}^{i}\left(f\right)\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{1}\left(S_{3}^{i}\left(f\right)\right) & = & \left(x+1\right)\left(x^{n}+\left(x+1\right)^{i}g\right)\\
+ & = & x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g
+\end{eqnarray*}
+
+\end_inset
+
+כעת נחשב את 
+\begin_inset Formula $\left(S_{3}^{i+1}\left(f\right)\right)$
+\end_inset
+
+
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ כלומר נמצא את הפולינום המתקבל מהפעלה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ על 
+\begin_inset Formula $S_{3}^{i}\left(f\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i+1}\left(f\right) & = & S_{3}\left(S_{3}^{i}\left(f\right)\right)=S_{2}\left(S_{1}\left(S_{3}^{i}\left(f\right)\right)\right)\\
+ & = & S_{2}\left(x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g\right)\\
+ & = & x^{n}+\left(x+1\right)^{i+1}g
+\end{eqnarray*}
+
+\end_inset
+
+נסביר את המעבר האחרון - 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{i+1}g\right)\le n$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\[
+\deg\left(x^{n+1}+x^{n}+\left(x+1\right)^{i+1}g\right)=n+1
+\]
+
+\end_inset
+
+בכך הוכחנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Proof
+נוכיח כעת את השוויון השני.
+ לכל 
+\begin_inset Formula $0\le i\le r$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{i}g\right)\le n$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i}\left(f\right) & = & x^{n}+\left(x+1\right)^{i}g=\left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n}
+\end{eqnarray*}
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula $x^{n}\equiv\left(x+1\right)^{i}x^{n}\mod x^{n}$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{n}+\left(x+1\right)^{i}g & \equiv_{x^{n}} & \left(x+1\right)^{i}x^{n}+\left(x+1\right)^{i}g=\left(x+1\right)^{i}\left(x^{n}+g\right)=\left(x+1\right)^{i}f
+\end{eqnarray*}
+
+\end_inset
+
+אם כך לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i}\left(f\right) & = & \left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n-1}=\left(\left(x+1\right)^{i}f\right)\vert_{\le n-1}
+\end{eqnarray*}
+
+\end_inset
+
+כמו כן 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ מופיע עם מקדם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בשני הביטויים לכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{i}\left(f\right) & = & \left(x^{n}+\left(x+1\right)^{i}g\right)\vert_{\le n}=\left(\left(x+1\right)^{i}f\right)\vert_{\le n}
+\end{eqnarray*}
+
+\end_inset
+
+וקיבלנו את השוויון השני.
+\end_layout
+
+\begin_layout Standard
+הלמה הבאה מקשרת בין זמן העצירה של 
+\begin_inset Formula $f$
+\end_inset
+
+ אי זוגי לזמן העצירה של פולינום אי זוגי ממעלה נמוכה יותר.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--כאשר"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f\left(x\right)=x^{n}+g\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי ו
+\begin_inset Formula $n\ge2$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $r=n-\deg\left(g\right)$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ מתקיים 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)=r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+לפי השוויון הראשון של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{r}\left(f\right) & = & x^{n}+\left(x+1\right)^{r}g
+\end{eqnarray*}
+
+\end_inset
+
+מתקיים 
+\begin_inset Formula $\deg\left(\left(x+1\right)^{r}g\right)=r+\deg\left(g\right)=n$
+\end_inset
+
+ ולכן הוספה של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ לפולינום הזה שקולה להפעלת 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray}
+S_{3}^{r}\left(f\right) & = & S_{2}\left(\left(x+1\right)^{r}g\right)=S_{2}\left(S_{1}\left(\left(x+1\right)^{r-1}g\right)\right)=S_{3}\left(\left(x+1\right)^{r-1}g\right)\label{eq:3}
+\end{eqnarray}
+
+\end_inset
+
+נשים לב כי מהוכחת 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--אי-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נובע כי לכל 
+\begin_inset Formula $0\le i\le r-1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\deg\left(S_{3}^{i}\left(f\right)\right)=n$
+\end_inset
+
+ ולכן בפרט 
+\begin_inset Formula $S_{3}^{i}\left(f\right)\ne1$
+\end_inset
+
+.
+ אם כך:
+\begin_inset Formula 
+\begin{eqnarray}
+t_{\min}\left(f,S_{3}\right) & = & r+t_{\min}\left(S_{3}^{r}\left(f\right),S_{3}\right)\overbrace{=}^{\ref{eq:3}}r+t_{\min}\left(S_{3}\left(\left(x+1\right)^{r-1}g\right),S_{3}\right)\label{eq:4}
+\end{eqnarray}
+
+\end_inset
+
+אם 
+\begin_inset Formula $\left(x+1\right)^{r-1}g\ne1$
+\end_inset
+
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(S_{3}\left(\left(x+1\right)^{r-1}g\right),S_{3}\right) & = & t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+והצבה של השוויון הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נותנת את השוויון הדרוש.
+ נניח בשלילה כי 
+\begin_inset Formula $\left(x+1\right)^{r-1}g=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $g=1$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(x+1\right)^{r-1}=1$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $r=1$
+\end_inset
+
+.
+ במקרה זה 
+\begin_inset Formula $n=r+\deg\left(g\right)=1+0=1$
+\end_inset
+
+ ולכן תנאי הטענה לא מתקיימים.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהיו--פולינומים"
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $f,g$
+\end_inset
+
+ פולינומים אי זוגיים.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\deg\left(S_{3}\left(f\right)\right)\le\deg\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $S_{3}^{k}\left(f\right)=\left(\left(x+1\right)^{k}f\right)\vert_{\le m}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m=\deg\left(S_{3}^{k}\left(f\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $g=f\vert_{\le n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $t_{\min}\left(g,S_{3}\right)\le t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נשים לב ש
+\begin_inset Formula $S_{2}$
+\end_inset
+
+ מקטין את המעלה של כל פולינום שונה מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+\deg\left(S_{3}\left(f\right)\right) & = & \deg\left(S_{2}\left(S_{1}\left(f\right)\right)\right)<\deg\left(S_{1}\left(f\right)\right)\\
+ & = & \deg\left(\left(x+1\right)f\right)=\deg\left(x+1\right)+\deg\left(f\right)\\
+ & = & 1+\deg\left(f\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נוכיח את הטענה באינדוקציה על 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ המקרה של 
+\begin_inset Formula $k=0$
+\end_inset
+
+ ברור, נניח כעת שהטענה נכונה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $h_{1}=S_{3}^{k}\left(f\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $h_{2}=S_{3}^{k+1}\left(f\right)=S_{3}\left(h_{1}\right)$
+\end_inset
+
+.
+ נסמן גם 
+\begin_inset Formula $d_{1}=\deg\left(h_{1}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $d_{2}=\deg\left(h_{2}\right)$
+\end_inset
+
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+h_{1} & \equiv & \left(x+1\right)^{k}f\mod\left(x^{d_{1}+1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נכפול את שני האגפים ב
+\begin_inset Formula $\left(x+1\right)$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)h_{1} & \equiv & \left(x+1\right)^{k+1}f\mod\left(x^{d_{1}+1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+שוב לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, 
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{1}} & = & \left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{1}}
+\end{eqnarray*}
+
+\end_inset
+
+מחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של טענה זו 
+\begin_inset Formula $d_{2}\le d_{1}$
+\end_inset
+
+ ולכן מתקיים בפרט: 
+\begin_inset Formula 
+\[
+\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}
+\]
+
+\end_inset
+
+ אבל מהגדרת 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(\left(x+1\right)h_{1}\right)\vert_{\le d_{2}}=S_{3}\left(h_{1}\right)$
+\end_inset
+
+.
+ נציב זאת בשוויון הקודם ונקבל: 
+\begin_inset Formula 
+\[
+h_{2}=S_{3}\left(h_{1}\right)=\left(\left(x+1\right)^{k+1}f\right)\vert_{\le d_{2}}
+\]
+
+\end_inset
+
+ כנדרש.
+\end_layout
+
+\begin_layout Enumerate
+נסמן לכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+, 
+\begin_inset Formula $f_{k}=S_{3}^{k}\left(f\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $g_{k}=S_{3}^{k}\left(g\right)$
+\end_inset
+
+.
+ נוכיח באינדוקציה שלכל 
+\begin_inset Formula $k\ge0$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\deg\left(g_{k}\right)\le\deg\left(f_{k}\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $f_{k}\equiv g_{k}\mod x^{1+\deg\left(g_{k}\right)}$
+\end_inset
+
+.
+ המקרה 
+\begin_inset Formula $k=0$
+\end_inset
+
+ ברור.
+ נניח שהטענה נכונה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ ונכפול את שני אגפי השקילות ב
+\begin_inset Formula $\left(x+1\right)$
+\end_inset
+
+ כך שנקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)f_{k} & \equiv & \left(x+1\right)g_{k}\mod x^{1+\deg\left(g_{k}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+כמו כן מ
+\begin_inset Formula $\deg\left(g_{k}\right)\le\deg\left(f_{k}\right)$
+\end_inset
+
+ נקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+x^{1+\deg\left(g_{k}\right)} & \equiv & x^{1+\deg\left(f_{k}\right)}\equiv0\mod x^{1+\deg\left(g_{k}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+מכאן נקבל על ידי סכימה של השקילויות:
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{k+1} & = & \left(x+1\right)f_{k}+x^{\deg\left(\left(x+1\right)f_{k}\right)}=\left(x+1\right)f_{k}+x^{1+\deg\left(f_{k}\right)}\\
+ & \equiv & \underbrace{\left(x+1\right)g_{k}+x^{1+\deg\left(g_{k}\right)}}_{g_{k+1}}\mod x^{1+\deg\left(g_{k}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+לפי סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של טענה זו 
+\begin_inset Formula $\deg\left(g_{k}\right)\ge\deg\left(g_{k+1}\right)$
+\end_inset
+
+ ולכן מתקיים בפ
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{k+1} & \equiv & g_{k+1}\mod x^{1+\deg\left(g_{k+1}\right)}
+\end{eqnarray*}
+
+\end_inset
+
+וזה גורר לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:mod"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ כי:
+\begin_inset Formula 
+\[
+f_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}\vert_{\le\deg\left(g_{k+1}\right)}=g_{k+1}
+\]
+
+\end_inset
+
+ולכן מתקיים גם 
+\begin_inset Formula $\deg\left(g_{k+1}\right)\le\deg\left(f_{k+1}\right)$
+\end_inset
+
+.
+ בכך השלמנו את צעד האינדוקציה.
+ כדי לקבל את טענת חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+נסמן 
+\begin_inset Formula $k_{0}=t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f_{k_{0}}=1$
+\end_inset
+
+ ומ
+\begin_inset Formula $\deg\left(g_{k_{0}}\right)\le\deg\left(f_{k_{0}}\right)$
+\end_inset
+
+ מתחייב כי גם 
+\begin_inset Formula $g_{k_{0}}=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $t_{\min}\left(g,S_{3}\right)\le k_{0}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--כאשר-1"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f=\left(x+1\right)^{r}g$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי )ולכן 
+\begin_inset Formula $f$
+\end_inset
+
+ גם אי זוגי( אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & \le & 2\deg\left(f\right)-r+t_{\min}\left(g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $s$
+\end_inset
+
+ שלם כך שמתקיים 
+\begin_inset Formula $2^{s-1}\le\deg\left(f\right)<2^{s}$
+\end_inset
+
+.
+ נסמן: 
+\begin_inset Formula 
+\begin{eqnarray*}
+k & = & 2^{s}-r\\
+d & = & \deg\left(S_{3}^{k}\left(f\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{k}\left(f\right) & = & \left(\left(x+1\right)^{k}f\right)\vert_{\le d}=\left(\left(x+1\right)^{2^{s}}g\right)\vert_{\le d}\\
+ & = & \left(\left(x^{2^{s}}+1\right)g\right)\vert_{\le d}=\left(x^{2^{s}}g+g\right)\vert_{\le d}
+\end{eqnarray*}
+
+\end_inset
+
+השתמשנו גם בשוויון 
+\begin_inset Formula $\left(x+1\right)^{2^{s}}=x^{2^{s}}+1$
+\end_inset
+
+ שניתן לוודא את נכונותו בקלות באינדוקציה.
+ לבסוף נבחין כי:
+\begin_inset Formula 
+\[
+\deg\left(x^{2^{s}}g\right)\ge2^{s}>\deg\left(f\right)\ge d
+\]
+
+\end_inset
+
+ ולכן 
+\begin_inset Formula $S_{3}^{k}\left(f\right)=g\vert_{\le d}$
+\end_inset
+
+.
+ כעת נשתמש בחלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & \le & k+t_{\min}\left(\overbrace{S_{3}^{k}\left(f\right)}^{g\vert_{\le d}},S_{3}\right)\le k+t_{\min}\left(g,S_{3}\right)\\
+ & = & 2^{s}-r+t_{\min}\left(g,S_{3}\right)\\
+ & \le & 2\deg\left(f\right)-r+t_{\min}\left(g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:יהי--פולינום"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום אי זוגי, אז 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)\le\sqrt{2}\left(\deg\left(f\right)\right)^{1.5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נסמן 
+\begin_inset Formula $n=\deg\left(f\right)$
+\end_inset
+
+ ונוכיח את ההטענה באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $n=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $f=1$
+\end_inset
+
+ ו
+\begin_inset Formula $t_{\min}\left(1,S_{3}\right)=0$
+\end_inset
+
+ לכן הטענה מתקיימת.
+\end_layout
+
+\begin_layout Proof
+נניח שהטענה נכונה לפולינומים ממעלה קטנה מ
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח שהיא נכונה לפולינומים ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ נרשום 
+\begin_inset Formula $f\left(x\right)=x^{n}+g\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\deg\left(g\right)=n-r$
+\end_inset
+
+ עבור 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כאשר"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & = & r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+נבחין בין שני מקרים אפשריים:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $r\le\sqrt{2n}$
+\end_inset
+
+.
+ נשתמש בהנחת האינדוקציה על הפולינום 
+\begin_inset Formula $\left(x+1\right)^{r-1}g$
+\end_inset
+
+ שמעלתו 
+\begin_inset Formula $n-1$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & = & r-1+\sqrt{2}\left(n-1\right)^{1.5}<\sqrt{2n}+\sqrt{2}\left(n-1\right)^{1.5}\\
+ & = & \sqrt{2n}+\left(n-1\right)\sqrt{2n}=n\sqrt{2n}=\sqrt{2}n^{1.5}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $r>\sqrt{2n}$
+\end_inset
+
+.
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כאשר-1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & = & r-1+t_{\min}\left(\left(x+1\right)^{r-1}g,S_{3}\right)\\
+ & \le & r-1+2\left(n-1\right)-\left(r-1\right)+t_{\min}\left(g,S_{3}\right)\\
+ & < & 2n+t_{\min}\left(g,S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula $\deg\left(g\right)=n-r$
+\end_inset
+
+ ולכן מהנחת האינדוקציה 
+\begin_inset Formula $t_{\min}\left(g,S_{3}\right)\le\sqrt{2}\left(n-r\right)^{1.5}$
+\end_inset
+
+ נשתמש בחסם זה כדי להמשיך ולחסום את 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,S_{3}\right) & < & 2n+\sqrt{2}\left(n-r\right)^{1.5}\le2n+\left(n-r\right)\sqrt{2n}\\
+ & < & 2n+\left(n-\sqrt{2n}\right)\sqrt{2n}=n\sqrt{2n}=\sqrt{2}n^{1.5}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+בכך השלמנו את צעד האינדוקציה.
+\end_layout
+
+\begin_layout Standard
+כעת לא נותר אלא לשלב את התוצאות שקיבלנו על מנת להגיע לחסום המשופר על זמן
+ העצירה של 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+יהי 
+\begin_inset Formula $0\ne f\in\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $t_{\min}\left(f,T\right)\le\left(2\deg\left(f\right)\right)^{1.5}+\deg\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+נרשום 
+\begin_inset Formula $f=x^{r}g$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $g$
+\end_inset
+
+ אי זוגי.
+ אז 
+\begin_inset Formula $t_{\min}\left(f,T\right)=r+t_{\min}\left(g,T\right)$
+\end_inset
+
+.
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & = & 2t_{\min}\left(\hat{g},S_{3}\right)+\deg\left(g\right)
+\end{eqnarray*}
+
+\end_inset
+
+נשים לב 
+\begin_inset Formula $\deg\left(\hat{g}\right)=\deg\left(g\right)=n-r$
+\end_inset
+
+ ולכן לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:יהי--פולינום"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(g,T\right) & \le & 2\sqrt{2}\left(n-r\right)^{1.5}+\left(n-r\right)=\left(2\left(n-r\right)\right)^{1.5}+n-r
+\end{eqnarray*}
+
+\end_inset
+
+לכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f,T\right) & = & r+t_{\min}\left(g,T\right)\le r+\left(2\left(n-r\right)\right)^{1.5}+n-r\\
+ & = & \left(2\left(n-r\right)\right)^{1.5}+n<\left(2n\right)^{1.5}+n
+\end{eqnarray*}
+
+\end_inset
+
+כנדרש.
+\end_layout
+
+\begin_layout Subsection
+קיום סדרות חשבוניות בזמני העצירה של 
+\begin_inset Formula $T$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר כעת במדויק את מושג ״קיום תתי סדרות חשבוניות שאורכן לא חסום״ ואת התוצאה
+ שנרצה להוכיח.
+\end_layout
+
+\begin_layout Definition
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n\ge0}$
+\end_inset
+
+ סדרה ויהי 
+\begin_inset Formula $r\ge0$
+\end_inset
+
+.
+ נאמר ש
+\begin_inset Formula $\left(a_{n}\right)_{n\ge0}$
+\end_inset
+
+ מכילה סדרות חשבוניות באורך לא חסום ובעלות הפרש משותף 
+\begin_inset Formula $r$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $m\ge1$
+\end_inset
+
+ קיים 
+\begin_inset Formula $l\ge0$
+\end_inset
+
+ כך ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+a_{l+1} & = & a_{l}+r\\
+a_{l+2} & = & a_{l}+2r\\
+ & ...\\
+a_{l+\left(m-2\right)} & = & a_{l}+\left(m-2\right)r\\
+a_{l+\left(m-1\right)} & = & a_{l}+\left(m-1\right)r
+\end{eqnarray*}
+
+\end_inset
+
+כלומר תת הסדרה 
+\begin_inset Formula $\left(a_{l+k}\right)_{k=0}^{m-1}$
+\end_inset
+
+ היא סדרה חשבונית עם הפרש 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Theorem
+\begin_inset CommandInset label
+LatexCommand label
+name "thm:יהיו--מספרים"
+
+\end_inset
+
+יהיו 
+\begin_inset Formula $a,b$
+\end_inset
+
+ מספרים שלמים אי שליליים כך ש
+\begin_inset Formula $\left(a,b\right)\ne\left(0,0\right)$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula 
+\[
+f_{a,b,n}=\left(x^{a}\left(1+x\right)^{b}\right)^{n}+1
+\]
+
+\end_inset
+
+הסדרה 
+\begin_inset Formula $\left(t_{\min}\left(f_{a,b,n}\right),T\right)_{n\ge1}$
+\end_inset
+
+ מכילה סדרות חשבוניות באורך לא חסום ובעלות הפרש משותף 
+\begin_inset Formula $a-b$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בחלק זה נוכיח את המשפט הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל על ידי חישוב מפורש של 
+\begin_inset Formula $t_{\min}\left(f_{a,b,n},T\right)$
+\end_inset
+
+.
+ גם כאן ניעזר במיפוי 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+ )הגדרה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:עבור--יהיו:"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( ובמיפוי 
+\begin_inset Formula $f\mapsto\hat{f}$
+\end_inset
+
+ של היפוך סדר המקדמים )הגדרה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:יהי-מיפוי-היפוך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:לכל--שלמים"
+
+\end_inset
+
+לכל 
+\begin_inset Formula $a,b$
+\end_inset
+
+ שלמים אי שליליים כך ש
+\begin_inset Formula $\left(a,b\right)\ne\left(0,0\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ מתקיים פרט למקרים 
+\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right),\left(a,b,n\right)=\left(1,0,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)+3na+nb-2
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:יהי--אי"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right)+n\left(a+b\right)\label{eq:5}
+\end{eqnarray}
+
+\end_inset
+
+נחשב את 
+\begin_inset Formula $\widehat{f_{a,b,n}}$
+\end_inset
+
+ לפי הגדרה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "def:יהי-מיפוי-היפוך"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & x^{\deg\left(f_{a,b,n}\right)}f_{a,b,n}\left(\frac{1}{x}\right)=x^{n\left(a+b\right)}\left(\left(\left(\frac{1}{x}\right)^{a}\left(1+\frac{1}{x}\right)^{b}\right)^{n}+1\right)\\
+ & = & \left(x+1\right)^{nb}+x^{na+nb}
+\end{eqnarray*}
+
+\end_inset
+
+נפריד כעת למקרים 
+\begin_inset Formula $a=0$
+\end_inset
+
+ ו
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ נתחיל במקרה 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ במקרה זה נסמן 
+\begin_inset Formula $g=\left(x+1\right)^{nb}$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & x^{na+nb}+g\\
+na+nb & > & \deg\left(g\right)=nb\\
+na+nb & \ge & 2
+\end{eqnarray*}
+
+\end_inset
+
+האי שוויון האחרון נכון שכן אחרת 
+\begin_inset Formula $n\left(a+b\right)=1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $n=a+b=1$
+\end_inset
+
+ מה שגורר 
+\begin_inset Formula $\left(a,b,n\right)=\left(1,0,1\right)$
+\end_inset
+
+ שזה מקרה שהוחרג בתנאי המשפט.
+ אם כך תנאי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--כאשר"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מתקיימים עבור 
+\begin_inset Formula $\widehat{f_{a,b,n}}$
+\end_inset
+
+ ולכן:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & \left(na+nb-nb\right)-1+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)\\
+ & = & na-1+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)
+\end{eqnarray*}
+
+\end_inset
+
+והצבה ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מניבה את השוויון הדרוש.
+\end_layout
+
+\begin_layout Proof
+אם 
+\begin_inset Formula $a=0$
+\end_inset
+
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+\widehat{f_{a,b,n}} & = & \left(x+1\right)^{nb}+x^{nb}=S_{3}\left(\left(x+1\right)^{nb-1}\right)
+\end{eqnarray*}
+
+\end_inset
+
+הנחנו 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $nb-1\ge b-1>0$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x+1\right)^{nb-1}\ne1$
+\end_inset
+
+ ומכאן ש:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\widehat{f_{a,b,n}},S_{3}\right) & = & t_{\min}\left(\left(x+1\right)^{nb-1},S_{3}\right)-1
+\end{eqnarray*}
+
+\end_inset
+
+ושוב הצבה של השוויון הנ״ל ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ מניבה את השוויון הדרוש.
+\end_layout
+
+\begin_layout Standard
+מהלמה האחרונה נובע שכדי לחשב את 
+\begin_inset Formula $t_{\min}\left(f_{a,b,n},T\right)$
+\end_inset
+
+ מספיק לחשב את 
+\begin_inset Formula $t_{\min}\left(\left(x+1\right)^{n},S_{3}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Lemma
+\begin_inset CommandInset label
+LatexCommand label
+name "lem:יהי--ונניח"
+
+\end_inset
+
+יהי 
+\begin_inset Formula $n\ge1$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $2^{d-1}\le n<2^{d}$
+\end_inset
+
+.
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\left(x+1\right)^{n},S_{3}\right) & = & 2^{d}-n
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בטרם נוכיח את הלמה, נתבונן בהמחשה של הפולינומים הללו:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{0} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◻◻◻◼\\
+\left(x+1\right)^{1} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◻◻◼◼\\
+\left(x+1\right)^{2} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◻◼◻◼\\
+\left(x+1\right)^{3} &  & ◻◻◻◻◻◻◻◻◻◻◻◻◼◼◼◼\\
+\left(x+1\right)^{4} &  & ◻◻◻◻◻◻◻◻◻◻◻◼◻◻◻◼\\
+\left(x+1\right)^{5} &  & ◻◻◻◻◻◻◻◻◻◻◼◼◻◻◼◼\\
+\left(x+1\right)^{6} &  & ◻◻◻◻◻◻◻◻◻◼◻◼◻◼◻◼\\
+\left(x+1\right)^{7} &  & ◻◻◻◻◻◻◻◻◼◼◼◼◼◼◼◼\\
+\left(x+1\right)^{8} &  & ◻◻◻◻◻◻◻◼◻◻◻◻◻◻◻◼\\
+\left(x+1\right)^{9} &  & ◻◻◻◻◻◻◼◼◻◻◻◻◻◻◼◼\\
+\left(x+1\right)^{10} &  & ◻◻◻◻◻◼◻◼◻◻◻◻◻◼◻◼\\
+\left(x+1\right)^{11} &  & ◻◻◻◻◼◼◼◼◻◻◻◻◼◼◼◼\\
+\left(x+1\right)^{12} &  & ◻◻◻◼◻◻◻◼◻◻◻◼◻◻◻◼\\
+\left(x+1\right)^{13} &  & ◻◻◼◼◻◻◼◼◻◻◼◼◻◻◼◼\\
+\left(x+1\right)^{14} &  & ◻◼◻◼◻◼◻◼◻◼◻◼◻◼◻◼\\
+\left(x+1\right)^{15} &  & ◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼◼
+\end{eqnarray*}
+
+\end_inset
+
+קיבלנו את משולש שרפינסקי והסיבה לכך היא כזו - מצד אחד, את משולש שרפינסקי
+ ניתן לבנות רקורסיבית בעזרת
+\family roman
+\series medium
+\shape italic
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape italic
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עותקים של גרסה קטנה יותר שלו.
+ מצד שני, את חישוב המקדמים של הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,2^{d+1}-1\right]$
+\end_inset
+
+ ניתן גם לבצע רקורסיבית.
+ נפריד לשני מקרים אפשריים של 
+\begin_inset Formula $n$
+\end_inset
+
+ והם: 
+\begin_inset Formula $n\in\left[0,2^{d}-1\right]$
+\end_inset
+
+ ו-
+\begin_inset Formula $n\in\left[2^{d},2^{d+1}-1\right]$
+\end_inset
+
+.
+ הפולינומים בקבוצה השנייה מתקבלים מאלו בקבוצה הראשונה על ידי כפל ב
+\begin_inset Formula $\left(x+1\right)^{2^{d}}$
+\end_inset
+
+ בהתאמה כשהם מסודרים בסדר עולה של המעלות.
+ מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{2^{d}} & = & x^{2^{d}}+1
+\end{eqnarray*}
+
+\end_inset
+
+ולכן כפל של פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ בפולינום 
+\begin_inset Formula $\left(x+1\right)^{2^{d}}$
+\end_inset
+
+ יוצר שני עותקים של 
+\begin_inset Formula $f$
+\end_inset
+
+ שאחד מהם מוזז ב
+\begin_inset Formula $2^{d}$
+\end_inset
+
+ מקומות שמאלה.
+ אם כך, הקבוצה 
+\begin_inset Formula $\left\{ \left(x+1\right)^{n}:n\in\left[0,2^{d}-1\right]\right\} $
+\end_inset
+
+ תורמת משולש אחד מסדר 
+\begin_inset Formula $d$
+\end_inset
+
+, והקבוצה 
+\begin_inset Formula $\left\{ \left(x+1\right)^{n}:n\in\left[2^{d},2^{d+1}-1\right]\right\} $
+\end_inset
+
+ תורמת שני משולשים מסדר 
+\begin_inset Formula $d$
+\end_inset
+
+, זה לצד זה.
+ נדגים: את הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,7\right]$
+\end_inset
+
+ ניתן לחלק לקבוצות 
+\begin_inset Formula $\left(x+1\right)^{0},...,\left(x+1\right)^{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x+1\right)^{4},...,\left(x+1\right)^{7}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{4} & = & \left(x+1\right)^{4}\left(x+1\right)^{0}=\left(x^{4}+1\right)\left(x+1\right)^{0}\\
+\left(x+1\right)^{5} & = & \left(x+1\right)^{4}\left(x+1\right)^{1}=\left(x^{4}+1\right)\left(x+1\right)^{1}\\
+\left(x+1\right)^{6} & = & \left(x+1\right)^{4}\left(x+1\right)^{2}=\left(x^{4}+1\right)\left(x+1\right)^{2}\\
+\left(x+1\right)^{7} & = & \left(x+1\right)^{4}\left(x+1\right)^{3}=\left(x^{4}+1\right)\left(x+1\right)^{3}
+\end{eqnarray*}
+
+\end_inset
+
+ואז ניתן לקבל את המקדמים של ארבעת הפולינומים האחרונים על ידי שני עותקים
+ של המקדמים של ארבעת הפולינומים הראשונים שאחד מהעותקים מוזז ארבע מקומות
+ שמאלה.
+\end_layout
+
+\begin_layout Standard
+להרחבה בנושא מומלץ מאוד לצפות ב
+\begin_inset CommandInset href
+LatexCommand href
+name "הזה היוטיוב סרטון"
+target "https://www.youtube.com/watch?v=2SUvWfNJSsM&t=239s"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-14"
+literal "false"
+
+\end_inset
+
+ ו
+\begin_inset CommandInset href
+LatexCommand href
+name "שלו השני בחלק"
+target "https://www.youtube.com/watch?v=bdMfjfT0lKk&t=591s"
+literal "false"
+
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-16"
+literal "false"
+
+\end_inset
+
+.
+ ניגש כעת להוכחת הלמה.
+\end_layout
+
+\begin_layout Proof
+נוכיח ראשית כי 
+\begin_inset Formula $t_{\min}\left(\left(x+1\right)^{n},S_{3}\right)\le2^{d}-n$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $m=\deg\left(S_{3}^{2^{d}-n}\left(\left(x+1\right)^{n}\right)\right)$
+\end_inset
+
+.
+ לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהיו--פולינומים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}^{2^{d}-n}\left(\left(x+1\right)^{n}\right) & = & \left(\left(x+1\right)^{2^{d}}\right)\vert_{\le m}=\left(x^{2^{d}}+1\right)\vert_{\le m}
+\end{eqnarray*}
+
+\end_inset
+
+אבל לפי חלק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+של אותה הלמה:
+\begin_inset Formula 
+\[
+m\le\left(\deg\left(x+1\right)^{n}\right)=n<2^{d}
+\]
+
+\end_inset
+
+ ולכן בהכרח 
+\begin_inset Formula $S_{3}^{2^{d}-n}\left(\left(x+1\right)^{n}\right)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+בשביל להוכיח את האי שוויון ההפוך, נשים לב לתכונה הבאה של 
+\begin_inset Formula $S_{3}$
+\end_inset
+
+.
+ אם פולינום 
+\begin_inset Formula $f$
+\end_inset
+
+ מכיל את החזקות 
+\begin_inset Formula $x^{k_{1}},x^{k_{2}}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $k_{2}-k_{1}>1$
+\end_inset
+
+ ולא מכיל אף חזקה ביניהן, הפולינום 
+\begin_inset Formula $S_{3}\left(f\right)$
+\end_inset
+
+ יכיל את החזקות 
+\begin_inset Formula $x^{k_{1}+1},x^{k_{2}}$
+\end_inset
+
+ ולא יכיל אף חזקה ביניהן.
+ נוכיח:
+\begin_inset Formula 
+\begin{eqnarray*}
+S_{3}\left(f\right) & = & xf+f+x^{\deg\left(f\right)+1}
+\end{eqnarray*}
+
+\end_inset
+
+החזקות 
+\begin_inset Formula $x^{k_{1}+1},x^{k_{2}}$
+\end_inset
+
+ מופיעות בדיוק במחובר אחד מהשלושה.
+\end_layout
+
+\begin_layout Proof
+\begin_inset Formula $x^{k_{1}+1}$
+\end_inset
+
+: מופיע ב
+\begin_inset Formula $xf$
+\end_inset
+
+, לא מופיע ב
+\begin_inset Formula $f$
+\end_inset
+
+ ולא מופיע ב
+\begin_inset Formula $x^{\deg\left(f\right)+1}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\deg\left(f\right)+1\ge k_{2}+1>k_{1}+1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x^{k_{2}}$
+\end_inset
+
+: מופיע ב
+\begin_inset Formula $f$
+\end_inset
+
+, לא מופיע ב
+\begin_inset Formula $xf$
+\end_inset
+
+ )אילו היה מופיע, אז ב
+\begin_inset Formula $f$
+\end_inset
+
+ הייתה החזקה 
+\begin_inset Formula $x^{k_{2}-1}$
+\end_inset
+
+( ולא מופיע ב
+\begin_inset Formula $x^{\deg\left(f\right)+1}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\deg\left(f\right)+1>k_{2}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Proof
+והחזקות 
+\begin_inset Formula $x^{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $k_{1}+1<i<k_{2}$
+\end_inset
+
+ לא מופיעות באף אחד מהמחוברים.
+ אם כך הפולינומים 
+\begin_inset Formula $S_{3}^{j}\left(f\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $0\le j\le k_{2}-k_{1}-1$
+\end_inset
+
+ לובשים את הצורה: 
+\begin_inset Formula 
+\begin{eqnarray*}
+f &  & ...+x^{k_{1}}+x^{k_{2}}+...\\
+S_{3}\left(f\right) &  & ...+x^{k_{1}+1}+x^{k_{2}}+...\\
+ & \vdots\\
+S_{3}^{\left(k_{2}-k_{1}-2\right)}\left(f\right) &  & ...+x^{k_{1}+\left(k_{2}-k_{1}-2\right)}+x^{k_{2}}+...\\
+S_{3}^{\left(k_{2}-k_{1}-1\right)}\left(f\right) &  & ...+x^{k_{1}+\left(k_{2}-k_{1}-1\right)}+x^{k_{2}}+...
+\end{eqnarray*}
+
+\end_inset
+
+הם שונים כולם מ
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולכן 
+\begin_inset Formula $t_{\min}\left(f,S_{3}\right)\ge k_{2}-k_{1}$
+\end_inset
+
+.
+ כדי לסיים נוכיח כי החזקות 
+\begin_inset Formula $x^{n-2^{d-1}},x^{2^{d-1}}$
+\end_inset
+
+ מופיעות ב
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+, והחזקות שביניהן לא ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\left(x+1\right)^{n},S_{3}\right) & \ge & 2^{d-1}-\left(n-2^{d-1}\right)=2^{d}-n
+\end{eqnarray*}
+
+\end_inset
+
+נרשום:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(x+1\right)^{n} & = & \left(x+1\right)^{2^{d-1}}\left(x+1\right)^{n-2^{d-1}}=\left(x^{2^{d-1}}+1\right)\left(x+1\right)^{n-2^{d-1}}\\
+ & = & x^{2^{d-1}}\left(x+1\right)^{n-2^{d-1}}+\left(x+1\right)^{n-2^{d-1}}\\
+ & = & x^{2^{d-1}}\left(x^{n-2^{d-1}}+...+1\right)+x^{n-2^{d-1}}+...+1\\
+ & = & x^{n}+...+x^{2^{d-1}}+x^{n-2^{d-1}}+...+1
+\end{eqnarray*}
+
+\end_inset
+
+ובכך נקבל את הנדרש.
+\end_layout
+
+\begin_layout Standard
+נשים לב שהפולינום 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $2^{d-1}\le n<2^{d}$
+\end_inset
+
+ הוא ב
+\begin_inset Formula $2^{d-1}$
+\end_inset
+
+ השורות התחתונות של משולש שרפינסקי שיוצרים הפולינומים 
+\begin_inset Formula $\left(x+1\right)^{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left[0,2^{d}-1\right]$
+\end_inset
+
+.
+ אם כך הוא מורכב מהפולינום 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ ומעותק שלו המוזז 
+\begin_inset Formula $2^{d-1}$
+\end_inset
+
+ מקומות שמאלה.
+\end_layout
+
+\begin_layout Standard
+החזקה 
+\begin_inset Formula $x^{n-2^{d-1}}$
+\end_inset
+
+ היא הגבוהה ביותר בעותק הרגיל של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ והחזקה 
+\begin_inset Formula $x^{2^{d-1}}$
+\end_inset
+
+ היא הנמוכה ביותר בעותק המוזז שמאלה של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+ כלומר הן מהוות את ההפרדה בין שני העותקים של 
+\begin_inset Formula $\left(x+1\right)^{n-2^{d-1}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Corollary
+\begin_inset CommandInset label
+LatexCommand label
+name "cor:לכל--שלמים"
+
+\end_inset
+
+לכל 
+\begin_inset Formula $a,b$
+\end_inset
+
+ שלמים אי שליליים כך ש
+\begin_inset Formula $\left(a,b\right)\ne\left(0,0\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $n\ge1$
+\end_inset
+
+.
+ מתקיים פרט למקרים 
+\begin_inset Formula $\left(a,b,n\right)=\left(0,1,1\right),\left(a,b,n\right)=\left(1,0,1\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2^{d+1}+\left(a-b\right)n
+\end{eqnarray*}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $d$
+\end_inset
+
+ שלם המקיים 
+\begin_inset Formula $2^{d-1}<n\left(a+b\right)\le2^{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Proof
+האי שוויון של מספרים שלמים 
+\begin_inset Formula $2^{d-1}<n\left(a+b\right)\le2^{d}$
+\end_inset
+
+ שקול ל:
+\begin_inset Formula 
+\[
+2^{d-1}\le n\left(a+b\right)-1<2^{d}
+\]
+
+\end_inset
+
+ לפי 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:יהי--ונניח"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right) & = & 2^{d}-n\left(a+b\right)+1
+\end{eqnarray*}
+
+\end_inset
+
+נציב בשוויון שהוכחנו ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lem:לכל--שלמים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2t_{\min}\left(\left(x+1\right)^{na+nb-1},S_{3}\right)+3na+nb-2\\
+ & = & 2\left(2^{d}-n\left(a+b\right)+1\right)+3na+nb-2\\
+ & = & 2^{d+1}+na-nb
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נשתמש בחישובים שערכנו כדי להוכיח את 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "thm:יהיו--מספרים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Proof
+יהי 
+\begin_inset Formula $n\ge2$
+\end_inset
+
+, אז בהכרח 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $\left(a,b,n\right)\ne\left(0,1,1\right)$
+\end_inset
+
+.
+ נניח גם ש
+\begin_inset Formula $n$
+\end_inset
+
+ מקיים:
+\begin_inset Formula 
+\[
+2^{d-1}<n\left(a+b\right)\le2^{d}
+\]
+
+\end_inset
+
+מצאנו ב
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "cor:לכל--שלמים"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ שבתנאים אלו מתקיים:
+\begin_inset Formula 
+\begin{eqnarray*}
+t_{\min}\left(f_{a,b,n},T\right) & = & 2^{d+1}+\left(a-b\right)n
+\end{eqnarray*}
+
+\end_inset
+
+המספרים 
+\begin_inset Formula $n$
+\end_inset
+
+ המקיימים את התנאים האלו מהווים 
+\series bold
+רצף
+\series default
+ של אינדקסים בסדרה 
+\begin_inset Formula $\left(t_{\min}\left(f_{a,b,n},T\right)\right)_{n\ge1}$
+\end_inset
+
+, ליתר דיוק:
+\begin_inset Formula 
+\begin{eqnarray*}
+n & \in & \left\{ \left\lceil \frac{2^{d-1}}{a+b}\right\rceil ,\left\lceil \frac{2^{d-1}}{a+b}\right\rceil +1,...,\left\lfloor \frac{2^{d}}{a+b}\right\rfloor \right\} \backslash\left\{ 1\right\} 
+\end{eqnarray*}
+
+\end_inset
+
+נסמן את קבוצת האינדקסים הזו ב
+\begin_inset Formula $A$
+\end_inset
+
+ אז:
+\begin_inset Formula 
+\begin{eqnarray*}
+\left(t_{\min}\left(f_{a,b,n},T\right)\right)\vert_{n\in A} & = & 2^{d+1}+\left(a-b\right)n
+\end{eqnarray*}
+
+\end_inset
+
+כלומר זו תת סדרה חשבונית עם הפרש 
+\begin_inset Formula $\left(a-b\right)$
+\end_inset
+
+.
+ לסיום נשים לב שניתן לבחור את 
+\begin_inset Formula $d$
+\end_inset
+
+ גדול כרצוננו כדי שכמות האיברים ב
+\begin_inset Formula $A$
+\end_inset
+
+ שמהווה את אורך התת סדרה המבוקשת תהיה גדולה כרצוננו.
+\end_layout
+
+\begin_layout Section
+שאלות פתוחות
+\end_layout
+
+\begin_layout Standard
+ניתן להמשיך את המחקר על בעיית קולאץ הפולינומיאלית במספר כיוונים:
+\end_layout
+
+\begin_layout Itemize
+בדיקה אם החסם האסימפטוטי 
+\begin_inset Formula $O\left(d^{1.5}\right)$
+\end_inset
+
+ לזמן העצירה המקסימלי של פולינום ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+ הוא אופטימלי או ניתן לשיפור
+\end_layout
+
+\begin_layout Itemize
+מציאת חסם אסימפטוטי לזמן העצירה הממוצע של פולינום ממעלה 
+\begin_inset Formula $d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+הכללת הבעיה מהחוג 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+ והתאמתה לחוג 
+\begin_inset Formula $\mathbb{F}_{p}\left[x\right]$
+\end_inset
+
+ עבור 
+\begin_inset Formula $p$
+\end_inset
+
+ ראשוני
+\end_layout
+
+\begin_layout Standard
+להרחבה וניסוחים מדויקים של השאלות הפתוחות וההשערות ניתן לעיין בחלק 
+\begin_inset Quotes eld
+\end_inset
+
+השאלות הפתוחות
+\begin_inset Quotes erd
+\end_inset
+
+ במאמר 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-3"
+literal "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Lagarias, J.
+ C.
+ (1985).
+ The 3x + 1 Problem and Its Generalizations.
+ The American Mathematical Monthly, 92(1), 3–23.
+ https://doi.org/10.2307/2322189
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ 
+\lang english
+Hicks, K., Mullen, G.
+ L., Yucas, J.
+ L., & Zavislak, R.
+ (2008).
+ A Polynomial Analogue of the 3n + 1 Problem.
+ The American Mathematical Monthly, 115(7), 615–622.
+ http://www.jstor.org/stable/27642557
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+literal "false"
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+Alon, G., Behajaina, A., & Paran, E.
+ (2024).
+ On the stopping time of the Collatz map in 
+\begin_inset Formula $\mathbb{F}_{2}\left[x\right]$
+\end_inset
+
+.
+ arXiv:2401.03210.
+ https://doi.org/10.48550/arXiv.2401.03210 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+literal "false"
+
+\end_inset
+
+ 
+\lang english
+Tao, T.
+ (2022), Almost all orbits of the Collatz map attain almost bounded values.
+ Forum of Mathematics Pi 10 (e12), 1-56.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+literal "false"
+
+\end_inset
+
+ 
+\lang english
+Yuzuriha Inori (https://mathoverflow.net/users/124627/yuzuriha-inori), Arithmetic
+ progressions in stopping time of Collatz sequences, URL (version: 2019-12-20):
+ https://mathoverflow.net/q/348733
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-12"
+
+\end_inset
+
+ אורנשטיין, א'.
+ )
+\numeric on
+1995
+\numeric off
+(.
+ 
+\series bold
+מבנים אלגבריים
+\series default
+.
+ האוניברסיטה הפתוחה.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-13"
+
+\end_inset
+
+ קורמן, ת.ה., לייזרסון, צ.א., ריבסט ר.ל., ושטיין, ק'.
+ )
+\numeric on
+2008
+\numeric off
+(.
+ 
+\series bold
+מבוא לאלגוריתמים
+\series default
+ )סופר, ע', מתרגם(.
+ )מהדורה שנייה(.
+ האוניברסיטה הפתוחה.
+ )פרסום ראשון במקור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2001
+\numeric off
+(
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-14"
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+\lang english
+3Blue1Brown.
+ (2016, November 25).
+ Binary, Hanoi, and Sierpinski, part 1 [Video].
+ Youtube.
+ https://youtu.be/2SUvWfNJSsM?si=J9WZq9LZ1w7XW_Uy
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-16"
+
+\end_inset
+
+ 
+\lang english
+3Blue1Brown.
+ (2016, November 25).
+ Binary, Hanoi, and Sierpinski, part 2 [Video].
+ Youtube.
+ https://youtu.be/bdMfjfT0lKk?si=kbgMDUl3iEDpTNtS
+\lang hebrew
+ 
+\end_layout
+
+\end_body
+\end_document
